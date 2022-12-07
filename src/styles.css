@@ -35,4 +35,4 @@ label {
 /*estilizando a scrollbar*/
 body::-webkit-scrollbar-track{background: #040D19}
 body::-webkit-scrollbar{width: 6px;}
-body::-webkit-scrollbar-thumb{background-color: #4FE8D0}
+body::-webkit-scrollbar-thumb{ background-color: #4FE8D0; }
