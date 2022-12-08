@@ -32,6 +32,11 @@ label {
   height: 50%;
 }
 
+a {
+  color: #5EEAD4;
+  text-decoration: none;
+}
+
 /*estilizando a scrollbar*/
 body::-webkit-scrollbar-track{background: #040D19}
 body::-webkit-scrollbar{width: 6px;}
