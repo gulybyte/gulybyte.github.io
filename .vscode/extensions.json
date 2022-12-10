@@ -4,6 +4,14 @@
     "angular.ng-template",
     "johnpapa.angular-essentials",
     "cyrilletuzi.angular-schematics",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "sporiley.css-auto-prefix",
+    "dbaeumer.vscode-eslint",
+    "visualstudioexptteam.vscodeintellicode",
+    "dbaeumer.jshint",
+    "leizongmin.node-module-intellisense",
+    "christian-kohler.npm-intellisense",
+    "rbbit.typescript-hero",
+    "pmneo.tsimporter"
   ]
 }
