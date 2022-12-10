@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 25px 35px;
+  background-color: #0A192F;
+}
+
+.header-contents {
+  display: inline-block;
+}
+
+.header-contents> button {
+  margin-left: 40px;
+}
+
