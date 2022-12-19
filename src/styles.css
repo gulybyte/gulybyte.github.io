@@ -28,7 +28,7 @@ ul {
 }
 
 .clear{
-  clear: both;
+  clear: both !important;
 }
 
 /*estilizando a scrollbar*/
