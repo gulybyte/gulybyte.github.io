@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth !important;/* SCROLL suave para links internos */
+}
+
 body{
   height: 100% !important;
   width: 100% !important;

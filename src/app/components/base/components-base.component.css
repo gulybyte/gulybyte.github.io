@@ -17,6 +17,15 @@
   margin-left: 40px;
 }
 
+.header-contents> .navigation {
+  font-size: 16px;
+  font-family: 'SF Mono';
+  color: #8892B0 !important;
+  padding: 0 30px 15px 0;
+}.header-contents> .navigation:hover {
+  color: #40bba9 !important;
+}
+
 
 
 
@@ -55,7 +64,7 @@
 
 
 /* == CODE == */
-.code {
+.email {
   width: 27px;
   position: fixed;
   bottom: 0px;
@@ -65,7 +74,7 @@
   z-index: 10;
 }
 
-.code::after {
+.email::after {
   content: "";
   display: block;
   width: 2px;
@@ -74,7 +83,7 @@
   background-color: #5EEAD4;
 }
 
-.code> a {
+.email> a {
   margin: 7px auto;
   padding: 10px;
   font-family: var(--font-mono);
