@@ -1,3 +1,4 @@
+/* == espacamentos about == */
 .about {
   max-width: 90%;
   width: 90%;
@@ -14,16 +15,41 @@
   float: right;
   max-width: 40%;
   width: 40%;
-  padding: 100px 0 0 60px;
+  padding: 75px 0 0 70px;
 }
 
-.about-image> img {
-  border-radius: 2%;
+
+
+.about-image> .img-guilherme {
+  border-radius: 1%;
+  width: 280px;
+  height: 280px;
+  box-shadow: 22px 22px #0A192F, 22px 22px 0px 2.5px #5EEAD4;
+
+  background-image: url('../../../assets/images/eu-azul.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  -webkit-border-radius: 1%;
+  -moz-border-radius: 1%;
+  -ms-border-radius: 1%;
+  -o-border-radius: 1%;
 }
+
+.about-image> .img-guilherme:hover {
+  box-shadow: 16px 16px #0A192F, 16px 16px 0px 2.5px #5EEAD4;
+  background-image: url('../../../assets/images/eu.jpg');
+}
+
+
+
+
+/* titulo about me */
 
 *, ::before, ::after {
   box-sizing: inherit;
 }
+
 
 .title-about {
   color: white;
@@ -39,7 +65,8 @@
   content: "";
   display: block;
   position: relative;
-  width: 300px;
+  width: 100%;
   height: 1px;
   margin-left: 20px;
+  background-color: gray;
 }

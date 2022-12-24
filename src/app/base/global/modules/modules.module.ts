@@ -7,10 +7,10 @@ import { ButtonModule } from 'primeng/button';
   declarations: [],
   imports: [
     CommonModule,
-    ButtonModule,
+    ButtonModule
   ],
   exports: [
-    ButtonModule,
+    ButtonModule
   ]
 })
 export class ModulesModule { }

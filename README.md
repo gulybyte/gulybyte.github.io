@@ -2,9 +2,14 @@
 node version: 19<br>
 npm version: 9.1.3<br>
 ng: 15<br>
-</h3>
+</h3><br>
 
-run: 
+install dependencies:
+```
+$ npm i
+```
+<br>
+run:
 ```
 $ ng s --o
 ```
