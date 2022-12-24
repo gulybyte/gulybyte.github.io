@@ -1,3 +1,4 @@
+/* == header == */
 .header {
   width: 100%;
   display: flex;
@@ -30,11 +31,8 @@
 
 
 
-*, ::before, ::after {
-  box-sizing: inherit;
-}
 
-/* == NAV == */
+/* == nav == */
 .nav {
   width: 27px;
   position: fixed;
@@ -63,7 +61,7 @@
 
 
 
-/* == CODE == */
+/* == email == */
 .email {
   width: 27px;
   position: fixed;

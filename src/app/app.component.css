@@ -1,3 +1,7 @@
+*, ::before, ::after {
+  box-sizing: inherit !important;/* config default antes e depois dos elementos */
+}
+
 .container {
   width: 75%;
   margin: 110px auto 0;

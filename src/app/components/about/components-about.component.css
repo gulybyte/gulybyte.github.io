@@ -20,6 +20,7 @@
 
 
 
+/* == imagem no about == */
 .about-image> .img-guilherme {
   border-radius: 1%;
   width: 280px;
@@ -37,20 +38,13 @@
 }
 
 .about-image> .img-guilherme:hover {
-  box-shadow: 16px 16px #0A192F, 16px 16px 0px 2.5px #5EEAD4;
+  box-shadow: 12px 12px #0A192F, 12px 12px 0px 2.5px #5EEAD4;
   background-image: url('../../../assets/images/eu.jpg');
 }
 
 
 
-
-/* titulo about me */
-
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
-
+/* == titulo about me == */
 .title-about {
   color: white;
   display: flex;
@@ -69,4 +63,30 @@
   height: 1px;
   margin-left: 20px;
   background-color: gray;
+}
+
+
+
+/* == lista techs about == */
+.recently-tech {
+  width: 100%;
+  font-size: 16px;
+  color: #8892b0;
+  line-height: 26px;
+  font-family: serif;
+}
+
+.recently-tech> .list-0 {
+  width: 50%;
+  float: right;
+} .recently-tech> .list-1 {
+  width: 50%;
+}
+
+.recently-tech> .list-0> li::before,
+.recently-tech> .list-1> li::before {
+   content: "▹ ";
+} .recently-tech> .list-0> li::after,
+.recently-tech> .list-1> li::after {
+  content: ";";
 }
