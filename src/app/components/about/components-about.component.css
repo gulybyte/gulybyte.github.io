@@ -1,0 +1,45 @@
+.about {
+  max-width: 90%;
+  width: 90%;
+  margin: 250px auto 0;
+}
+
+.about-me {
+  float: left;
+  max-width: 60%;
+  width: 60%;
+}
+
+.about-image {
+  float: right;
+  max-width: 40%;
+  width: 40%;
+  padding: 100px 0 0 60px;
+}
+
+.about-image> img {
+  border-radius: 2%;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+.title-about {
+  color: white;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: 26px;
+  white-space: nowrap;
+} .title-about::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+}
