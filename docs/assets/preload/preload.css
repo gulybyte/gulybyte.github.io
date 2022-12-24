@@ -1,0 +1,14 @@
+body {
+  overflow: hidden;
+}
+
+#preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: #060D15 url('../static/images/loader.gif') no-repeat center center;
+  background-size: 15%;
+  z-index:999;
+}

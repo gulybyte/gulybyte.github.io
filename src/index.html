@@ -38,17 +38,22 @@ SOFTWARE.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- NORMALIZE CSS -->
-  <link href="assets/normalize-css/normalize.min.css" rel="stylesheet">
+  <link href="assets/libs/normalize-css/normalize.min.css" rel="stylesheet">
   <!-- AOS -->
-  <link href="assets/aos/aos.min.css" rel="stylesheet">
+  <link href="assets/libs/aos/aos.min.css" rel="stylesheet">
+  <!-- LOAD PAGE -->
+  <script src="assets/preload/preload.js"></script>
+  <link href="assets/preload/preload.css" rel="stylesheet">
 <!-- GLOBAL STYLES -->
 </head>
 <body>
 
+  <div id="preloader"></div>
+
   <app-root></app-root>
 
   <!-- AOS -->
-  <script src="assets/aos/aos.min.js"></script>
+  <script src="assets/libs/aos/aos.min.js"></script>
   <script>AOS.init();</script>
 </body>
 </html>

@@ -36,31 +36,31 @@ ul {
 }
 
 /*estilizando a scrollbar*/
-body::-webkit-scrollbar-track{background: #060D15}
+body::-webkit-scrollbar-track{background: #0A192F }
 body::-webkit-scrollbar{width: 6px;}
-body::-webkit-scrollbar-thumb{ background-color: #4FE8D0; }
+body::-webkit-scrollbar-thumb{ background-color: #5EEAD4; }
 
 
 
 /* === FONTS === */
 @font-face {
   font-family: 'SF Mono';
-  src: url('assets/fonts/SFMonoRegular.woff') format('truetype');
+  src: url('assets/static/fonts/SFMonoRegular.woff') format('truetype');
 }
 
 @font-face {
   font-family: 'SF Mono-900';
-  src: url('assets/fonts/SFMonoRegular.woff') format('truetype');
+  src: url('assets/static/fonts/SFMonoRegular.woff') format('truetype');
   font-weight: 900;
 }
 
 @font-face {
   font-family: 'Calibre-semibold';
-  src: url('assets/fonts/Calibre-Semibold.woff2');
+  src: url('assets/static/fonts/Calibre-Semibold.woff2');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Calibre-Regular';
-  src: url('assets/fonts/Calibre-Regular.woff2');
+  src: url('assets/static/fonts/Calibre-Regular.woff2');
 }
