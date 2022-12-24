@@ -12,7 +12,26 @@
       class="p-button-outlined p-button-success"></a>
 
   </div>
+
+  <div data-aos="fade-down" data-aos-duration="2000" class="header-navbar">
+
+    <input type="checkbox" id="trigger"  hidden="">
+    <label class="navbarLabel" for="trigger" (click)="toggleNavbarVisible()"><span></span></label>
+
+  </div>
 </header>
+
+<ul class="navbarUl" *ngIf="navbarVisible">
+  <li><a href="/">Home</a></li>
+        <li><a href="/">Teste</a></li>
+        <li><a href="/">Teste</a></li>
+        <li><a href="/">Teste</a></li>
+        <li><a href="/">Teste</a></li>
+        <li><a href="/">Teste</a></li>
+        <li><a href="/">Teste</a></li>
+        <li><a href="/">Teste</a></li>
+
+</ul>
 
 <div class="clear"></div>
 

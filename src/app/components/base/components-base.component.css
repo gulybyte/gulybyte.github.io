@@ -8,6 +8,8 @@
   top: 0;
   padding: 25px 35px;
   background-color: #0A192F;
+  opacity: 1 !important;
+  z-index: 998;
 }
 
 .header-contents {
@@ -27,8 +29,9 @@
   color: #40bba9 !important;
 }
 
-
-
+.header-navbar {
+  display: none;
+}
 
 
 
