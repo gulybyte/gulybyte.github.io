@@ -21,15 +21,11 @@
 
 
 /* == imagem no about == */
-.about-image> .img-guilherme {
+.about-image> .img-guilherme> img {
   border-radius: 1%;
   width: 280px;
   height: 280px;
   box-shadow: 22px 22px #0A192F, 22px 22px 0px 2.5px #5EEAD4;
-
-  background-image: url('../../../assets/images/eu-azul.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 
   -webkit-border-radius: 1%;
   -moz-border-radius: 1%;
@@ -37,10 +33,20 @@
   -o-border-radius: 1%;
 }
 
-.about-image> .img-guilherme:hover {
+.about-image> .img-guilherme:hover> img {
   box-shadow: 12px 12px #0A192F, 12px 12px 0px 2.5px #5EEAD4;
-  background-image: url('../../../assets/images/eu.jpg');
 }
+
+.about-image> .img-guilherme> .eu {
+  display: none;
+}/* troca as imagens */
+.about-image> .img-guilherme:hover> .eu-azul {
+  display: none;
+}.about-image> .img-guilherme:hover> .eu {
+  display: block;
+}
+
+
 
 
 
