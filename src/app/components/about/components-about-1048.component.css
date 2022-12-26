@@ -1,0 +1,47 @@
+@media screen and (max-width: 1048px) {
+
+  .about-me {
+    max-width: 50%;
+    width: 50%;
+  }
+
+  .about-image {
+    max-width: 50%;
+    width: 50%;
+    padding: 75px 0 0 25px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .about-me {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-image {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .about-image> .img-guilherme> img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about-image> .img-guilherme> img {
+    width: 200px;
+    height: 200px;
+  }
+}

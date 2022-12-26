@@ -77,4 +77,18 @@
   .navbarLabel {
     margin: -18px 0 0 0;
   }
+
+  .navbarUl {
+    padding: 70px 180px 0 70px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .navbarLabel {
+    margin: -22px 0 0 0;
+  }
+
+  .navbarUl {
+    padding: 70px 170px 0 62px;
+  }
 }
