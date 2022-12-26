@@ -59,3 +59,15 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .navbarUl {
+    padding: 70px 200px 0 90px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbarLabel {
+    margin: -18px 0 0 0;
+  }
+}

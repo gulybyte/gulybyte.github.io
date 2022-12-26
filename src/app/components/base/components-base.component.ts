@@ -13,7 +13,6 @@ export class ComponentsBaseComponent {
 
   toggleNavbarVisible() {
     this.navbarVisible = !this.navbarVisible;
-    // Adicionar lógica adicional aqui, se necessário
   }
 
 }
