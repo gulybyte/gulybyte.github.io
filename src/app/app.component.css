@@ -6,3 +6,26 @@
   width: 75%;
   margin: 110px auto 0;
 }
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 80%;
+    margin: 80px auto 0;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+
+  .container {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    width: 85%;
+  }
+}

@@ -35,30 +35,6 @@
 
 
 
-/* == nav == */
-.nav {
-  width: 27px;
-  position: fixed;
-  bottom: 0px;
-  left: 40px;
-  right: auto;
-  z-index: 10;
-}
-
-.nav::after {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: #5EEAD4;
-}
-
-.nav> ul> li {
-  padding-bottom: 22px;
-}
-
-
 
 
 

@@ -1,0 +1,86 @@
+@media screen and (max-width: 1125px) {
+
+  .infoinit> .info {
+    max-width: 80%;
+  }
+
+  .infoinit> .name {
+    font-size: 70px;
+  }
+
+  .infoinit> .developer-web {
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+
+  .infoinit> .name {
+    font-size: 60px;
+  }
+
+  .infoinit> .developer-web {
+    font-size: 50px;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+
+  .infoinit> .info {
+    max-width: 100%;
+  }
+
+  .infoinit> .name {
+    font-size: 50px;
+  }
+
+  .infoinit> .developer-web {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .infoinit> .info {
+    max-width: 85%;
+  }
+
+}
+
+@media screen and (max-width: 580px) {
+  .infoinit> .info {
+    max-width: 100%;
+  }
+
+  .infoinit> .name {
+    font-size: 45px;
+  }
+
+  .infoinit> .developer-web {
+    font-size: 40px;
+  }
+
+  .infoinit> .info {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .infoinit> .name {
+    font-size: 42px;
+  }
+
+  .infoinit> .developer-web {
+    font-size: 38px;
+  }
+
+  .infoinit> .thiscode {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}

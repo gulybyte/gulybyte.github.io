@@ -7,13 +7,15 @@ import { ModulesModule } from './base/global/modules/modules.module';
 import { ComponentsBaseComponent } from './components/base/components-base.component';
 import { ComponentsInfoinitComponent } from './components/infoinit/components-infoinit.component';
 import { ComponentsAboutComponent } from './components/about/components-about.component';
+import { NavComponent } from './components/base/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentsBaseComponent,
     ComponentsInfoinitComponent,
-    ComponentsAboutComponent
+    ComponentsAboutComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

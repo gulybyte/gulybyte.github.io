@@ -1,3 +1,42 @@
 .infoinit {
   padding-top: 72px;
 }
+
+.infoinit> .hi {
+  font-family: 'SF Mono';
+  font-weight: 400;
+  font-size: 18px;
+  color: #5EEAD4;
+}
+
+.infoinit> .name {
+  margin-top: 23px;
+  font-family: 'Calibre-semibold';
+  font-weight: 600;
+  font-size: 78px;
+  color: #CCD6F6;
+}
+
+.infoinit> .developer-web {
+  font-family: 'Calibre-semibold';
+  font-weight: 600;
+  font-size: 72px;
+  color: #8892b0;
+}
+
+.infoinit> .info {
+  font-family: serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #8892b0;
+  line-height: 26px;
+  max-width: 51%;
+}
+
+.infoinit> .thiscode {
+  font-family: 'SF Mono-900';
+  color:#64ffda;
+  font-size: 15px;
+  margin-top: 50px;
+  padding: 12px 25px;
+}

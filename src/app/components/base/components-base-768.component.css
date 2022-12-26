@@ -51,6 +51,13 @@
 
 }
 
+@media screen and (max-width: 768px) {
+  .email {
+    position: static;
+    display: none;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .navbarUl {
     padding: 70px 220px 0 110px;
