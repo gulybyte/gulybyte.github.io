@@ -29,8 +29,9 @@
   top: 0;
   left: 0;
   z-index: 998;
-  padding: 70px 150px;
-  text-align: center;
+  padding: 70px 250px 0 150px;
+  text-align: center !important;
+  align-items: center !important;
 }
 
 .navbarUl> .navigation {
@@ -42,10 +43,19 @@
 }
 
 .navbarUl> .p-button-outlined {
+  text-align: center !important;
   font-size: 15px;
-  margin: 0 auto;
-  margin: 50px 0 0 -13px;
+  margin: 50px auto 0;
   padding: 10px 30px;
 }
 
+}
+
+@media screen and (max-width: 520px) {
+  .navbarUl {
+    padding: 70px 220px 0 110px;
+  }
+  .navbarUl> .navigation {
+    font-size: 20px;
+  }
 }
