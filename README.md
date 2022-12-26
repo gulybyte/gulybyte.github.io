@@ -8,7 +8,7 @@ install dependencies:
 ```
 $ npm i
 ```
-<br>
+
 run:
 ```
 $ ng s --o
