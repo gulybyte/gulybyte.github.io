@@ -8,6 +8,7 @@ import { ComponentsBaseComponent } from './components/base/components-base.compo
 import { ComponentsInfoinitComponent } from './components/infoinit/components-infoinit.component';
 import { ComponentsAboutComponent } from './components/about/components-about.component';
 import { NavComponent } from './components/base/nav/nav.component';
+import { PhilosophyComponent } from './components/philosophy/philosophy.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavComponent } from './components/base/nav/nav.component';
     ComponentsBaseComponent,
     ComponentsInfoinitComponent,
     ComponentsAboutComponent,
-    NavComponent
+    NavComponent,
+    PhilosophyComponent
   ],
   imports: [
     BrowserModule,
