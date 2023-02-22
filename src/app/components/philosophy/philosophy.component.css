@@ -10,9 +10,20 @@
   margin-right: 10px;
 }
 
-@media screen and (max-width: 480px) {
-  .philosophy> p> img {
-    width: 100%;
+.img-cj {
+  float: right !important;
+  width: 30% !important;
+}
+
+@media screen and (max-width: 980px) {
+  .img-cj {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .philosophy> p> img, .img-cj {
+    width: 100% !important;
   }
 }
 
