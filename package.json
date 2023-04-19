@@ -14,5 +14,9 @@
     "sass": "^1.62.0",
     "sass-loader": "^13.2.2",
     "webpack": "^5.80.0"
+  },
+  "dependencies": {
+    "primeicons": "^6.0.1",
+    "primevue": "^3.27.0"
   }
 }
