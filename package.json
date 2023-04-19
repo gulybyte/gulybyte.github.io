@@ -11,10 +11,5 @@
   "devDependencies": {
     "@types/node": "^18",
     "nuxt": "^3.4.1"
-  },
-  "dependencies": {
-    "sass": "^1.62.0",
-    "sass-loader": "^13.2.2",
-    "webpack": "^5.79.0"
   }
 }
