@@ -1,0 +1,13 @@
+@use '_colors' as c;
+@use '_fonts' as f;
+
+html {
+  scroll-behavior: smooth !important; /* scroll lento */
+}
+
+body{
+  height: 100% !important;
+  color: white !important;
+  background-color: c.$primary-color !important;
+  font-family: f.$font-main !important;
+}

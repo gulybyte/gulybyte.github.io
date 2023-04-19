@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
+  css: [
+    '~/assets/_colors.scss',
+    '~/assets/_fonts.scss',
+    '~/assets/_base.scss'
+  ],
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width, initial-scale=1',
@@ -8,9 +12,7 @@ export default defineNuxtConfig({
         lang: 'pt-br'
       },
       link: [
-        { rel: 'stylesheet', href: '/assets/static/styles/_colors.css' },
-        { rel: 'stylesheet', href: '/assets/static/styles/_fonts.css' },
-        { rel: 'stylesheet', href: '/assets/static/styles/main.css' }
+        //{ rel: 'stylesheet', href: '/static/styles/main.css' }
       ]
     },
   }

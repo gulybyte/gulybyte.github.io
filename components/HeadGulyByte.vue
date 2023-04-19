@@ -21,7 +21,7 @@
     <Meta property="og:site_name" content="Guilherme Luis (gulybyte)." />
     <Meta property="og:description" content="Apenas um mero desenvolvedor amante de tecnologia." />
     <Meta property="og:url" content="https://gulybyte.github.io/gulybyte" />
-    <Meta property="og:image" content="https://gulybyte.github.io/assets/static/images/eu.webp" />
+    <Meta property="og:image" content="https://gulybyte.github.io/static/images/eu.webp" />
     <Meta property="og:image:width" content="600" />
     <Meta property="og:image:height" content="600" />
     <Meta property="og:image:type" content="image/webp" />
