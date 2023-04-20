@@ -4,19 +4,18 @@
   <gulybyte-Email></gulybyte-Email>
 
   <div class="container">
-    <img src="/static/images/eu.webp" alt="Guilherme Luis França" />
 
-    <!-- <app-components-infoinit></app-components-infoinit> -->
+    <gulybyte-FirstApresentation></gulybyte-FirstApresentation>
 
-    <div class="clear"></div>
+    <div class="clear-both"></div>
 
     <!-- <app-components-about></app-components-about> -->
 
-    <div class="clear"></div>
+    <div class="clear-both"></div>
 
     <!-- <app-component-philosophy></app-component-philosophy> -->
 
-    <div class="clear"></div>
+    <div class="clear-both"></div>
 
 
     <div class="soon-more" style="margin: 80px; text-align: center; font-size: 25px; font-family: 'Calibre-semibold';">

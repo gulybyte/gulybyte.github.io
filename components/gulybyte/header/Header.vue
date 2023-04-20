@@ -1,7 +1,7 @@
 <template>
   <header class="header" >
 
-    <div class="pl-6">
+    <div class="pl-8">
       <img width="50" alt="Logo" src="/static/images/icon.png">
     </div>
 
