@@ -8,6 +8,11 @@ $calibre-regular: 'Calibre-Regular';
 
 /* === FONTS === */
 @font-face {
+  font-family: 'Ubuntu';
+  src: url('/static/fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'SF Mono';
   src: url('/static/fonts/SFMonoRegular.woff') format('truetype');
 }

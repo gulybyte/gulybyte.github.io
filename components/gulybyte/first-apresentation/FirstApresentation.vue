@@ -2,7 +2,7 @@
   <div class="infoinit">
     <h1 class="hi">Olá, meu nome é</h1>
     <h2 class="name">Guilherme Luis.</h2>
-    <h3 class="developer-web">Desenvolvedor Web.</h3>
+    <h3 class="developer-web">Desenvolvedor Web <small>(construo sites)</small>.</h3>
     <p class="info">
       Apenas um grande amante de tecnologia desde os 15 anos. Meu foco é desenvolvimento web, onde crio experiências únicas.
       Você desenvolvedor, visite meu
@@ -123,6 +123,7 @@
 }
 
 .infoinit> .name {
+  line-height: 80px;
   font-size: 45px;
 }
 

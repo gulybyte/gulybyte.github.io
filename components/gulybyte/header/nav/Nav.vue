@@ -1,14 +1,14 @@
 <template>
   <!-- vesao para nav-menu -->
-  <nav class="nav-menu">
+  <aside class="nav-menu">
     <a href="https://github.com/gulybyte" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="pi pi-github"></i></a>
     <a href="https://www.instagram.com/gulybyte/" aria-label="Instagram" target="_blank" rel="noreferrer"><i class="pi pi-instagram"></i></a>
     <a href="mailto:gulybyte@gmail.com" aria-label="E-Mail" target="_blank" rel="noreferrer"><i class="pi pi-envelope"></i></a>
-  </nav>
+  </aside>
 
 
 
-  <nav orientation="left" class="nav" data-aos="fade-right" data-aos-duration="2000">
+  <aside orientation="left" class="nav">
     <ul>
       <li>
         <a href="https://github.com/gulybyte" aria-label="GitHub" target="_blank" rel="noreferrer">
@@ -52,7 +52,7 @@
         </a>
       </li>-->
     </ul>
-  </nav>
+  </aside>
 </template>
 
 <style lang="scss">
