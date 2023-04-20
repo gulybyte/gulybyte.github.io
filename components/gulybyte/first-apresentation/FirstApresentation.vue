@@ -23,134 +23,50 @@
   padding-top: 72px;
 }
 
-.hi {
-  font-family: f.$sf-mono;
-  font-weight: 400;
-  font-size: 18px;
-  color: #5EEAD4;
-}
+.hi{font-family:f.$sf-mono;font-weight:400;font-size:18px;color:c.$secondary-color;}
 
-.name {
-  line-height: 130px;
-  font-family: f.$calibre-semibold;
-  font-weight: 600;
-  font-size: 78px;
-  color: #CCD6F6;
-}
+.developer-web,.name{font-family:f.$calibre-semibold;font-weight:600}
 
-.developer-web {
-  line-height: 50px;
-  font-family: f.$calibre-semibold;
-  font-weight: 600;
-  font-size: 72px;
-  color: #8892b0;
-  padding: 0 !important;
-}
+.name{line-height:130px;font-size:78px;color:#ccd6f6}
 
-.info {
-  padding-top: 25px;
-  font-family: serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #8892b0;
-  max-width: 51%;
-}
+.developer-web{line-height:50px;font-size:72px;color:#8892b0;padding:0!important}
 
-.thiscode {
-  font-family: f.$sf-mono-900;
-  color:#64ffda;
-  font-size: 15px;
-  margin-top: 50px !important;
-  padding: 12px 25px;
-}
+.info{padding-top:25px;font-family:serif;font-weight:400;font-size:20px;color:#8892b0;max-width:51%}
+
+.thiscode{font-family:f.$sf-mono-900;color:c.$secondary-color;font-size:15px;margin-top:50px!important;padding:12px 25px}
 
 
 @media screen and (max-width: 1125px) {
-
-.infoinit> .info {
-  max-width: 80%;
-}
-
-.infoinit> .name {
-  font-size: 70px;
-}
-
-.infoinit> .developer-web {
-  font-size: 60px;
-}
-
+  .info{max-width:80%}
+  .name{font-size:70px}
+  .developer-web{font-size:60px}
 }
 
 @media screen and (max-width: 950px) {
-
-.infoinit> .name {
-  font-size: 60px;
-}
-
-.infoinit> .developer-web {
-  font-size: 50px;
-}
-
+  .name {font-size: 60px}
+  .developer-web {font-size: 50px;}
 }
 
 @media screen and (max-width: 780px) {
-
-.infoinit> .info {
-  max-width: 100%;
-}
-
-.infoinit> .name {
-  font-size: 50px;
-}
-
-.infoinit> .developer-web {
-  font-size: 40px;
-}
-
+  .info{max-width:100%}
+  .name{font-size:50px}
+  .developer-web{font-size:40px}
 }
 
 @media screen and (max-width: 650px) {
-
-.infoinit> .info {
-  max-width: 85%;
-}
-
+  .info {max-width: 85%;}
 }
 
 @media screen and (max-width: 580px) {
-.infoinit> .info {
-  max-width: 100%;
-}
-
-.infoinit> .name {
-  line-height: 80px;
-  font-size: 45px;
-}
-
-.infoinit> .developer-web {
-  font-size: 40px;
-}
-
-.infoinit> .info {
-  width: 100%;
-  font-size: 18px;
-}
+  .name{line-height:80px;font-size:45px}
+  .developer-web{font-size:40px}
+  .info{max-width:100%;width:100%;font-size:18px}
 }
 
 @media screen and (max-width: 330px) {
-.infoinit> .name {
-  font-size: 42px;
-}
-
-.infoinit> .developer-web {
-  font-size: 38px;
-}
-
-.infoinit> .thiscode {
-  width: 100%;
-  font-size: 15px;
-  padding: 10px 20px;
-}
+  .name{font-size:42px}
+  .developer-web{font-size:38px}
+  .thiscode{width:100%;font-size:15px;padding:10px 20px}
 }
 
 

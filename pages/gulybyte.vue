@@ -9,7 +9,7 @@
 
     <div class="clear-both"></div>
 
-    <!-- <app-components-about></app-components-about> -->
+    <gulybyte-About></gulybyte-About>
 
     <div class="clear-both"></div>
 
