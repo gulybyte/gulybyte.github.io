@@ -67,6 +67,10 @@
   left: 40px;
   right: auto;
   z-index: 10;
+  ul> li
+  {
+    padding-bottom: 22px;
+  }
 }
 
 .nav::after {
@@ -78,28 +82,25 @@
   background-color: #5EEAD4;
 }
 
-.nav> ul> li {
-  padding-bottom: 22px;
-}
-
 @media screen and (max-width: 768px) {
   .nav {
     position: static;
     display: none;
   }
 
-  .nav-menu {
+  .nav-menu{
     display: block;
     width: 100%;
     white-space: nowrap;
+    a> i
+    {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 20px;
+      margin: 15px 29px 0 0;
+    }
   }
 
-  .nav-menu> a> i {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-    margin: 15px 29px 0 0;
-  }
 }
 
 </style>

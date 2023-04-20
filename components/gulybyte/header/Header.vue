@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     showNavBar() {
-      this.navBar = true
+      this.navBar = !this.navBar
     }
   }
 };
@@ -76,15 +76,15 @@ export default {
   opacity: 1 !important;
   z-index: 998;
 
-  .header-img {
-    padding: 25px;
-  }
+  .header-img { padding: 25px; }
 
-  .header-contents {
+  .header-contents
+  {
     display: inline-block;
     padding: 25px;
 
-    .navigation {
+    .navigation
+    {
       font-size: 16px;
       font-family: 'SF Mono';
       color: #8892B0 !important;
@@ -107,13 +107,14 @@ export default {
   /* == header == */
   .header {
     padding: 25px 35px;
+
+    .header-contents { display: none !important; }
+    .header-navbar { display: block; }
   }
 
   /* == MENU HAMBURGUER MOBILE == */
-  .header-contents { display: none; }
-  .header-navbar { display: block; }
 
-  .navbarLabel { margin: -18px 12px 0 0; position: fixed; top: 0; right: 0; width: 40px; height: 30px; display: flex; align-items: center; z-index: 999; cursor: pointer; }
+  .navbarLabel { margin: 50px 70px 0 0; position: fixed; top: 0; right: 0; width: 40px; height: 30px; display: flex; align-items: center; z-index: 999; cursor: pointer; }
   .navbarLabel span { width: 100%; height: 4px; background: #060D15; display: block; transition: transform .3s cubic-bezier(0.75, 0, 0.25, 1); -webkit-transition: transform .3s cubic-bezier(0.75, 0, 0.25, 1); -moz-transition: transform .3s cubic-bezier(0.75, 0, 0.25, 1); -ms-transition: transform .3s cubic-bezier(0.75, 0, 0.25, 1); -o-transition: transform .3s cubic-bezier(0.75, 0, 0.25, 1); }
   .navbarLabel span::before, .navbarLabel span::after { content: ""; position: absolute; left: 0; right: 0; display: block; height: 4px; background: #5EEAD4; }
   .navbarLabel span::before { top: 0; }
@@ -128,12 +129,13 @@ export default {
     background: #060D15;
     color: white;
     position: fixed;
-    width: 50%;
+    width: 50% !important;
+    padding-top: 15%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 998;
-    padding: 70px 250px 0 150px;
+    /* padding: 70px 250px 0 150px; */
     text-align: center !important;
     align-items: center !important;
 
@@ -171,20 +173,12 @@ export default {
 }
 
 @media screen and (max-width: 375px) {
-  .navbarLabel {
-    margin: -18px 0 0 0;
-  }
-
   .navbarUl {
     padding: 70px 180px 0 70px;
   }
 }
 
 @media screen and (max-width: 330px) {
-  .navbarLabel {
-    margin: -22px 0 0 0;
-  }
-
   .navbarUl {
     padding: 70px 170px 0 62px;
   }
