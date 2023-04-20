@@ -3,10 +3,12 @@ export default defineNuxtConfig({
     strict: true
   },
   css: [
+    // css global
     '~/assets/_colors.scss',
     '~/assets/_fonts.scss',
     '~/assets/_base.scss',
 
+    // primevue configs
     "primeicons/primeicons.css",
     "primevue/resources/themes/lara-dark-teal/theme.css",
     "primevue/resources/primevue.min.css"
@@ -14,6 +16,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ["primevue"]
   },
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ],
   app: {
     head: {
       charset: 'utf-16',
