@@ -16,7 +16,7 @@
       </a>
 
       <a target="_blank" href="/static/PDF/Resume.pdf" rel="noopener">
-        <Button label="Resume" class="p-button-outlined p-button-success" />
+        <Button label="Resume" class="p-button-outlined p-button-success" style="padding: 8px 15px;" />
       </a>
 
     </nav>
