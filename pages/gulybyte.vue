@@ -2,11 +2,9 @@
   <gulybyte-Head></gulybyte-Head>
   <gulybyte-Header></gulybyte-Header>
   <gulybyte-Email></gulybyte-Email>
-  <img src="/static/images/eu.webp" alt="Guilherme Luis França" />
-
-  <!-- <app-components-base></app-components-base> -->
 
   <div class="container">
+    <img src="/static/images/eu.webp" alt="Guilherme Luis França" />
 
     <!-- <app-components-infoinit></app-components-infoinit> -->
 
@@ -51,4 +49,38 @@
       }
     }
   }
+
+  *, ::before, ::after {
+    box-sizing: inherit !important;/* config default antes e depois dos elementos */
+  }
+
+  .container {
+    width: 75%;
+    margin: 110px auto 0;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .container {
+      width: 80%;
+      margin: 80px auto 0;
+    }
+
+  }
+
+  @media screen and (max-width: 580px) {
+
+    .container {
+      width: 90%;
+    }
+
+  }
+
+  @media screen and (max-width: 380px) {
+    .container {
+      width: 85%;
+    }
+  }
+
+
 </style>

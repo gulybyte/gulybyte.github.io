@@ -13,6 +13,14 @@
     left: auto;
     font-size: 15px;
     z-index: 10;
+
+    a {
+      margin: 7px auto;
+      padding: 10px;
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+    }
   }
 
   .email::after {
@@ -24,14 +32,11 @@
     background-color: #5EEAD4;
   }
 
-  .email> a {
-    margin: 7px auto;
-    padding: 10px;
-    font-family: var(--font-mono);
-    font-size: var(--fz-xxs);
-    line-height: var(--fz-lg);
-    letter-spacing: 0.1em;
-    -webkit-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
+
+  @media screen and (max-width: 768px) {
+    .email {
+      position: static;
+      display: none;
+    }
   }
 </style>

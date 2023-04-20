@@ -9,22 +9,22 @@ $calibre-regular: 'Calibre-Regular';
 /* === FONTS === */
 @font-face {
   font-family: 'SF Mono';
-  src: url('static/fonts/SFMonoRegular.woff') format('truetype');
+  src: url('/static/fonts/SFMonoRegular.woff') format('truetype');
 }
 
 @font-face {
   font-family: 'SF Mono-900';
-  src: url('static/fonts/SFMonoRegular.woff') format('truetype');
+  src: url('/static/fonts/SFMonoRegular.woff') format('truetype');
   font-weight: 900;
 }
 
 @font-face {
   font-family: 'Calibre-semibold';
-  src: url('static/fonts/Calibre-Semibold.woff2');
+  src: url('/static/fonts/Calibre-Semibold.woff2');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Calibre-Regular';
-  src: url('static/fonts/Calibre-Regular.woff2');
+  src: url('/static/fonts/Calibre-Regular.woff2');
 }
