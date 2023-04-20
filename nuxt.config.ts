@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+  typescript: {
+    strict: true
+  },
   css: [
     '~/assets/_colors.scss',
     '~/assets/_fonts.scss',

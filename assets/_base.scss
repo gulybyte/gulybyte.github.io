@@ -17,3 +17,24 @@ body{
   background-color: c.$primary-color !important;
   font-family: f.$font-main !important;
 }
+
+label {
+  font-weight: bold;
+}
+
+a {
+  color: c.$secondary-color;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.clear{
+  clear: both !important;
+}
+
+body::-webkit-scrollbar-track{background: c.$primary-color  }
+body::-webkit-scrollbar{width: 6px;}
+body::-webkit-scrollbar-thumb{ background-color: c.$secondary-color ; }

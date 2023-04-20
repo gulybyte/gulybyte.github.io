@@ -1,7 +1,8 @@
 <template>
   <gulybyte-Head></gulybyte-Head>
+  <gulybyte-Header></gulybyte-Header>
+  <gulybyte-Email></gulybyte-Email>
   <img src="/static/images/eu.webp" alt="Guilherme Luis França" />
-  <Button label="Check" icon="pi pi-check" />
 
   <!-- <app-components-base></app-components-base> -->
 
