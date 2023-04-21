@@ -2,7 +2,9 @@
   <header class="header" >
 
     <figure class="pl-8">
-      <img width="50" alt="Logo" src="/static/images/icon.png">
+      <a href="/">
+        <img width="50" alt="Logo" src="/static/images/icon.png">
+      </a>
     </figure>
 
     <nav class="header-contents">
@@ -98,7 +100,7 @@
 
     .header {padding: 25px 35px;
       .header-contents { display: none !important; }
-      .hamburger-menu { display: block; }
+      .hamburger-menu { display: block; padding: 38px; }
     }
 
     /* == HAMBURGUER MENU MOBILE == */
