@@ -1,7 +1,7 @@
 <template>
   <Head>
     <Title>Guilherme Luis (gulybyte).</Title>
-    <!-- <Base href="/" /> -->
+    <Base href="/" />
     <Link rel="canonical" href="https://gulybyte.github.io/" />
     <Meta name="robots" content="index, follow" />
     <Meta name="author" content="Guilherme Luis - gulybyte@gmail.com" />

@@ -7,16 +7,14 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "touch .output/.nojekyll && gh-pages --dotfiles -d .output"
+    "deploy": "nuxt generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@types/node": "^18",
     "gh-pages": "^5.0.0",
     "nuxt": "^3.4.1",
-    "sass": "^1.62.0",
-    "sass-loader": "^13.2.2",
-    "webpack": "^5.80.0"
+    "sass": "^1.62.0"
   },
   "dependencies": {
     "primeicons": "^6.0.1",
