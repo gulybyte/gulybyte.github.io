@@ -1,12 +1,9 @@
 export default defineNuxtConfig({
-  typescript: {
-    strict: true
-  },
   css: [
     // css global
-    '~/assets/_colors.scss',
-    '~/assets/_fonts.scss',
-    '~/assets/_base.scss',
+    'assets/_colors.scss',
+    'assets/_fonts.scss',
+    'assets/_base.scss',
 
     // primevue configs
     "primeicons/primeicons.css",
