@@ -5,22 +5,18 @@
 
       <p style="font-size: 20px; color: #8892b0; line-height: 26px; font-family: serif;">
         Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios sistemas.
-        Eu não me importava com o quão difícil isso pudesse ser, apenas queria aprender.
-        Lá por 2019 me dediquei e mergulhei fundo nessa área, buscando conhecimento e prática, sem sequer pensar em seguir como profissão.
-        No entanto, quanto mais aprendia, mais me apaixonava por essa área.
-        Aprendi muitas coisas novas, estudei até coisas consideradas "difíceis", como C/C++, assembly e Linux.
-        Sinceramente nunca gostei da ideia da ideia de limitações,
-        afirmações como "Java é difícil como primeira linguagem" me faziam sentir a vontade que todo bom programador tem -
-        "Quero aprender isso não importa o que". Mas no fim, percebi que a programação poderia ser mais do que apenas um hobby,
-        a escolha de seguir foi natural, hoje eu to ai né, como programador e buscando mais conhecimento.</p>
+        E eu aprendia tudo o que podia, me dediquei e mergulhei fundo nessa área,
+        buscando conhecimento e prática, sem sequer pensar em seguir como profissão.
+        Qualquer coisa me fazia sentir a vontade que todo bom programador tem - "Quero aprender isso não importa o que". No fim
+        percebi que a programação poderia ser mais do que apenas um hobby, a escolha de seguir foi natural.</p>
 
     </article>
-    <div class="about-image">
+    <figure class="about-image">
       <div class="img-guilherme">
         <img class="eu-azul" src="/static/images/eu-azul.webp" alt="Guilherme Luis França efeito azul">
         <img class="eu" src="/static/images/eu.webp" alt="Guilherme Luis França">
       </div>
-    </div>
+    </figure>
   </section>
 </template>
 
@@ -36,7 +32,8 @@
 
 
 /* == imagem no about == */
-.img-guilherme>{img{border-radius:1%;width:280px;height:280px;box-shadow:22px 22px c.$primary-color,22px 22px 0 2.5px c.$secondary-color;-webkit-border-radius:1%;-moz-border-radius:1%;-ms-border-radius:1%;-o-border-radius:1%}.about-image>.img-guilherme:hover>img{box-shadow:12px 12px c.$primary-color,12px 12px 0 2.5px c.$secondary-color}}
+.img-guilherme> img{border-radius:1%;width:280px;height:280px;box-shadow:22px 22px c.$primary-color,22px 22px 0 2.5px c.$secondary-color;-webkit-border-radius:1%;-moz-border-radius:1%;-ms-border-radius:1%;-o-border-radius:1%;}
+.img-guilherme:hover>img{box-shadow:12px 12px c.$primary-color,12px 12px 0 2.5px c.$secondary-color;}
 
 .about-image> .img-guilherme> .eu {
   display: none;
@@ -50,7 +47,6 @@
 /* == titulo about me == */
 .title-about{color:#fff;display:flex;-webkit-box-align:center;align-items:center;position:relative;margin:10px 0 40px;width:100%;font-size:26px;white-space:nowrap}
 .title-about::after{content:"";display:block;position:relative;width:100%;height:1px;margin-left:20px;background-color:c.$light-gray}
-
 
 
 

@@ -18,11 +18,11 @@
     <div class="clear-both"></div>
 
 
-    <div class="soon-more" style="margin: 80px; text-align: center; font-size: 25px; font-family: 'Calibre-semibold';">
+    <footer class="soon-more" style="margin: 80px; text-align: center; font-size: 25px; font-family: 'Calibre-semibold';">
       <i class="pi pi-exclamation-triangle" style="color: yellow; font-size: 25px;"></i> Ainda em construção! <i
         style="font-size: 25px;" class="pi pi-spin pi-spinner"></i> Em breve mais conteudo <i
         style="font-size: 25px;" class="pi pi-calendar-plus"></i>
-    </div>
+    </footer>
   </div>
 
 
