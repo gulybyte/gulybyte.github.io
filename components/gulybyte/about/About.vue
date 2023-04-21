@@ -4,8 +4,8 @@
       <h2 class="title-about"><span style="color: #4FE8D0; margin-right: 16px;">01.</span>Sobre mim</h2>
 
       <p style="font-size: 20px; color: #8892b0; line-height: 26px; font-family: serif;">
-        Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios sistemas.
-        E eu aprendia tudo o que podia, me dediquei e mergulhei fundo nessa área,
+        Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios
+        sistemas. E eu aprendia tudo o que podia, me dediquei e mergulhei fundo nessa área,
         buscando conhecimento e prática, sem sequer pensar em seguir como profissão.
         Qualquer coisa me fazia sentir a vontade que todo bom programador tem - "Quero aprender isso não importa o que". No fim
         percebi que a programação poderia ser mais do que apenas um hobby, a escolha de seguir foi natural.</p>

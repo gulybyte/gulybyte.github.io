@@ -1,7 +1,7 @@
 <template>
   <Head>
     <Title>Guilherme Luis (gulybyte).</Title>
-    <Link rel="canonical" children="gulybyte.github.io/gulybyte" />
+    <Link rel="canonical" children="gulybyte.github.io/" />
 
     <Meta HTTPEquiv="content-language" content="pt-br" />
     <Meta HTTPEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -20,7 +20,7 @@
     <Meta property="og:type" content="profile" />
     <Meta property="og:site_name" content="Guilherme Luis (gulybyte)." />
     <Meta property="og:description" content="Apenas um mero desenvolvedor amante de tecnologia." />
-    <Meta property="og:url" content="https://gulybyte.github.io/gulybyte" />
+    <Meta property="og:url" content="https://gulybyte.github.io/" />
     <Meta property="og:image" content="https://gulybyte.github.io/static/images/eu.webp" />
     <Meta property="og:image:width" content="600" />
     <Meta property="og:image:height" content="600" />

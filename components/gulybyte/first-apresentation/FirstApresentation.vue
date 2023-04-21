@@ -4,7 +4,7 @@
     <h2 class="name">Guilherme Luis.</h2>
     <h3 class="developer-web">Desenvolvedor Web <small>(construo sites)</small>.</h3>
     <p class="info">
-      Apenas um grande amante de tecnologia desde os 15 anos. Meu foco é desenvolvimento web, onde crio experiências únicas.
+      Apenas um grande amante de tecnologia. Meu foco é desenvolvimento web, onde crio experiências únicas.
       Você desenvolvedor, visite meu
       <a href="https://github.com/gulybyte" target="_blank"><i class="pi pi-github"></i> GitHub</a>.
     </p>
