@@ -122,21 +122,21 @@
   }
 
   @media screen and (max-width: 520px) {
-    .navbar {padding: 70px 220px 0 110px;
+    .navbar {padding: 50px 10px;
       .nav-link {font-size: 20px;}
     }
   }
 
   @media screen and (max-width: 400px) {
-    .navbar {padding: 70px 200px 0 90px;}
+    .navbar {padding: 50px 40px;}
   }
 
   @media screen and (max-width: 375px) {
-    .navbar {padding: 70px 180px 0 70px;}
+    .navbar {padding: 50px 30px;}
   }
 
   @media screen and (max-width: 330px) {
-    .navbar {padding: 70px 170px 0 62px;}
+    .navbar {padding: 50px 25px;}
   }
 
 
