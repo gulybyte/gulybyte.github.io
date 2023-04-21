@@ -1,22 +1,21 @@
 <template>
   <section class="about" id="about">
     <article class="about-me">
-      <h2 class="title-about"><span style="color: #4FE8D0; margin-right: 16px;">01.</span>Sobre mim</h2>
+      <h2 class="title-about"><span class="text-teal-400 mr-4">01.</span>Sobre mim</h2>
 
-      <p style="font-size: 20px; color: #8892b0; line-height: 26px; font-family: serif;">
-        Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios
+      <p>Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios
         sistemas. E eu aprendia tudo o que podia, me dediquei e mergulhei fundo nessa área,
         buscando conhecimento e prática, sem sequer pensar em seguir como profissão.
         Qualquer coisa me fazia sentir a vontade que todo bom programador tem - "Quero aprender isso não importa o que". No fim
         percebi que a programação poderia ser mais do que apenas um hobby, a escolha de seguir foi natural.</p>
 
     </article>
-    <figure class="about-image">
-      <div class="img-guilherme">
-        <img class="eu-azul" src="/static/images/eu-azul.webp" alt="Guilherme Luis França efeito azul">
-        <img class="eu" src="/static/images/eu.webp" alt="Guilherme Luis França">
-      </div>
-    </figure>
+    <aside class="about-image">
+      <figure class="img-guilherme">
+        <img class="eu-azul" src="/static/images/guilherme-luis-franca-azul.webp" alt="Guilherme Luis França efeito azul">
+        <img class="eu" src="/static/images/guilherme-luis-franca.webp" alt="Guilherme Luis França">
+      </figure>
+    </aside>
   </section>
 </template>
 
@@ -26,10 +25,8 @@
 
 /* == espacamentos about == */
 .about{max-width:90%;width:90%;margin:250px auto 0}
-.about-me{float:left;width:62%}
+.about-me{float:left;width:62%; p{font-size: 20px; color: c.$light-gray; line-height: 26px; font-family: serif;}}
 .about-image{float:right;width:30%;padding:75px 0 0 70px}
-
-
 
 /* == imagem no about == */
 .img-guilherme> img{border-radius:1%;width:280px;height:280px;box-shadow:22px 22px c.$primary-color,22px 22px 0 2.5px c.$secondary-color;-webkit-border-radius:1%;-moz-border-radius:1%;-ms-border-radius:1%;-o-border-radius:1%;}

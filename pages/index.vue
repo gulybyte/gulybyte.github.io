@@ -5,18 +5,13 @@
 
   <div class="container">
 
-    <gulybyte-FirstApresentation></gulybyte-FirstApresentation>
+    <main>
+      <gulybyte-FirstApresentation></gulybyte-FirstApresentation>
+
+      <gulybyte-About></gulybyte-About>
+    </main>
 
     <div class="clear-both"></div>
-
-    <gulybyte-About></gulybyte-About>
-
-    <div class="clear-both"></div>
-
-    <!-- <app-component-philosophy></app-component-philosophy> -->
-
-    <div class="clear-both"></div>
-
 
     <footer class="soon-more" style="margin: 80px; text-align: center; font-size: 25px; font-family: 'Calibre-semibold';">
       <i class="pi pi-exclamation-triangle" style="color: yellow; font-size: 25px;"></i> Ainda em construção! <i

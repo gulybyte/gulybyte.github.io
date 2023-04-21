@@ -1,9 +1,9 @@
 <template>
   <header class="header" >
 
-    <div class="pl-8">
+    <figure class="pl-8">
       <img width="50" alt="Logo" src="/static/images/icon.png">
-    </div>
+    </figure>
 
     <nav class="header-contents">
 
@@ -21,12 +21,12 @@
 
     </nav>
 
-    <div class="hamburger-menu">
+    <figure class="hamburger-menu">
 
       <input type="checkbox" id="nav-toggle" hidden>
       <label class="nav-toggle-label" for="nav-toggle" @click="showToggleNav"><span></span></label>
 
-    </div>
+    </figure>
   </header>
 
   <nav>

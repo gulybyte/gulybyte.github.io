@@ -1,5 +1,5 @@
 <template>
-  <div class="infoinit">
+  <section class="infoinit">
     <h1 class="hi">Olá, meu nome é</h1>
     <h2 class="name">Guilherme Luis.</h2>
     <h3 class="developer-web">Desenvolvedor Web <small>(construo sites)</small>.</h3>
@@ -12,7 +12,7 @@
     <Button label="Check code this website!" class="thiscode p-button-outlined p-button-success"
       target="_blank" href="https://github.com/gulybyte/gulybyte.github.io" ></Button>
 
-  </div>
+  </section>
 </template>
 
 <style lang="scss">
