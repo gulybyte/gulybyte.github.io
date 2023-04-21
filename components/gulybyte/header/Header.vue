@@ -44,8 +44,10 @@
       </li>
 
       <li>
-        <Button type="button" label="Resume" target="_blank" href="/static/PDF/Resume.pdf"
-          class="p-button-outlined p-button-success"></Button>
+        <a  href="static/PDF/Resume.pdf">
+          <Button type="button" label="Resume"
+            class="p-button-outlined p-button-success"></Button>
+        </a>
       </li>
 
       <li>
