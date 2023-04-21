@@ -44,7 +44,7 @@
       </li>
 
       <li>
-        <a  href="static/PDF/Resume.pdf">
+        <a href="static/PDF/Resume.pdf">
           <Button type="button" label="Resume"
             class="p-button-outlined p-button-success"></Button>
         </a>

@@ -56,6 +56,8 @@
 </template>
 
 <style lang="scss">
+@use 'assets/colors' as c;
+
 .nav-menu {
   display: none;
 }
@@ -79,7 +81,7 @@
   width: 2px;
   height: 90px;
   margin: 0px auto;
-  background-color: #5EEAD4;
+  background-color: c.$secondary-color;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,10 +96,10 @@
     white-space: nowrap;
     a> i
     {
+      font-size: 25px;
       margin: 0 auto;
       text-align: center;
-      font-size: 20px;
-      margin: 15px 29px 0 0;
+      padding: 40px 10px;
     }
   }
 
