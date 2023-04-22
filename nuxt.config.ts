@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     "primevue/resources/primevue.min.css"
   ],
   build: {
-    transpile: ["primevue"]
+    transpile: ["primevue", "aos"],
   },
   modules: [
     '@nuxtjs/tailwindcss',
