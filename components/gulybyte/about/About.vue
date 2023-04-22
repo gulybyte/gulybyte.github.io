@@ -12,7 +12,7 @@
         percebi que a programação poderia ser mais do que apenas um hobby, a escolha de seguir foi natural.</p>
 
     </article>
-    <aside class="about-image" data-aos="fade-left" data-aos-duration="1800">
+    <aside class="about-image" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0">
       <figure class="img-guilherme">
         <img class="eu-azul" src="/static/images/guilherme-luis-franca-azul.webp" alt="Guilherme Luis França efeito azul">
         <img class="eu" src="/static/images/guilherme-luis-franca.webp" alt="Guilherme Luis França">
