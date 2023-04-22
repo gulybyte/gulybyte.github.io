@@ -10,6 +10,7 @@
     "deploy": "nuxt generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
+    "@nuxt/image-edge": "1.0.0-28020728.5df24eb",
     "@nuxtjs/tailwindcss": "^6.6.6",
     "@types/node": "^18",
     "gh-pages": "^5.0.0",

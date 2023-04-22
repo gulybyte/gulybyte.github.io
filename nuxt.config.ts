@@ -14,7 +14,8 @@ export default defineNuxtConfig({
     transpile: ["primevue"]
   },
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image-edge'
   ],
   app: {
     baseURL: '/',

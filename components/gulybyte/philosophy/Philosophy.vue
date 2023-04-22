@@ -4,16 +4,18 @@
       <span class="text-teal-400 mr-4">02.</span>Minha Filosofia</h2>
 
     <p class="text-content" data-aos="fade-left" data-aos-duration="1500">
-      <img class="mr-4 float-left" src="/static/images/not-agile.webp" alt="Not Agile"
-      data-aos="fade-right" data-aos-duration="2000"/>
+      <nuxt-img class="mr-4 float-left" src="/static/images/not-agile.webp" alt="Not Agile"
+        data-aos="fade-right" data-aos-duration="2000"
+        sizes="sm:250px md:400px lg:500px" />
       &nbsp;&nbsp;&nbsp;Sou um desenvolvedor que busca ser sempre pragmático e genérico em muitos assuntos, mas especialista em
       outros que considero serem importantes (equilíbrio). Me esforço para fornecer excelentes experiências planejando, desenhando
       e construindo o software, garantindo sua estabilidade e disponibilidade, e trazendo melhorias e recursos com o tempo.
       Sim, o chamado "<a target="_blank" href="https://agilemanifesto.org/iso/ptbr/principles.html">Agile</a>".</p>
 
     <p class="text-content pt-2" data-aos="fade-right" data-aos-duration="1500">
-      <img class="float-right" src="/static/images/no-rules-no-limits.webp" alt="No Rules No Limits"
-        data-aos="fade-left" data-aos-duration="2000" />
+      <nuxt-img class="float-right" src="/static/images/no-rules-no-limits.webp" alt="No Rules No Limits"
+        data-aos="fade-left" data-aos-duration="2000"
+        sizes="sm:250px md:400px lg:500px" />
       &nbsp;&nbsp;&nbsp;Não tenho nada contra, mas o problema é que algumas metodologias ágeis parecem impor
       regras e procedimentos restritivos que, muitas vezes, bloqueiam a criatividade e a produtividade. Para mim,
       programação é uma arte, e não algo que deva ser regido por excesso de normas. Mas como eu trabalho de forma eficiente?,
@@ -30,8 +32,9 @@
     </p>
 
     <p class="text-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500">
-      <img class="img-cj" src="/static/images/cj-matando-mosca-bazuca.webp" alt="Carl Johnson Matando Mosca com Bazuca."
-        data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0"/>
+      <nuxt-img class="img-cj" src="/static/images/cj-matando-mosca-bazuca.webp" alt="Carl Johnson Matando Mosca com Bazuca."
+        data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0"
+        sizes="sm:250px md:440px lg:570px"  />
       &nbsp;&nbsp;&nbsp;Claro, não levo isso ao pé da letra. Bons programadores que realmente gostam de programar
       amam fazer overengineer (excesso de complexidade). Fazemos porque gostamos de experimentar coisas que não fazemos no dia a dia.
       Mas esse é um código de hobby, um código de um produto real cujo objetivo é gerar lucro e agregar valor para o cliente.</p>

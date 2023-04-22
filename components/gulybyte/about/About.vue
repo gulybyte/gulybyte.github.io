@@ -14,8 +14,10 @@
     </article>
     <aside class="about-image" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0">
       <figure class="img-guilherme">
-        <img class="eu-azul" src="/static/images/guilherme-luis-franca-azul.webp" alt="Guilherme Luis França efeito azul">
-        <img class="eu" src="/static/images/guilherme-luis-franca.webp" alt="Guilherme Luis França">
+        <nuxt-img sizes="sm:225px md:400px lg:560px"
+          class="eu-azul" src="/static/images/guilherme-luis-franca-azul.webp" alt="Guilherme Luis França efeito azul" />
+        <nuxt-img sizes="sm:225px md:400px lg:560px"
+          class="eu" src="/static/images/guilherme-luis-franca.webp" alt="Guilherme Luis França" />
       </figure>
     </aside>
   </section>
@@ -57,14 +59,6 @@
 @media screen and (max-width: 1048px) {
   .about-me {float: none;width: 100%;}
   .about-image {text-align: center;margin: 0 auto;float: none;width: 100%;display: flex;align-items: 50%;padding-top: 50px;}
-}
-
-@media screen and (max-width: 580px) {
-  .img-guilherme{img{width: 250px;height: 250px;}}
-}
-
-@media screen and (max-width: 380px) {
-.img-guilherme{img{width: 200px; height: 200px;}}
 }
 
 </style>
