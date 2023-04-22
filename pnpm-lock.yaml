@@ -19,7 +19,7 @@ devDependencies:
     specifier: 1.0.0-28020728.5df24eb
     version: 1.0.0-28020728.5df24eb
   '@nuxtjs/tailwindcss':
-    specifier: ^6.6.6
+    specifier: ^6.5
     version: 6.6.6(webpack@5.80.0)
   '@types/node':
     specifier: ^18

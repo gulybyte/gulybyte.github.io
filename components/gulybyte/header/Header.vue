@@ -35,12 +35,6 @@
     <ul class="navbar" v-if="navVisible">
 
       <li>
-        <NuxtLink href="/articles" class="nav-link">
-          <span class="nav-link-number">00.</span> Artigos
-        </NuxtLink>
-      </li>
-
-      <li>
         <a href="#about" class="nav-link">
           <span class="nav-link-number">01.</span> Sobre
         </a>
