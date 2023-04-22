@@ -1,5 +1,5 @@
 <template>
-  <section class="infoinit">
+  <section class="infoinit" data-aos="zoom-in-right" data-aos-duration="3000">
     <h1 class="hi">Olá, meu nome é</h1>
     <h2 class="name">Guilherme Luis.</h2>
     <h3 class="developer-web">Desenvolvedor Web <small>(construo sites)</small>.</h3>
@@ -9,8 +9,10 @@
       <a href="https://github.com/gulybyte" target="_blank"><i class="pi pi-github"></i> GitHub</a>.
     </p>
 
-    <Button label="Check code this website!" class="thiscode p-button-outlined p-button-success"
-      target="_blank" href="https://github.com/gulybyte/gulybyte.github.io" ></Button>
+    <a target="_blank" href="https://github.com/gulybyte/gulybyte.github.io">
+      <Button label="Check code this website!" class="thiscode p-button-outlined p-button-success"></Button>
+    </a>
+
 
   </section>
 </template>

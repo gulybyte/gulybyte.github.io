@@ -1,5 +1,5 @@
 <template>
-  <aside orientation="right" class="email">
+  <aside orientation="right" class="email" data-aos="fade-left" data-aos-duration="2500">
     <a href="mailto:gulybyte@gmail.com" target="_blank" rel="noopener noreferrer">gulybyte@gmail.com</a>
   </aside>
 </template>

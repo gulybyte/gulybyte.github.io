@@ -1,13 +1,13 @@
 <template>
-  <header class="header" >
+  <header class="header">
 
-    <figure class="pl-8">
+    <figure class="pl-8" data-aos="zoom-in-right" data-aos-duration="1000">
       <a href="/">
         <img width="50" alt="Logo" src="/static/images/icon.png">
       </a>
     </figure>
 
-    <nav class="header-contents">
+    <nav class="header-contents" data-aos="zoom-in-left" data-aos-duration="2000">
 
       <a href="#about" class="nav-link">
         <span class="nav-link-number">01. </span>Sobre

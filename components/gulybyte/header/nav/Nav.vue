@@ -8,7 +8,7 @@
 
 
 
-  <aside orientation="left" class="nav">
+  <aside orientation="left" class="nav" data-aos="fade-right" data-aos-duration="2500">
     <ul>
       <li>
         <a href="https://github.com/gulybyte" aria-label="GitHub" target="_blank" rel="noreferrer">

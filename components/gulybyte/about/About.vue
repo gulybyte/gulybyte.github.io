@@ -1,16 +1,18 @@
 <template>
   <section class="about" id="about">
     <article class="about-me">
-      <h2 class="title-about"><span class="text-teal-400 mr-4">01.</span>Sobre mim</h2>
+      <h2 class="title-about" data-aos="fade-down-right" data-aos-duration="800">
+        <span class="text-teal-400 mr-4">01.</span>Sobre mim</h2>
 
-      <p>Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios
+      <p data-aos="fade-right" data-aos-duration="1500">
+        Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios
         sistemas. E eu aprendia tudo o que podia, me dediquei e mergulhei fundo nessa área,
         buscando conhecimento e prática, sem sequer pensar em seguir como profissão.
         Qualquer coisa me fazia sentir a vontade que todo bom programador tem - "Quero aprender isso não importa o que". No fim
         percebi que a programação poderia ser mais do que apenas um hobby, a escolha de seguir foi natural.</p>
 
     </article>
-    <aside class="about-image">
+    <aside class="about-image" data-aos="fade-left" data-aos-duration="1800">
       <figure class="img-guilherme">
         <img class="eu-azul" src="/static/images/guilherme-luis-franca-azul.webp" alt="Guilherme Luis França efeito azul">
         <img class="eu" src="/static/images/guilherme-luis-franca.webp" alt="Guilherme Luis França">

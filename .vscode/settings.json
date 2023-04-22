@@ -18,5 +18,6 @@
       "titleBar.inactiveBackground": "#18005b99",
       "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "18005b"
+    "peacock.color": "18005b",
+    "vue.features.codeActions.enable": false
 }
