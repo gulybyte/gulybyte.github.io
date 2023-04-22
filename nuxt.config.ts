@@ -11,12 +11,21 @@ export default defineNuxtConfig({
     "primevue/resources/primevue.min.css"
   ],
   build: {
-    transpile: ["primevue", "aos"],
+    transpile: ["primevue"],
   },
   modules: [
+    '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge'
   ],
+  content: {
+    highlight: {
+      theme: 'dracula',
+      preload: [
+        'java'
+      ]
+    }
+  },
   app: {
     baseURL: '/',
     head: {
