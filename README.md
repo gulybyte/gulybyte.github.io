@@ -1,4 +1,4 @@
-# Nuxt 3 
+# Nuxt 3
 
 start:
 ```
@@ -12,7 +12,7 @@ pnpm run dev -o
 
 build and preview build:
 ```
-pnpm run build ;  pnpm run preview
+pnpm run build ; pnpm run preview
 ```
 
 build and deploy:
