@@ -14,9 +14,9 @@
     </article>
     <aside class="about-image" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0">
       <figure class="img-guilherme">
-        <nuxt-img sizes="sm:225px md:400px lg:560px"
+        <nuxt-img
           class="eu-azul" src="/static/images/guilherme-luis-franca-azul.webp" alt="Guilherme Luis França efeito azul" />
-        <nuxt-img sizes="sm:225px md:400px lg:560px"
+        <nuxt-img
           class="eu" src="/static/images/guilherme-luis-franca.webp" alt="Guilherme Luis França" />
       </figure>
     </aside>
