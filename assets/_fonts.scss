@@ -4,6 +4,9 @@ $sf-mono: 'SF Mono';
 $sf-mono-900: 'SF Mono-900';
 $calibre-semibold: 'Calibre-semibold';
 $calibre-regular: 'Calibre-Regular';
+$raleway-semibold: 'Raleway-SemiBold';
+$montserrat-medium: 'Montserrat-Medium';
+
 
 
 /* === FONTS === */
@@ -33,4 +36,14 @@ $calibre-regular: 'Calibre-Regular';
 @font-face {
   font-family: 'Calibre-Regular';
   src: url('/static/fonts/Calibre-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('/static/fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('/static/fonts/Montserrat-Medium.ttf');
 }
