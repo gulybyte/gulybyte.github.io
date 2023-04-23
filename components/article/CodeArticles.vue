@@ -1,9 +1,9 @@
 <template>
   <div class="code-container">
 
-    <ContentDoc id="code1" path="/"></ContentDoc>
+    <ContentDoc id="code1" path="/teste/part-1"></ContentDoc>
 
-    <button class="copy-btn" @click="copyText('code1')">
+    <button class="copy-code" @click="copyText('code1')">
         <i :class="copyIcon"></i></button>
 
   </div>
@@ -51,7 +51,7 @@ export default {
     font-size: 1.2rem;
   }
 
-  .copy-btn {
+  .copy-code {
     position: absolute;
     top: 5px;
     right: 5px;

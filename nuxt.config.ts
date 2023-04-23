@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   ],
   content: {
     highlight: {
-      theme: 'dracula',
+      theme: 'monokai',
       preload: [
         'java'
       ]
