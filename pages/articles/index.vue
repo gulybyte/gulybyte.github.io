@@ -1,7 +1,7 @@
 <template>
   <main class="container-articles">
     <article class="articles">
-      <NuxtLink href="/articles/estrutura-de-dados">Serie Estrutura de Dados Completa.</NuxtLink>
+      <NuxtLink href="/articles/estrutura-de-dados-java">Serie Estrutura de Dados Completa.</NuxtLink>
     </article>
   </main>
 </template>
