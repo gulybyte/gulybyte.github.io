@@ -48,7 +48,7 @@
         padrão da linguagem.</p>
 
       <p>&nbsp;&nbsp;As <b>principais interfaces e classes</b> que vamos estudar são essas
-        (<a href="https://docs.oracle.com/en/java/javase/17/docs/api/overview-tree.html">mas
+        (<a target="_blank" href="https://docs.oracle.com/en/java/javase/17/docs/api/overview-tree.html">mas
           é só o básico e o mais usado, atualmente essa lista é muito mas muito mais grande</a>):</p>
 
       <nuxt-img class="m-auto w-11/12" src="/static/images/articles/estrutura-de-dados-java/collections-framework-java.png"
@@ -57,9 +57,17 @@
       <p>&nbsp;&nbsp;Lembrando que essa hierarquia são só as principais, e inclusive ela está bem rudimentar, faltou colocar as
         "Abstract's" interface e todas as outras estruturas fornecidas pela Collections Framework.</p>
 
-      <p>&nbsp;&nbsp;Breve história...</p>
+      <p>&nbsp;&nbsp;No início do Java (chamado originalmente de Oak), as estruturas básicas disponíveis eram o
+        <code>Vector</code> e o <code>Hashtable</code>. Perceba que o <code>Hashtable</code> não segue o padrão
+        de nomenclatura atual sendo que o correto seria "<code>HashTable</code>". Com o tempo, a necessidade de
+        mais estruturas de dados (devido aos sistemas que ele era usado) surgiu, levando então ao desenvolvimento
+        do Collections Framework no Java 1.2. É comum que haja uma confusão (até eu me confundi) de que o Map não
+        faz parte do Collections Framework, isso devido a ele não extender de java.util.Collection como nas outras
+        estruturas, mas ele faz parte sim da Collections Framework.</p>
 
     </section>
+
+    <div style="margin-top: 800px;"></div>
 
   </main>
 </template>
@@ -89,6 +97,12 @@
   p {
     padding: 10px;
     font-family: f.$montserrat-medium !important;
+  }
+
+  code {
+    border-radius: 5px;
+    padding: 3px 4px;
+    background-color: #343942;
   }
 
   @media screen and (max-width: 768px) {

@@ -61,6 +61,13 @@ export default {
     font-size: 1.2rem;
   }
 
+  /* Necessário devido aos artigos que tem codes e eles alteram os códigos do markdown. */
+  code {
+    border-radius: 0px !important;
+    padding: 0px !important;
+    background-color: none !important;
+  }
+
   .copy-code {
     position: absolute;
     top: 5px;
