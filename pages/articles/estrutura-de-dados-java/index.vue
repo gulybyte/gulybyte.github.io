@@ -32,9 +32,17 @@
       <p>&nbsp;&nbsp;Antes de partir para as estruturas, é necessário compreender os Generics do Java.
         Generics não apenas tornam o código mais seguro, mas também mais legível.</p>
 
-      <p>&nbsp;&nbsp;Código com Generics:</p>
+      <p><b>Código com Generics:</b></p>
+      <article-CodeArticles content="/ed/code-without-generics"></article-CodeArticles>
 
-      <p>&nbsp;&nbsp;Código sem Generics:</p>
+      <p><b>Código sem Generics: </b></p>
+      <article-CodeArticles content="/ed/code-with-generics"></article-CodeArticles>
+
+    </section>
+
+    <section>
+      <h3 class="text-3xl">Hierarquia Collection Framework.</h3>
+
 
 
     </section>
@@ -60,7 +68,7 @@
   }
 
   h3 {
-    padding-top: 60px;
+    padding-top: 80px;
   }
 
   p {

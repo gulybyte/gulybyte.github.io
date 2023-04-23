@@ -1,9 +1,9 @@
 <template>
   <div class="code-container">
 
-    <ContentDoc id="code1" path="/teste/part-1"></ContentDoc>
+    <ContentDoc id="code" :path="content"></ContentDoc>
 
-    <button class="copy-code" @click="copyText('code1')">
+    <button class="copy-code" @click="copyText('code')">
         <i :class="copyIcon"></i></button>
 
   </div>
@@ -11,6 +11,12 @@
 
 <script>
 export default {
+  props: {
+    content: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       copyIcon: 'pi pi-clone text-white'
@@ -41,6 +47,10 @@ export default {
 @use 'assets/colors' as c;
 
 .code-container {
+  overflow-x: auto;
+  max-width: 98%;
+  margin: 0 auto;
+  border-radius: 8px;
   position: relative;
   background-color: c.$dark-color;
   color: white;

@@ -19,5 +19,10 @@
       "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "18005b",
-    "vue.features.codeActions.enable": false
+    "vue.features.codeActions.enable": false,
+    "cSpell.words": [
+      "nuxtjs",
+      "primevue",
+      "tailwindcss"
+    ]
 }
