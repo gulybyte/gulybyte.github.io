@@ -2,7 +2,7 @@
   <main class="articles-tecnico-container">
     <h1 class="text-center text-5xl">Serie - visão geral sobre estrutura de dados Java.</h1>
 
-    <h4 class="text-center text-1xl">Data Structures + Algorithms = Programs de Niklaus Wirth.</h4>
+    <h5 class="text-center text-1xl">Data Structures + Algorithms = Programs de Niklaus Wirth.</h5>
 
     <nuxt-img src="/static/images/articles/estrutura-de-dados-java/dados-estruturados-x-nao-estruturados.png"
       alt="Dados Estruturados x Não Estruturados" />
@@ -10,7 +10,7 @@
     <nuxt-img src="/static/images/linha-branca.png"
       alt="Linha Branca" />
 
-    <section>
+    <article>
       <h3>Porque estudar?</h3>
 
       <p>&nbsp;&nbsp;A disciplina de estrutura de dados visa estudar como os dados são organizados,
@@ -24,9 +24,9 @@
       <p>&nbsp;&nbsp;Sendo direto, como quer entender a fundo conceitos como banco de dados, Kafka,
         contêineres, sistemas operacionais, SQS e escalabilidade que tem como base você saber e
         <b>entender estruturas de dados?</b>.</p>
-    </section>
+    </article>
 
-    <section>
+    <article>
       <h3>Compreendendo Generics do Java.</h3>
 
       <p>&nbsp;&nbsp;Antes de partir para as estruturas, é necessário compreender os Generics do Java.
@@ -38,9 +38,9 @@
       <p><b>Código sem Generics: </b></p>
       <article-CodeArticles content="/ed/code-with-generics"></article-CodeArticles>
 
-    </section>
+    </article>
 
-    <section>
+    <article>
       <h3>Hierarquia Collection Framework.</h3>
 
       <p>&nbsp;&nbsp;O Collection Framework do Java é um conjunto de classes e interfaces que fornecem estruturas de dados
@@ -64,6 +64,48 @@
         do Collections Framework no Java 1.2. É comum que haja uma confusão (até eu me confundi) de que o Map não
         faz parte do Collections Framework, isso devido a ele não extender de java.util.Collection como nas outras
         estruturas, mas ele faz parte sim da Collections Framework.</p>
+
+    </article>
+
+    <section>
+      <h2 class="text-5xl">Explicando as estruturas.</h2>
+
+      <p>&nbsp;&nbsp;Vamos ver agora explicação base de cada classe com uma explicação detalhada de
+        cada uma separada nos links:</p>
+
+      <h4><NuxtLink href="#">List</NuxtLink></h4>
+      <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface List define uma sequência ordenada de elementos.
+        As implementações disponíveis incluem:</span>
+<pre class="pt-2">
+  - <b>ArrayList - </b>um array dinâmico;
+  - <b>LinkedList - </b>estrutura Node duplamente ligado;
+  - <b>Vector - </b>um ArrayList só que thread-safe;
+    - <b>Stack - </b>tipo LIFO;</pre>
+
+      <h4><NuxtLink href="#">Queue</NuxtLink></h4>
+      <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Queue define uma coleção que mantém uma ordem
+        específica para seus elementos. As implementações disponíveis incluem:</span>
+<pre class="pt-2">
+  - <b>PriorityQueue - </b>tipo FIFO;
+  - <b>ArrayDeque - </b>FIFO de duas cabeças;</pre>
+
+      <h4><NuxtLink href="#">Set</NuxtLink></h4>
+      <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Set define uma coleção de elementos únicos,
+        que não se repetem. As implementações disponíveis incluem:</span>
+<pre class="pt-2">
+  - <b>HashSet - </b>tabela hash;
+    - <b>LinkedHashSet - </b>HashSet + <s>LinkedList</s>;
+  - <b>TreeSet - </b>tabela hash em <b><span style="color: red;">R</span><span style="color: black;">B</span>Tree</b>;</pre>
+
+      <h4><NuxtLink href="#">Map</NuxtLink></h4>
+      <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Map define uma coleção de pares chave-valor,
+        em que cada chave é única. As implementações disponíveis incluem:</span>
+<pre class="pt-2">
+  - <b>HashMap - </b>key-value;
+    - <b>LinkedHashMap - </b>key-value + <s>LinkedList</s>;
+  - <b>TreeMap - </b>key-value em <b><span style="color: red;">R</span><span style="color: black;">B</span>Tree</b>;
+  - <b>Hashtable - </b>um HashMap só que thread-safe;</pre>
+
 
     </section>
 
@@ -94,6 +136,10 @@
     padding-top: 80px;
   }
 
+  h4 {
+    font-size: 30px;
+  }
+
   p {
     padding: 10px;
     font-family: f.$montserrat-medium !important;
@@ -105,11 +151,23 @@
     background-color: #343942;
   }
 
+  section {
+    font-family: f.$font-main !important;
+  }
+
   @media screen and (max-width: 768px) {
     p {
       padding: 15px;
     }
   }
 
+}
+
+
+.description-structures {
+  border-left: 4px solid #363a3e;
+  padding: 8px 0;
+  margin-left: 20px;
+  color: #727475;
 }
 </style>

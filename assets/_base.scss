@@ -35,6 +35,10 @@ ul {
   list-style: none;
 }
 
+pre {
+  overflow-x: auto;
+}
+
 .clear{
   clear: both !important;
 }
