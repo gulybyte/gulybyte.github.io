@@ -1,5 +1,3 @@
-Welcome to Nuxt Content Hello World example.
-
 ```java
 List<String> listNames = new ArrayList<String>();
 listNames.add("Tom");
