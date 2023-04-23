@@ -26,7 +26,8 @@
 
       <p>&nbsp;&nbsp;Creio que a essa altura do campeonato você já tenha quase que entendido o funcionamento do
         <code>LinkedList</code>, mas agora qual sua diferença em relação a estrutura estudada anteriormente
-        (<code>ArrayList</code>)?. Vamos ver essa tabela de benchmark:</p>
+        (<code>ArrayList</code>)?. Vamos ver essa tabela de <a target="_blank"
+        href="https://gist.github.com/gulybyte/5682491f14ddf489d1c05d042673ca5e">benchmark</a>:</p>
 
       <DataTable :value="benchmark" tableStyle="min-width: 50rem">
         <Column field="operacao" header="Operação"></Column>

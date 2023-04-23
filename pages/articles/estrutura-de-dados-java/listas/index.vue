@@ -47,8 +47,6 @@ a {
     font-size: 16px;
     color: white;
   }
-} a:after {
-  content: ";";
 }
 </style>
 
