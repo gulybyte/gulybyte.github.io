@@ -43,7 +43,11 @@
 
       <p>&nbsp;&nbsp;Ou seja, podemos concluir que ArrayList é uma estrutura de lista sequencial,
         onde podemos acessar pelo índice e elementos podem ser adicionados ou removidos de forma dinâmica:</p>
-      <nuxt-img src="/static/images/articles/estrutura-de-dados-java/array-list.png" alt="Linha Branca" />
+      <nuxt-img src="/static/images/articles/estrutura-de-dados-java/array-list.png" alt="ArrayList Java" />
+
+      <p>&nbsp;&nbsp;Sim ele é um Objeto Dinâmico, porém ainda assim computador não tem memória infinita,
+        ArrayList costuma ter 50% de memória a mais que seu total, e quando bate o limite vai precisar criar
+        outro objeto, mas ainda assim é bem menos que o array, pois ele <b>redimensiona objeto não recria</b>.</p>
 
     </article>
 

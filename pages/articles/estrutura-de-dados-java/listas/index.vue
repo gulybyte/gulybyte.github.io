@@ -28,7 +28,7 @@
     </section>
 
     <article class="pt-10">
-      <DataTable :value="products" tableStyle="min-width: 50rem">
+      <DataTable :value="listas" tableStyle="min-width: 50rem">
         <Column field="tipo" header="Tipo"></Column>
         <Column field="descricao" header="Descrição"></Column>
         <Column field="detalhes" header="detalhes"></Column>
@@ -56,7 +56,7 @@ a {
 export default {
   data() {
     return {
-      products: [
+      listas: [
         { tipo: 'ArrayList', descricao: 'Array dinâmico', detalhes: 'Não é thread-safe' },
         { tipo: 'LinkedList', descricao: 'Node duplo', detalhes: 'Elemento aponta para o próximo e para elemento anterior.' },
         { tipo: 'Vector', descricao: 'Array dinâmico', detalhes: 'ArrayList só que thread-safe' },
