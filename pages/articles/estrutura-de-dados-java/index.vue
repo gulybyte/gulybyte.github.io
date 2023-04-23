@@ -73,7 +73,7 @@
       <p>&nbsp;&nbsp;Vamos ver agora explicação base de cada classe com uma explicação detalhada de
         cada uma separada nos links:</p>
 
-      <h4><NuxtLink href="#">List</NuxtLink></h4>
+      <h4><NuxtLink href="/articles/estrutura-de-dados-java/listas">List</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface List define uma sequência ordenada de elementos.
         As implementações disponíveis incluem:</span>
 <pre class="pt-2">
@@ -115,54 +115,7 @@
 </template>
 
 <style lang="scss">
-@use 'assets/fonts' as f;
-
-.articles-tecnico-container {
-  padding: 0;
-  margin: 20px auto;
-  width: 80% !important;
-
-  h1, h2, h3, h4, h5, h6, p {
-    color: #F5F5F5;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: f.$raleway-semibold !important;
-    padding: 1rem;
-  }
-
-  h3 {
-    font-size: 35px;
-    padding-top: 80px;
-  }
-
-  h4 {
-    font-size: 30px;
-  }
-
-  p {
-    padding: 10px;
-    font-family: f.$montserrat-medium !important;
-  }
-
-  code {
-    border-radius: 5px;
-    padding: 3px 4px;
-    background-color: #343942;
-  }
-
-  section {
-    font-family: f.$font-main !important;
-  }
-
-  @media screen and (max-width: 768px) {
-    p {
-      padding: 15px;
-    }
-  }
-
-}
-
+@import 'assets/articles/base';
 
 .description-structures {
   border-left: 4px solid #363a3e;
