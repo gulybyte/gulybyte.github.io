@@ -15,7 +15,7 @@
             <NuxtLink href="/articles/estrutura-de-dados-java/set/hash-set">HashSet;</NuxtLink>
           </li>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/set">LinkedHashSet;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/set/linked-hash-set">LinkedHashSet;</NuxtLink>
           </li>
           <li>
             <NuxtLink href="/articles/estrutura-de-dados-java/set">TreeSet;</NuxtLink>
