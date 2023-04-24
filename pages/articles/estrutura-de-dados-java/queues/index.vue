@@ -12,10 +12,10 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/listas/array-list">PriorityQueue;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/queues/priority-queue">PriorityQueue;</NuxtLink>
           </li>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/listas/linked-list">ArrayDeque;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/queues">ArrayDeque;</NuxtLink>
           </li>
         </ul>
       </nav>
