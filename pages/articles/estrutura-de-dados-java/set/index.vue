@@ -18,13 +18,11 @@
             <NuxtLink href="/articles/estrutura-de-dados-java/set/linked-hash-set">LinkedHashSet;</NuxtLink>
           </li>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/set">TreeSet;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/set/tree-set">TreeSet;</NuxtLink>
           </li>
         </ul>
       </nav>
     </section>
-
-    <h3>Tipos</h3>
 
     <article>
       <DataTable :value="types_set" tableStyle="min-width: 50rem">

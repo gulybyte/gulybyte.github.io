@@ -37,9 +37,6 @@ export default defineNuxtConfig({
       meta: [
         { 'http-equiv': 'content-language', content: 'pt-br' },
         //{ 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1' }
-      ],
-      link: [
-        { rel: 'stylesheet', href: '/static/styles/clipboard.css' }
       ]
     },
   }
