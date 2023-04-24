@@ -82,7 +82,7 @@
   - <b>Vector - </b>um ArrayList só que thread-safe;
     - <b>Stack - </b>tipo LIFO;</pre>
 
-      <h4><NuxtLink href="#">Queue</NuxtLink></h4>
+      <h4><NuxtLink href="/articles/estrutura-de-dados-java/queue">Queue</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Queue define uma coleção que mantém uma ordem
         específica para seus elementos. As implementações disponíveis incluem:</span>
 <pre class="pt-2">
