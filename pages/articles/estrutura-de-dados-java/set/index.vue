@@ -12,13 +12,13 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/queues/priority-queue">HashSet;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/set/hash-set">HashSet;</NuxtLink>
           </li>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/queues/array-deque">LinkedHashSet;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/set">LinkedHashSet;</NuxtLink>
           </li>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/queues/array-deque">TreeSet;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/set">TreeSet;</NuxtLink>
           </li>
         </ul>
       </nav>
