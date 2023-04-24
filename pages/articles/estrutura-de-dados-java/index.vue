@@ -89,7 +89,7 @@
   - <b>PriorityQueue - </b>tipo FIFO;
   - <b>ArrayDeque - </b>FIFO de duas cabeças;</pre>
 
-      <h4><NuxtLink href="#">Set</NuxtLink></h4>
+      <h4><NuxtLink href="/articles/estrutura-de-dados-java/set">Set</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Set define uma coleção de elementos únicos,
         que não se repetem. As implementações disponíveis incluem:</span>
 <pre class="pt-2">
