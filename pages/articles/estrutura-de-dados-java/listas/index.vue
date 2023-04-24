@@ -1,14 +1,15 @@
 <template>
   <main class="articles-tecnico-container">
-    <h1 class="text-center text-5xl">Listas.</h1>
+    <h1 class="text-center text-5xl">List's.</h1>
 
     <h3>Serie - visão geral sobre estrutura de dados Java.</h3>
 
     <nuxt-img src="/static/images/linha-branca.png"
       alt="Linha Branca" />
 
-
     <section class="pt-20">
+      <nuxt-img width="200" style="float: right;" src="/static/images//articles/estrutura-de-dados-java/lista.png"
+        alt="Linha Branca" />
       <nav>
         <ul>
           <li>
@@ -26,6 +27,8 @@
         </ul>
       </nav>
     </section>
+
+    <div class="clear-both"></div>
 
     <article class="pt-10">
       <DataTable :value="listas" tableStyle="min-width: 50rem">

@@ -97,7 +97,7 @@
     - <b>LinkedHashSet - </b>HashSet + <s>LinkedList</s>;
   - <b>TreeSet - </b>tabela hash em <b><span style="color: red;">R</span><span style="color: black;">B</span>Tree</b>;</pre>
 
-      <h4><NuxtLink href="#">Map</NuxtLink></h4>
+      <h4><NuxtLink href="/articles/estrutura-de-dados-java/map">Map</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Map define uma coleção de pares chave-valor,
         em que cada chave é única. As implementações disponíveis incluem:</span>
 <pre class="pt-2">

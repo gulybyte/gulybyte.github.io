@@ -9,6 +9,8 @@
 
 
     <section class="pt-20">
+      <nuxt-img width="200" style="float: right;" src="/static/images//articles/estrutura-de-dados-java/set.png"
+        alt="Linha Branca" />
       <nav>
         <ul>
           <li>
@@ -24,6 +26,8 @@
       </nav>
     </section>
 
+    <div class="clear-both"></div>
+
     <article>
       <DataTable :value="types_set" tableStyle="min-width: 50rem">
         <Column field="tipo" header="Tipo"></Column>
@@ -32,7 +36,8 @@
       </DataTable>
     </article>
 
-    <h3>Performance entre elas <small>(Benchmark)</small> </h3>
+    <h3>Performance entre elas <small>(<a target="_blank"
+      href="https://gist.github.com/gulybyte/9373c09e0b92d698945afc451527b853">Benchmark</a>)</small> </h3>
     <p>&nbsp;&nbsp;Obviamente <code>HashSet</code> sempre vai se sair na frente, afinal ela não tem ordem,
       logo depois sem muita diferença e ordenada por inserção temos <code>LinkedHashSet</code>,
       por fim no geral sendo dobro mais lenta porém com sistemas de ordenação completo <code>TreeSet</code>.</p>
