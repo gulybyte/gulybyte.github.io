@@ -58,6 +58,14 @@
 
 <style lang="scss">
 @import 'assets/articles/base';
+
+.structs{ ul { li { a {
+  font-size: 20px;
+  span {
+    font-size: 16px;
+    color: white;
+  }
+}}}}
 </style>
 
 <script>

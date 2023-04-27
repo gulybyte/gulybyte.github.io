@@ -10,7 +10,7 @@
     <section class="pt-20">
       <nuxt-img width="200" style="float: right;" src="/static/images//articles/estrutura-de-dados-java/lista.png"
         alt="Linha Branca" />
-      <nav>
+      <nav class="structs">
         <ul>
           <li>
             <NuxtLink href="/articles/estrutura-de-dados-java/listas/array-list">ArrayList <span>| ArrayList vs array</span></NuxtLink>
@@ -44,13 +44,13 @@
 <style lang="scss">
 @import 'assets/articles/base';
 
-a {
+.structs{ ul { li { a {
   font-size: 20px;
   span {
     font-size: 16px;
     color: white;
   }
-}
+}}}}
 </style>
 
 <script>
