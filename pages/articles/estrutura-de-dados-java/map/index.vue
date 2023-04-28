@@ -35,6 +35,7 @@
       é que o hash no <code>Map</code> diferente de <code>Set</code>, é a <b>key</b>.</p>
 
   </main>
+  <article-NextContent content="HashMap" linkcontent="/articles/estrutura-de-dados-java/map/hash-map"></article-NextContent>
 </template>
 
 <style lang="scss">

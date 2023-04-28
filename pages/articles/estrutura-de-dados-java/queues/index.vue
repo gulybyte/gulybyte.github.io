@@ -46,6 +46,7 @@
 
 
   </main>
+  <article-NextContent content="PriorityQueue" linkcontent="/articles/estrutura-de-dados-java/queues/priority-queue"></article-NextContent>
 </template>
 
 <style lang="scss">

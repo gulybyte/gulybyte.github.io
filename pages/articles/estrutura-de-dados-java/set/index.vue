@@ -54,6 +54,8 @@
 
 
   </main>
+  <article-NextContent content="HashSet" linkcontent="/articles/estrutura-de-dados-java/set/hash-set"></article-NextContent>
+
 </template>
 
 <style lang="scss">

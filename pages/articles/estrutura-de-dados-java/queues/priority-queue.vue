@@ -31,6 +31,8 @@
 
     </article>
   </main>
+  <article-NextContent content="ArrayDeque" linkcontent="/articles/estrutura-de-dados-java/queues/array-deque"></article-NextContent>
+
 </template>
 
 <style lang="scss">

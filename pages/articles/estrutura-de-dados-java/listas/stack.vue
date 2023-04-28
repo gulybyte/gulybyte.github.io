@@ -22,6 +22,8 @@
         para quando precisar de um Stack. Isso porque tem as mesmas funcionalidades, são mais flexíveis e mais performáticas.</p>
     </article>
   </main>
+  <article-NextContent content="Queue (próxima interface)" linkcontent="/articles/estrutura-de-dados-java/queues"></article-NextContent>
+
 </template>
 
 <style lang="scss">

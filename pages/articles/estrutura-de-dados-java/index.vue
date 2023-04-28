@@ -109,9 +109,9 @@
 
     </section>
 
-    <div style="margin-top: 800px;"></div>
 
   </main>
+  <article-NextContent content="Comece aqui!" linkcontent="/articles/estrutura-de-dados-java/listas"></article-NextContent>
 </template>
 
 <style lang="scss">

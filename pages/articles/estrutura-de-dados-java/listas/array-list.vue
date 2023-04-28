@@ -52,6 +52,7 @@
     </article>
 
   </main>
+  <article-NextContent content="LinkedList" linkcontent="/articles/estrutura-de-dados-java/listas/linked-list"></article-NextContent>
 </template>
 
 <style lang="scss">

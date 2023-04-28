@@ -48,6 +48,7 @@
 
     </article>
   </main>
+  <article-NextContent content="Fim da série, retorne a home artigos" linkcontent="/articles"></article-NextContent>
 </template>
 
 <style lang="scss">

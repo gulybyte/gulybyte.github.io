@@ -51,6 +51,8 @@
 
     </article>
   </main>
+  <article-NextContent content="LinkedHashSet" linkcontent="/articles/estrutura-de-dados-java/set/linked-hash-set"></article-NextContent>
+
 </template>
 
 <style lang="scss">

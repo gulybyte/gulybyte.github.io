@@ -85,6 +85,7 @@
 
     </article>
   </main>
+  <article-NextContent content="Map (próxima interface)" linkcontent="/articles/estrutura-de-dados-java/map"></article-NextContent>
 </template>
 
 <style lang="scss">

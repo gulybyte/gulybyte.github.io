@@ -39,6 +39,7 @@
     </article>
 
   </main>
+  <article-NextContent content="ArrayList" linkcontent="/articles/estrutura-de-dados-java/listas/array-list"></article-NextContent>
 </template>
 
 <style lang="scss">

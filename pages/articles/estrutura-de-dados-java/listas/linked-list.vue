@@ -53,6 +53,7 @@
     </article>
 
   </main>
+  <article-NextContent content="Vector" linkcontent="/articles/estrutura-de-dados-java/listas/vector"></article-NextContent>
 </template>
 
 <script>

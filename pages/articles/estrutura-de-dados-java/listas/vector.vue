@@ -21,6 +21,7 @@
       <p><b>Em resumo, use Vector quando precisa de um ArrayList que é thread-safe.</b></p>
     </article>
   </main>
+  <article-NextContent content="Stack" linkcontent="/articles/estrutura-de-dados-java/listas/stack"></article-NextContent>
 </template>
 
 <style lang="scss">

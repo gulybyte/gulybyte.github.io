@@ -28,6 +28,7 @@
 
     </article>
   </main>
+  <article-NextContent content="Set (próxima interface)" linkcontent="/articles/estrutura-de-dados-java/set"></article-NextContent>
 </template>
 
 <style lang="scss">

@@ -33,6 +33,7 @@
 
     </article>
   </main>
+  <article-NextContent content="TreeSet" linkcontent="/articles/estrutura-de-dados-java/set/tree-set"></article-NextContent>
 </template>
 
 <style lang="scss">
