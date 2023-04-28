@@ -7,10 +7,10 @@
     <nuxt-img src="/static/images/linha-branca.png" alt="Linha Branca" />
 
     <section class="pt-20">
-      <nav>
+      <nav class="structs">
         <ul>
           <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/map/priority-queue">HashMap;</NuxtLink>
+            <NuxtLink href="/articles/estrutura-de-dados-java/map/hash-map">HashMap;</NuxtLink>
           </li>
           <li>
             <NuxtLink href="/articles/estrutura-de-dados-java/map/array-deque">LinkedHashMap;</NuxtLink>

@@ -11,7 +11,7 @@
     <section class="pt-20">
       <nuxt-img width="200" style="float: right;" src="/static/images//articles/estrutura-de-dados-java/set.png"
         alt="Linha Branca" />
-      <nav>
+      <nav class="structs">
         <ul>
           <li>
             <NuxtLink href="/articles/estrutura-de-dados-java/set/hash-set">HashSet;</NuxtLink>

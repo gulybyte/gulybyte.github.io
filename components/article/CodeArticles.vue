@@ -26,7 +26,8 @@ export default {
     // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard
     copyText(input) {
       const textToCopy = this.$el.querySelector(`#${input}`).textContent
-      const textWithoutColors = textToCopy.split('.ct-')[0]
+      const textWithoutSaida = textToCopy.split('saida:')[0]
+      const textWithoutColors = textWithoutSaida.split('.ct-')[0]
       navigator.clipboard.writeText(textWithoutColors)
         .then(() => {
           console.log("Copy success")

@@ -11,7 +11,7 @@
     <section class="pt-20">
       <nuxt-img width="200" style="float: right;" src="/static/images//articles/estrutura-de-dados-java/fila.png"
         alt="Linha Branca" />
-      <nav>
+      <nav class="structs">
         <ul>
           <li>
             <NuxtLink href="/articles/estrutura-de-dados-java/queues/priority-queue">PriorityQueue;</NuxtLink>

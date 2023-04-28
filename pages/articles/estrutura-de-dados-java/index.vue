@@ -73,7 +73,7 @@
       <p>&nbsp;&nbsp;Vamos ver agora explicação base de cada classe com uma explicação detalhada de
         cada uma separada nos links:</p>
 
-      <h4><NuxtLink href="/articles/estrutura-de-dados-java/listas">List</NuxtLink></h4>
+      <h4><NuxtLink class="title-structure" href="/articles/estrutura-de-dados-java/listas">List</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface List define uma sequência ordenada de elementos.
         As implementações disponíveis incluem:</span>
 <pre class="pt-2">
@@ -82,14 +82,14 @@
   - <b>Vector - </b>um ArrayList só que thread-safe;
     - <b>Stack - </b>tipo LIFO;</pre>
 
-      <h4><NuxtLink href="/articles/estrutura-de-dados-java/queues">Queue</NuxtLink></h4>
+      <h4><NuxtLink class="title-structure" href="/articles/estrutura-de-dados-java/queues">Queue</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Queue define uma coleção que mantém uma ordem
         específica para seus elementos. As implementações disponíveis incluem:</span>
 <pre class="pt-2">
   - <b>PriorityQueue - </b>tipo FIFO;
   - <b>ArrayDeque - </b>FIFO de duas cabeças;</pre>
 
-      <h4><NuxtLink href="/articles/estrutura-de-dados-java/set">Set</NuxtLink></h4>
+      <h4><NuxtLink class="title-structure" href="/articles/estrutura-de-dados-java/set">Set</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Set define uma coleção de elementos únicos,
         que não se repetem. As implementações disponíveis incluem:</span>
 <pre class="pt-2">
@@ -97,7 +97,7 @@
     - <b>LinkedHashSet - </b>HashSet + <s>LinkedList</s>;
   - <b>TreeSet - </b>tabela hash em <b><span style="color: red;">R</span><span style="color: black;">B</span>Tree</b>;</pre>
 
-      <h4><NuxtLink href="/articles/estrutura-de-dados-java/map">Map</NuxtLink></h4>
+      <h4><NuxtLink class="title-structure" href="/articles/estrutura-de-dados-java/map">Map</NuxtLink></h4>
       <span class="description-structures">&nbsp;&nbsp;&nbsp;&nbsp;A interface Map define uma coleção de pares chave-valor,
         em que cada chave é única. As implementações disponíveis incluem:</span>
 <pre class="pt-2">
@@ -116,6 +116,10 @@
 
 <style lang="scss">
 @import 'assets/articles/base';
+
+.title-structure {
+  color: rgb(0, 72, 255);
+}
 
 .description-structures {
   border-left: 4px solid #363a3e;

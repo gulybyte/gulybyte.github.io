@@ -39,8 +39,9 @@ pre {
   overflow-x: auto;
 }
 
-.clear{
-  clear: both !important;
+.img-80 {
+  width: 80%;
+  margin: 0 auto;
 }
 
 body::-webkit-scrollbar-track{background: c.$primary-color  }
