@@ -27,13 +27,15 @@
         <code>HashSet</code></b>.</p>
 
         <h3>E se houver colisões?</h3>
-
+        <span style="color: gray;">"No caso de colisão, um único value armazena várias entradas sequenciais
+          de outros values"</span>.
         <p>&nbsp;&nbsp;Se o hash é usado como próprio "identificador" dos elementos para evitar duplicação,
           o que acontece se houver dois elementos diferentes que geram o mesmo hash?</p>
 
         <p>&nbsp;&nbsp;Bem, o algoritmo de hash usado por <code>HashSet</code> é chamado de <b>hashing by chaining</b>,
-          sua implementação não é importante aqui, mas ele funciona como uma tabela de hash e as <b>colisões são resolvidas
-          usando listas encadeadas</b>. Ficou meio confuso eu sei, mas na visualização que já veremos vai dar para entender
+          sua implementação não é importante aqui, mas ele funciona como uma tabela de hash e as <b>"colisões são resolvidas
+          colocando em um único value armazena várias entradas sequenciais
+          de outros values"</b>, Ficou meio confuso eu sei, mas na visualização que já veremos vai dar para entender
           facilmente.</p>
 
         <p>&nbsp;&nbsp;Vamos usar exemplo de colisões com duas String, as String's "FB" e "Ea" geram o mesmo hash 2236.

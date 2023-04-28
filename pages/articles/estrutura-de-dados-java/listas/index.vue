@@ -61,7 +61,7 @@ export default {
         { tipo: 'ArrayList', descricao: 'Array dinâmico', detalhes: 'Não é thread-safe' },
         { tipo: 'LinkedList', descricao: 'Node duplo', detalhes: 'Elemento aponta para o próximo e para elemento anterior.' },
         { tipo: 'Vector', descricao: 'Array dinâmico', detalhes: 'ArrayList só que thread-safe' },
-        { tipo: 'Stack', descricao: 'Stack LIFO', detalhes: 'ele já tá defasado, troque por Deque' },
+        { tipo: 'Stack', descricao: 'Stack LIFO', detalhes: 'Ele já tá defasado, troque por Deque' },
       ]
     }
   }
