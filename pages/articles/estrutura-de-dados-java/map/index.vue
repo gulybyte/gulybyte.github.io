@@ -7,20 +7,18 @@
     <nuxt-img src="/static/images/linha-branca.png" alt="Linha Branca" />
 
     <section class="pt-20">
+      <nuxt-img width="200" style="float: right;" src="/static/images/articles/estrutura-de-dados-java/map.svg"
+        alt="Linha Branca" />
       <nav class="structs">
         <ul>
           <li>
             <NuxtLink href="/articles/estrutura-de-dados-java/map/hash-map">HashMap;</NuxtLink>
           </li>
-          <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/map/array-deque">LinkedHashMap;</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink href="/articles/estrutura-de-dados-java/map/array-deque">TreeMap;</NuxtLink>
-          </li>
         </ul>
       </nav>
     </section>
+
+    <div class="clear-both"></div>
 
     <article class="pt-10">
       <DataTable :value="maps" tableStyle="min-width: 50rem">
@@ -29,6 +27,12 @@
         <Column field="detalhes" header="detalhes"></Column>
       </DataTable>
     </article>
+
+    <h3>Outros...</h3>
+    <p>&nbsp;&nbsp;Se você leu a sessão <NuxtLink href="/articles/estrutura-de-dados-java/set">Set</NuxtLink>
+      e leu o <NuxtLink href="/articles/estrutura-de-dados-java/map/hash-map">HashMap</NuxtLink> então
+      você já sabe como funciona <code>LinkedHashMap</code> e <code>TreeMap</code>, a diferença
+      é que o hash no <code>Map</code> diferente de <code>Set</code>, é a <b>key</b>.</p>
 
   </main>
 </template>

@@ -9,7 +9,7 @@
 
 
     <section class="pt-20">
-      <nuxt-img width="200" style="float: right;" src="/static/images//articles/estrutura-de-dados-java/set.png"
+      <nuxt-img width="200" style="float: right;" src="/static/images//articles/estrutura-de-dados-java/set.svg"
         alt="Linha Branca" />
       <nav class="structs">
         <ul>
