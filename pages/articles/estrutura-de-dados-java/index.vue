@@ -1,5 +1,8 @@
 <template>
+  <!-- <HeadGeneric></HeadGeneric> -->
+
   <main class="articles-tecnico-container">
+
     <h1 class="text-center text-5xl">Serie - visão geral sobre estrutura de dados Java.</h1>
 
     <h5 class="text-center text-1xl">Data Structures + Algorithms = Programs de Niklaus Wirth.</h5>
@@ -128,3 +131,12 @@
   color: #727475;
 }
 </style>
+
+<script setup lang="ts">
+useHead({
+  title: 'My App',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ]
+})
+</script>

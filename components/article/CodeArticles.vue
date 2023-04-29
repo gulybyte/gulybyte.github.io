@@ -1,9 +1,9 @@
 <template>
   <div class="code-container">
 
-    <ContentDoc id="code" :path="content"></ContentDoc>
+    <ContentDoc id="code-content-copy" :path="content" :head="false"></ContentDoc>
 
-    <button class="copy-code" @click="copyText('code')">
+    <button class="copy-code" @click="copyText('code-content-copy')">
         <i :class="copyIcon"></i></button>
 
   </div>

@@ -36,7 +36,13 @@ export default defineNuxtConfig({
       },
       meta: [
         { 'http-equiv': 'content-language', content: 'pt-br' },
-        //{ 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1' }
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'Guilherme Luis - gulybyte@gmail.com' },
+        { name: 'developer', content: 'Guilherme Luis - gulybyte@gmail.com' },
+        { name: 'creator', content: 'Guilherme Luis - gulybyte@gmail.com' },
+        { name: 'publisher', content: 'Guilherme Luis - gulybyte@gmail.com' },
+        { name: 'theme-color', content: '"#0A192F' },
+        { property: 'og:locale', content: 'pt_BR' },
       ]
     },
   }
