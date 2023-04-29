@@ -4,6 +4,8 @@
       <Button size="large" icon="pi pi-reply" class="next-content" severity="info" :label="content" outlined></Button>
     </NuxtLink>
   </footer>
+
+  <article-HeadGeneric></article-HeadGeneric>
 </template>
 
 <script>
