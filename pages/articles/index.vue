@@ -1,9 +1,30 @@
 <template>
   <main class="container-articles">
     <article class="articles">
-      <NuxtLink href="/articles/estrutura-de-dados-java">Serie Estrutura de Dados Completa.</NuxtLink>
+      <div class="wrapper-articles">
+
+        <section class="pos-left">
+          <NuxtLink href="/articles/estrutura-de-dados-java">&nbsp;&nbsp;Serie - visão geral sobre estrutura de dados Java.</NuxtLink>
+        </section>
+
+        <section class="pos-right">
+          <nuxt-img src="/static/images/articles/estrutura-de-dados-java/dados-estruturados-x-nao-estruturados.png"
+            alt="Dados Estruturados x Não Estruturados" />
+        </section>
+
+        <section class="pos-left">
+          <p>&nbsp;&nbsp;Desmistificando a temida estrutura de dados com Collections Framework do Java.</p>
+          <p>&nbsp;&nbsp;Aprenda de uma vez por todas com conceitos simples e imagens que te farão "sacar" na hora o funcionamento
+            dessas estruturas.</p>
+        </section>
+
+      </div>
     </article>
   </main>
+
+  <footer>
+    <article-HeadGeneric></article-HeadGeneric>
+  </footer>
 </template>
 
 <style lang="scss">
@@ -19,6 +40,30 @@
   position: relative;
   background-color: c.$dark-color;
   padding: 10px;
+  overflow: auto;
+}
+
+.pos-right {
+  width: 50%;
+  float: right;
+}
+
+.pos-left {
+  width: 50%;
+  float: left;
+  a {
+    font-size: 30px;
+  }
+  p {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pos-right, .pos-left {
+    width: 100%;
+    float: none;
+  }
 }
 </style>
 
