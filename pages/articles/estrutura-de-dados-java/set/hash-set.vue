@@ -58,3 +58,34 @@
 <style lang="scss">
 @import 'assets/articles/base';
 </style>
+
+<script setup>
+useHead({
+  title: 'HashSet',
+  link: [
+    { rel: 'canonical', href: 'https://gulybyte.github.io/articles/estrutura-de-dados-java' }
+  ],
+  meta: [
+    { name: 'og:url', content: 'https://gulybyte.github.io/articles/estrutura-de-dados-java'},
+
+    { property: "og:title", content: 'HashSet' },
+
+    { name: 'description', content: 'HashSet | Serie - visão geral sobre estrutura de dados Java.'},
+    { name: 'excerpt', content: 'HashSet | Serie - visão geral sobre estrutura de dados Java.'},
+    { name: 'og:description', content: 'HashSet | Serie - visão geral sobre estrutura de dados Java.'},
+    { name: 'application-name', content: 'HashSet | Serie - visão geral sobre estrutura de dados Java.'},
+    { name: 'og:site_name', content: 'HashSet | Serie - visão geral sobre estrutura de dados Java.'},
+
+    { name: 'keywords', content: 'Java, Estrutura de Dados, Série, Set, HashSet'},
+
+    { name: 'og:image', content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/hash-set-colisao.png'},
+    { name: 'og:image:width', content: '2400'},
+    { name: 'og:image:height', content: '1913'},
+    { name: 'og:image:type', content: 'image/png'},
+
+    { name: 'article:published_time', content: '2023-03-25T04:09:45+00:00'},
+    { name: 'article:modified_time', content: '2023-04-30T04:30:41+00:00'}
+
+  ]
+})
+</script>
