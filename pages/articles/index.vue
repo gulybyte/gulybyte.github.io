@@ -38,7 +38,7 @@
 
 .articles {
   position: relative;
-  background-color: c.$primary-color !important;
+  background-color: c.$dark-color !important;
   padding: 10px;
   overflow: auto;
 }
