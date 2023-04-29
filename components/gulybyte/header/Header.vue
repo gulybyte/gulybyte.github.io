@@ -9,9 +9,9 @@
 
     <nav class="header-contents" data-aos="zoom-in-left" data-aos-duration="2000">
 
-      <a href="#articles" class="nav-link">
+      <NuxtLink href="/articles" class="nav-link">
         <span class="nav-link-number">01.</span> Artigos
-      </a>
+      </NuxtLink>
 
       <a href="#about" class="nav-link">
         <span class="nav-link-number">02. </span>Sobre
@@ -39,9 +39,9 @@
     <ul class="navbar" v-if="navVisible">
 
       <li>
-        <a href="#articles" class="nav-link">
+        <NuxtLink href="/articles" class="nav-link">
           <span class="nav-link-number">01.</span> Artigos
-        </a>
+        </NuxtLink>
       </li>
 
       <li>
