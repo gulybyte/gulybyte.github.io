@@ -8,6 +8,8 @@
     <main>
       <gulybyte-FirstApresentation></gulybyte-FirstApresentation>
 
+      <gulybyte-Articles></gulybyte-Articles>
+
       <gulybyte-About></gulybyte-About>
     </main>
 
