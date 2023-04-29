@@ -2,7 +2,7 @@
   <section class="about" id="about">
     <article class="about-me">
       <h2 class="title-about" data-aos="fade-down-right" data-aos-duration="800">
-        <span class="text-teal-400 mr-4">01.</span>Sobre mim</h2>
+        <span class="text-teal-400 mr-4">02.</span>Sobre mim</h2>
 
       <p data-aos="fade-right" data-aos-duration="1500">
         Desde cedo, sempre tive uma paixão pela programação e me sentia intrigado com a ideia de desenvolver meus próprios

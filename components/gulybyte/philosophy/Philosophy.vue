@@ -1,7 +1,7 @@
 <template>
   <article class="philosophy" id="philosophy">
     <h2 class="title-philosophy" data-aos="zoom-in" data-aos-duration="800">
-      <span class="text-teal-400 mr-4">02.</span>Minha Filosofia</h2>
+      <span class="text-teal-400 mr-4">03.</span>Minha Filosofia</h2>
 
     <p class="text-content" data-aos="fade-left" data-aos-duration="1500">
       <nuxt-img class="mr-4 float-left" src="/static/images/not-agile.webp" alt="Not Agile"
