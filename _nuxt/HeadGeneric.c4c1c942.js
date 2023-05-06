@@ -1,0 +1,1 @@
+import{B as c,M as a,H as _}from"./nuxt-img.e87ab89a.js";import{k as s,o as r,c as p,w as m,S as e}from"./entry.86902434.js";const f={};function d(i,l){const t=c,o=a,n=_;return r(),p(n,null,{default:m(()=>[e(t,{href:"/"}),e(o,{property:"og:type",content:"article"})]),_:1})}const B=s(f,[["render",d]]);export{B as _};
