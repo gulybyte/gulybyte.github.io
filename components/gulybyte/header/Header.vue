@@ -17,9 +17,9 @@
         <span class="nav-link-number">02. </span>Sobre
       </a>
 
-      <a href="#philosophy" class="nav-link">
+      <!-- <a href="#philosophy" class="nav-link">
         <span class="nav-link-number">03. </span>Filosofia
-      </a>
+      </a> -->
 
       <a target="_blank" href="/static/PDF/Resume.pdf" rel="noopener">
         <Button label="Resume" class="p-button-outlined p-button-success" style="padding: 8px 15px;" />
@@ -50,11 +50,11 @@
         </a>
       </li>
 
-      <li>
+      <!-- <li>
         <a href="#about" class="nav-link">
           <span class="nav-link-number">03.</span> Filosofia
         </a>
-      </li>
+      </li> -->
 
       <li>
         <a href="static/PDF/Resume.pdf">

@@ -15,7 +15,7 @@
 
     <div class="clear-both"></div>
 
-    <gulybyte-Philosophy></gulybyte-Philosophy>
+    <!-- <gulybyte-Philosophy></gulybyte-Philosophy> -->
 
     <div class="clear-both"></div>
 
