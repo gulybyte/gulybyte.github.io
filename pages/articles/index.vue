@@ -1,4 +1,3 @@
-import { ContentDoc } from '../../.nuxt/components';
 <template>
   <main class="container-articles">
     <article class="articles">

@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   ],
   content: {
     highlight: {
-      theme: 'monokai', // slack-dark também é top
+      theme: 'monokai', // github-dark também é top
       preload: [
         'java',
         'js'
