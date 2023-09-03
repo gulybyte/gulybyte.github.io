@@ -1,17 +1,6 @@
-<!-- -- [sdfsdfsd](google.com) -- -->
-
-# asdf
-## asdf
-### asdf
-#### asdf
-##### asdf
-###### asdf
-
 
 
 `code inline`.
-
-`const codeInline: string = 'highlighted code inline'`{lang="ts"}
 
 
 > lorem ipsum
