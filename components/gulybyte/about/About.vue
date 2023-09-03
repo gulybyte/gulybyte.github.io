@@ -29,7 +29,7 @@
 
 /* == espacamentos about == */
 .about{max-width:90%;width:90%;margin:250px auto 0}
-.about-me{float:left;width:62%; p{font-size: 20px; color: c.$font-color; line-height: 26px; font-family: serif;}}
+.about-me{float:left;width:62%; p{font-size: 18px; color: c.$font-color; line-height: 26px; font-family: f.$montserrat-medium;}}
 .about-image{float:right;width:30%;padding:75px 0 0 70px}
 
 /* == imagem no about == */
