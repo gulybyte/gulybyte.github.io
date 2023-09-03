@@ -5,7 +5,7 @@ import { ContentDoc } from '../../.nuxt/components';
       <div class="wrapper-articles">
 
         <section class="pos-left">
-          <NuxtLink href="/articles/estrutura-de-dados-java">&nbsp;&nbsp;Serie - visão geral sobre estrutura de dados Java.</NuxtLink>
+          <NuxtLink>&nbsp;&nbsp;Serie - visão geral sobre estrutura de dados Java.</NuxtLink>
         </section>
 
         <section class="pos-right">

@@ -32,7 +32,7 @@ label {
 }
 
 a {
-  color: c.$secondary-color;
+  color: c.$tertiary-color;
   text-decoration: none;
 }
 
@@ -51,4 +51,4 @@ pre {
 
 body::-webkit-scrollbar-track{background: c.$primary-color  }
 body::-webkit-scrollbar{width: 6px;}
-body::-webkit-scrollbar-thumb{ background-color: c.$secondary-color ; }
+body::-webkit-scrollbar-thumb{ background-color: c.$tertiary-color ; }

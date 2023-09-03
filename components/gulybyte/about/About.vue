@@ -29,7 +29,7 @@
 
 /* == espacamentos about == */
 .about{max-width:90%;width:90%;margin:250px auto 0}
-.about-me{float:left;width:62%; p{font-size: 20px; color: c.$light-gray; line-height: 26px; font-family: serif;}}
+.about-me{float:left;width:62%; p{font-size: 20px; color: c.$font-color; line-height: 26px; font-family: serif;}}
 .about-image{float:right;width:30%;padding:75px 0 0 70px}
 
 /* == imagem no about == */
@@ -47,7 +47,7 @@
 
 /* == titulo about me == */
 .title-about{color:#fff;display:flex;-webkit-box-align:center;align-items:center;position:relative;margin:10px 0 40px;width:100%;font-size:26px;white-space:nowrap}
-.title-about::after{content:"";display:block;position:relative;width:100%;height:1px;margin-left:20px;background-color:c.$light-gray}
+.title-about::after{content:"";display:block;position:relative;width:100%;height:1px;margin-left:20px;background-color:c.$font-color}
 
 
 

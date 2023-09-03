@@ -18,14 +18,15 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge'
   ],
-  /* content: {
+  content: {
     highlight: {
       theme: 'monokai', // slack-dark também é top
       preload: [
-        'java'
+        'java',
+        'js'
       ]
     }
-  }, */
+  },
   app: {
     baseURL: '/',
     head: {
