@@ -1,7 +1,6 @@
-
-
 `code inline`.
 
+---
 
 > lorem ipsum
 
