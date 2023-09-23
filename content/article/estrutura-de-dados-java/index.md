@@ -1,0 +1,82 @@
+# Serie - visão geral sobre estrutura de dados Java.
+
+###### Data Structures + Algorithms = Programs de Niklaus Wirth.
+
+![Dados Estruturados x Não Estruturados](/static/images/articles/estrutura-de-dados-java/dados-estruturados-x-nao-estruturados.png)
+
+---
+
+## Porque estudar?
+
+A disciplina de estrutura de dados visa estudar como os dados são organizados, acessados e manipulados na memória. Em linguagens de alto nível, geralmente usamos as estruturas que a própria linguagem fornece.
+
+Compreender a estrutura de dados facilita a compreensão de como as coisas funcionam por baixo dos panos, melhorando a capacidade de aprender e se adaptar a novas tecnologias. Portanto é o que diferencia um estudante de um profissional.
+
+Sendo direto, como quer entender a fundo conceitos como banco de dados, Kafka, contêineres, sistemas operacionais, SQS e escalabilidade que tem como base você saber e **entender estruturas de dados?**.
+
+## Compreendendo Generics do Java.
+
+Antes de partir para as estruturas, é necessário compreender os Generics do Java. Generics não apenas tornam o código mais seguro, mas também mais legível.
+
+**Código sem Generics:**
+```java
+List listNames = new ArrayList();
+listNames.add("Tom");
+listNames.add("Mary");
+listNames.add("Peter");
+String name2 = (String) listNames.get(1);
+```
+
+**Código com Generics:**
+```java
+List<String> listNames = new ArrayList<String>();
+listNames.add("Tom");
+listNames.add("Mary");
+listNames.add("Peter");
+String name2 = listNames.get(1);
+```
+
+## Hierarquia Collection Framework.
+
+O Collection Framework do Java é um conjunto de classes e interfaces que fornecem estruturas de dados de alto nível e eficiente para armazenar e manipular objetos em Java. É onde fica todas as estruturas de dados padrão da linguagem.
+
+As **principais interfaces e classes** que vamos estudar são essas ([mas é só o básico e o mais usado, atualmente essa lista é muito mas muito mais grande](https://docs.oracle.com/en/java/javase/17/docs/api/overview-tree.html)):
+
+![Collections Framework Java](/static/images/articles/estrutura-de-dados-java/collections-framework-java.png)
+
+Lembrando que essa hierarquia são só as principais, e inclusive ela está bem rudimentar, faltou colocar as "Abstract's" interface e todas as outras estruturas fornecidas pela Collections Framework.
+
+No início do Java (chamado originalmente de Oak), as estruturas básicas disponíveis eram o `Vector` e o `Hashtable`. Perceba que o `Hashtable` não segue o padrão de nomenclatura atual sendo que o correto seria `HashTable`. Com o tempo, a necessidade de mais estruturas de dados (devido aos sistemas que ele era usado) surgiu, levando então ao desenvolvimento do Collections Framework no Java 1.2. É comum que haja uma confusão (até eu me confundi) de que o Map não faz parte do Collections Framework, isso devido a ele não extender de java.util.Collection como nas outras estruturas, mas ele faz parte sim da Collections Framework.
+
+# Explicando as estruturas.
+
+---
+
+## [List](/articles/estrutura-de-dados-java/list)
+> A interface List define uma sequência ordenada de elementos. As implementações disponíveis incluem:
+
+- **ArrayList** - um array dinâmico;
+- **LinkedList** - estrutura Node duplamente ligado;
+- **Vector** - um ArrayList só que thread-safe;
+  - **Stack** - tipo LIFO;
+
+## Queue
+> A interface Queue define uma coleção que mantém uma ordem específica para seus elementos. As implementações disponíveis incluem:
+
+- **PriorityQueue** - tipo FIFO;
+- **ArrayDeque** - FIFO de duas cabeças;
+
+## Set
+> A interface Set define uma coleção de elementos únicos, que não se repetem. As implementações disponíveis incluem:
+
+- **HashSet** - tabela hash;
+  - **LinkedHashSet** - HashSet + <s>LinkedList</s>;
+- **TreeSet** - tabela hash em <span style="color: red;">R</span><span style="color: black;">B</span>Tree;
+
+## Map
+> A interface Map define uma coleção de pares chave-valor, em que cada chave é única. As implementações disponíveis incluem:
+
+- **HashMap** - key-value;
+  - **LinkedHashMap** - key-value + <s>LinkedList</s>;
+- **TreeMap** - key-value em <span style="color: red;">R</span><span style="color: black;">B</span>Tree;
+- **Hashtable** - um HashMap só que thread-safe;

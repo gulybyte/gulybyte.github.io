@@ -32,6 +32,8 @@
 
 
 <style lang="scss">
+  ul {list-style: none !important;}
+
   @media screen and (max-width: 419px) {
     .soon-more {
       font-size: 22px !important;
@@ -88,7 +90,7 @@
 <script>
 let line = '\n';
     console.log(
-        "             (((("+line+
+        "             ))))"+line+
         "            (((("+line+
         "             ))))"+line+
         "          _ .---."+line+

@@ -50,7 +50,7 @@ export default {
 .code-container {
   overflow-x: auto;
   max-width: 98%;
-  margin: 2rem auto;
+  margin: -.5em auto 1em;
   border-radius: 8px;
   position: relative;
   background-color: c.$dark-color;

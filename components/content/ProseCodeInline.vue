@@ -7,7 +7,7 @@
 
 code {
   border-radius: 8px !important;
-  padding: 5px !important;
+  padding: .2rem .3rem !important;
   background-color: c.$light-gray !important;
 }
 

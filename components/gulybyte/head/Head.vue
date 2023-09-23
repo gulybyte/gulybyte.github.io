@@ -2,7 +2,7 @@
   <Head>
     <Base href="/" />
     <Title>Guilherme Luis (gulybyte).</Title>
-    <Meta content="Guilherme Luis portifolio" property="og:title" />
+    <Meta content="Guilherme Luis" property="og:title" />
 
     <Meta property="og:type" content="profile" />
     <Link rel="canonical" href="https://gulybyte.github.io/" />

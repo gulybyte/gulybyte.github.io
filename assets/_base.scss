@@ -1,6 +1,5 @@
 @use '_colors' as c;
 @use '_fonts' as f;
-@use 'content/prose-h';
 
 
 * {
@@ -37,11 +36,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-  font-style: unset;
-}
-
 pre {
   overflow-x: auto;
 }
@@ -49,6 +43,12 @@ pre {
 .img-80 {
   width: 80%;
   margin: 0 auto;
+}
+
+.clear-both {clear: both}
+
+@media screen and (max-width: 768px) {
+  .float-768-disable {float: none !important;}
 }
 
 body::-webkit-scrollbar-track{background: c.$primary-color  }

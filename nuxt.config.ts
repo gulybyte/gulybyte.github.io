@@ -16,7 +16,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    '@nuxt/image-edge'
+    '@nuxt/image-edge',
+    [
+      '@nuxtjs/robots',
+      {
+        UserAgent: '*',
+        Disallow: '',
+        Allow: '*',
+        CrawlDelay: 1,
+      }
+    ]
   ],
   content: {
     highlight: {

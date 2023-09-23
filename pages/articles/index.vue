@@ -4,7 +4,7 @@
       <div class="wrapper-articles">
 
         <section class="pos-left">
-          <NuxtLink>&nbsp;&nbsp;Serie - visão geral sobre estrutura de dados Java.</NuxtLink>
+          <NuxtLink href="/articles/estrutura-de-dados-java">&nbsp;&nbsp;Serie - visão geral sobre estrutura de dados Java.</NuxtLink>
         </section>
 
         <section class="pos-right">
@@ -21,12 +21,12 @@
       </div>
     </article>
   </main>
-
-  <ContentDoc path="/" />
 </template>
 
 <style lang="scss">
 @use 'assets/colors' as c;
+@use 'assets/fonts' as f;
+
 
 .container-articles {
   padding: 0;
@@ -51,6 +51,7 @@
   float: left;
   a {
     font-size: 30px;
+    font-family: f.$raleway-semibold;
   }
   p {
     padding: 0.5rem 1rem;
