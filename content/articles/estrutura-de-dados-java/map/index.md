@@ -43,7 +43,7 @@ head:
 
 ---
 
-<div class="float-768-disable" style="float: left; font-size: 1.3em;">
+<div class="float-768-disable" style="float: left;">
 
 - [HashMap](/articles/estrutura-de-dados-java/map/hash-map/)
 

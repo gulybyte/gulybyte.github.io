@@ -44,7 +44,7 @@ head:
 
 ---
 
-<div class="float-768-disable" style="float: left; font-size: 1.3em;">
+<div class="float-768-disable" style="float: left;">
 
 - [ArrayList](/articles/estrutura-de-dados-java/list/array-list) | ArrayList vs array
 - [LinkedList](/articles/estrutura-de-dados-java/list/linked-list) | LinkedList vs ArrayList

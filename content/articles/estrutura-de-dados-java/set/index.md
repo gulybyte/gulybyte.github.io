@@ -43,7 +43,7 @@ head:
 
 ---
 
-<div class="float-768-disable" style="float: left; font-size: 1.3em;">
+<div class="float-768-disable" style="float: left;">
 
 - [HashSet](/articles/estrutura-de-dados-java/set/hash-set/)
 - [LinkedHashSet](/articles/estrutura-de-dados-java/set/linked-hash-set/)

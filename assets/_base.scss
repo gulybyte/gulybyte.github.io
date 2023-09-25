@@ -25,7 +25,6 @@ body{
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
   text-rendering: optimizeLegibility !important;
-  font-feature-settings: "cv11", "salt", "ss01", "ss03", "cv01", "cv02", "cv03", "cv04", "cv05", "cv06", "cv09", "cv10", !important;
 }
 
 label {
@@ -34,10 +33,10 @@ label {
 
 a {
   color: c.$secondary-color;
-  text-decoration: underline;
+  text-decoration: none;
 } a:hover  {
   color: c.$tertiary-color;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 pre {

@@ -10,11 +10,11 @@
 @use 'assets/colors' as c;
 
 .link-markdown-st:hover  {
-  color: c.$tertiary-color;
-  text-decoration: underline;
+  color: c.$tertiary-color !important;
+  text-decoration: none;
 }
 .link-markdown-st{
-  color: c.$secondary-color;text-decoration: underline !important;
+  color: c.$secondary-color !important;text-decoration: none !important;
 }</style>
 
 <script setup lang="ts">
