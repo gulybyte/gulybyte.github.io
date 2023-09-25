@@ -60,6 +60,7 @@ export default {
   pre {
     margin: 0;
     font-size: 1.2rem;
+    background-color: c.$dark-color;
   }
 
   /* Necessário devido aos artigos que tem codes e eles alteram os códigos do markdown. */
