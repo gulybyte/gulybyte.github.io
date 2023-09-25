@@ -1,11 +1,21 @@
 <template>
-  <NuxtLink
+  <NuxtLink class="link-markdown-st"
     :href="href"
-    :target="target"
-  >
+    :target="target">
     <slot />
   </NuxtLink>
 </template>
+
+<style lang="scss">
+@use 'assets/colors' as c;
+
+.link-markdown-st:hover  {
+  color: c.$tertiary-color;
+  text-decoration: underline;
+}
+.link-markdown-st{
+  color: c.$secondary-color;text-decoration: underline !important;
+}</style>
 
 <script setup lang="ts">
 defineProps({

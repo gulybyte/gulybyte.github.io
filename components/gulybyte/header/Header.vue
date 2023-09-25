@@ -98,7 +98,7 @@
 
   .header {width: 100%;display: flex;align-items: center;justify-content: space-between;position: fixed;top: 0;background-color: c.$primary-color-home;opacity: 1 !important;z-index: 998;
     .header-contents{display: inline-block;padding: 25px;
-      .nav-link{color: white;font-size: 16px;font-family: f.$sf-mono;color: c.$font-color !important;padding-right: 30px;}
+      .nav-link{color: white;font-size: 16px;text-decoration: none !important; font-family: f.$sf-mono;color: c.$font-color !important;padding-right: 30px;}
       .nav-link:hover {color: c.$tertiary-color !important;}
     }
   }

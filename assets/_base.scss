@@ -33,7 +33,11 @@ label {
 }
 
 a {
+  color: c.$secondary-color;
+  text-decoration: underline;
+} a:hover  {
   color: c.$tertiary-color;
+  text-decoration: underline;
 }
 
 pre {
@@ -53,4 +57,4 @@ pre {
 
 body::-webkit-scrollbar-track{background: c.$primary-color  }
 body::-webkit-scrollbar{width: 6px;}
-body::-webkit-scrollbar-thumb{ background-color: c.$tertiary-color ; }
+body::-webkit-scrollbar-thumb{ background-color: c.$secondary-color ; }
