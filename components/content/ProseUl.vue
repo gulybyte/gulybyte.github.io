@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul style="padding-bottom: 1em;">
     <slot />
   </ul>
 </template>

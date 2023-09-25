@@ -8,7 +8,7 @@
 code {
   border-radius: 8px !important;
   padding: .2rem .3rem !important;
-  background-color: c.$light-gray !important;
+  background-color: c.$dark-color !important;
 }
 
 </style>

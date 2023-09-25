@@ -49,7 +49,7 @@ export default {
 
 .code-container {
   overflow-x: auto;
-  max-width: 98%;
+  max-width: 100%;
   margin: -.5em auto 1em;
   border-radius: 8px;
   position: relative;

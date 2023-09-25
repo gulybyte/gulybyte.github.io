@@ -33,8 +33,8 @@
 .about-image{float:right;width:30%;padding:75px 0 0 70px}
 
 /* == imagem no about == */
-.img-guilherme> img{border-radius:1%;width:280px;height:280px;box-shadow:22px 22px c.$primary-color,22px 22px 0 2.5px c.$secondary-color;-webkit-border-radius:1%;-moz-border-radius:1%;-ms-border-radius:1%;-o-border-radius:1%;}
-.img-guilherme:hover>img{box-shadow:12px 12px c.$primary-color,12px 12px 0 2.5px c.$secondary-color;}
+.img-guilherme> img{border-radius:1%;width:280px;height:280px;box-shadow:22px 22px c.$primary-color-home,22px 22px 0 2.5px c.$secondary-color;-webkit-border-radius:1%;-moz-border-radius:1%;-ms-border-radius:1%;-o-border-radius:1%;}
+.img-guilherme:hover>img{box-shadow:12px 12px c.$primary-color-home,12px 12px 0 2.5px c.$secondary-color;}
 
 .about-image> .img-guilherme> .eu {
   display: none;

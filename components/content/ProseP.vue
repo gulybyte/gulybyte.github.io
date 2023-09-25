@@ -1,5 +1,5 @@
 <template>
-  <p class="prose-paragraph">&nbsp;&nbsp;&nbsp;<slot /></p>
+  <p class="prose-paragraph">&nbsp;&nbsp;<slot /></p>
 </template>
 
 <style>

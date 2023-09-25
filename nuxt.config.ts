@@ -4,6 +4,8 @@ export default defineNuxtConfig({
     'assets/_colors.scss',
     'assets/_fonts.scss',
     'assets/_base.scss',
+    'assets/_document-driven-page.scss',
+
 
     // primevue configs
     "primeicons/primeicons.css",
@@ -28,11 +30,17 @@ export default defineNuxtConfig({
     ]
   ],
   content: {
+    contentHead: true,
+    documentDriven: true,
+    /* markdown: {
+      mdc: true
+    }, */
     highlight: {
-      theme: 'monokai', // github-dark também é top
+      theme: 'monokai', // github-dark também é top TODO: TRETA DA COR MARROM AO ARRASTAR. COLOCAR LATEX MATH. COMPONENT PRÓXIMO MARKDOWN. TODOS INTERFACE DEVEM TER DIFERENCA TABELA, E BENCHMARK DE SUAS CLASSES. TODAS AS CLASSES DEVEM TER ALÉM DAS IMAGEM TAMBÉM EXEMPLO DE CÓDIGO CONDIZENTE COM AQUELA IMAGEM, REFAZER TODAS AS IMAGENS (FICAREM PADRÃO IGUAL)
       preload: [
-        'java',
-        'js'
+        'java', 'js',
+        'markdown', 'md',
+        'c'
       ]
     }
   },
@@ -51,8 +59,9 @@ export default defineNuxtConfig({
         { name: 'developer', content: 'Guilherme Luis - gulybyte@gmail.com' },
         { name: 'creator', content: 'Guilherme Luis - gulybyte@gmail.com' },
         { name: 'publisher', content: 'Guilherme Luis - gulybyte@gmail.com' },
-        { name: 'theme-color', content: '"#0A192F' },
+        { name: 'theme-color', content: '#0A192F' },
         { property: 'og:locale', content: 'pt_BR' },
+        { name: 'copyright', content: 'https://github.com/gulybyte/gulybyte.github.io/blob/main/Licence' }
       ]
     },
   }
