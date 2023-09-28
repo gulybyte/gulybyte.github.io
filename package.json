@@ -22,6 +22,7 @@
     "@nuxtjs/robots": "^3.0.0",
     "aos": "3.0.0-beta.6",
     "primeicons": "^6.0.1",
-    "primevue": "^3.33.0"
+    "primevue": "^3.33.0",
+    "vue-mathjax-next": "^0.0.4"
   }
 }

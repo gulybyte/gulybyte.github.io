@@ -1,31 +1,56 @@
 <template>
-  <div class="code-container">
 
+  <span style="display: none;" ref="contentCodeSlot"><slot /></span>
+
+  <i style="width: 100%; font-size: 25px; text-align: center;" class="pi pi-spin pi-spinner" v-if="visibleLoadSpinner"></i>
+
+  <custom-Equation :expression="codeInSlot" v-if="visibleMath"></custom-Equation>
+
+  <div class="code-container" v-if="visibleCode">
     <code id="code-content-copy"><slot /></code>
 
-    <button class="copy-code" @click="copyText('code-content-copy')">
+    <button class="copy-code" @click="copyText()">
         <i :class="copyIcon"></i></button>
 
   </div>
+
 </template>
 
 <script>
 export default {
-  props: {
-    content: {
-      type: String,
-      required: true
+  mounted() {
+    const contentCode = this.$refs.contentCodeSlot.textContent;
+    if(contentCode.includes("math:")) {
+      this.enableMath(contentCode)
+    } else {
+      this.enableCode(contentCode)
     }
   },
   data() {
     return {
-      copyIcon: 'pi pi-clone text-white'
+      copyIcon: 'pi pi-clone text-white',
+      visibleMath: false,
+      visibleCode: false,
+      codeInSlot: '',
+      visibleLoadSpinner: true
     }
   },
   methods: {
+    enableMath(contentCode) {
+      const latexCode = contentCode.replace(/^math: /, '');
+      this.codeInSlot = latexCode;
+      this.visibleLoadSpinner = false
+      this.visibleMath = true
+    },
+    enableCode(contentCode) {
+      this.codeInSlot = contentCode;
+      this.visibleLoadSpinner = false
+      this.visibleCode = true
+    },
+
     // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard
-    copyText(input) {
-      const textToCopy = this.$el.querySelector(`#${input}`).textContent
+    copyText() {
+      const textToCopy = this.$refs.contentCodeSlot.textContent;
       const textWithoutSaida = textToCopy.split('saida:')[0]
       const textWithoutColors = textWithoutSaida.split('.ct-')[0]
       navigator.clipboard.writeText(textWithoutColors)

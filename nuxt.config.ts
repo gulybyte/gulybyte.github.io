@@ -32,11 +32,8 @@ export default defineNuxtConfig({
   content: {
     contentHead: true,
     documentDriven: true,
-    /* markdown: {
-      mdc: true
-    }, */
     highlight: {
-      theme: 'monokai', // github-dark também é top.TODO: COLOCAR LATEX MATH. COMPONENT PRÓXIMO MARKDOWN. TODOS INTERFACE DEVEM TER DIFERENCA TABELA, E BENCHMARK DE SUAS CLASSES. TODAS AS CLASSES DEVEM TER ALÉM DAS IMAGEM TAMBÉM EXEMPLO DE CÓDIGO CONDIZENTE COM AQUELA IMAGEM, REFAZER TODAS AS IMAGENS (FICAREM PADRÃO IGUAL)
+      theme: 'monokai', // github-dark e dracula-soft também é top.TODO: COMPONENT PRÓXIMO MARKDOWN. TODOS INTERFACE DEVEM TER DIFERENCA TABELA, E BENCHMARK DE SUAS CLASSES. TODAS AS CLASSES DEVEM TER ALÉM DAS IMAGEM TAMBÉM EXEMPLO DE CÓDIGO CONDIZENTE COM AQUELA IMAGEM, REFAZER TODAS AS IMAGENS (FICAREM PADRÃO IGUAL)
       preload: [
         'java', 'js', 'c'
       ]
