@@ -21,21 +21,6 @@ defineProps({
 })
 </script>
 
-<!-- <script>
-export default {
-  props: {
-    linkcontent: {
-      type: String,
-      required: true
-    },
-    content: {
-      type: String,
-      required: true
-    }
-  }
-}
-</script> -->
-
 <style>
 .footer-content {
   width: 100% !important;

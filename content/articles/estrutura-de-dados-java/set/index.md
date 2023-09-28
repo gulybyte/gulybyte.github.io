@@ -56,9 +56,13 @@ head:
 
   ![Set (parecido com função matemática)](/static/images/articles/estrutura-de-dados-java/set.png){width=200}
 
-```
-math: \{ \forall x \in \text{A } \exists \text{! } y \in \text{B } \text{| } (x,y) \in f \}
-```
+::equation
+---
+size: 2re
+expression: \{ \forall x \in \text{A } \exists \text{! } y \in \text{B } \text{| } (x,y) \in f \}
+---
+::
+
 </div>
 
 <div class="clear-both"></div>

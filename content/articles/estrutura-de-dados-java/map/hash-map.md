@@ -76,6 +76,6 @@ Vamos usar o mesmo exemplo que usamos em `HashSet`, colisão entre duas String's
 ::next-content
 ---
 content: Fim da série. Retorne a home artigos.
-linkcontent: /articles/estrutura-de-dados-java
+linkcontent: /articles
 ---
 ::
