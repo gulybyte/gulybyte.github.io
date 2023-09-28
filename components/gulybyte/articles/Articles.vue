@@ -34,9 +34,8 @@
   overflow: none;
   width: 90%;
   margin: 250px auto 0;
-  background-color: c.$primary-color !important;
 
-  p{padding: 0.5rem 0; font-size: 20px; color: c.$light-gray; line-height: 26px; font-family: serif;}
+  p{padding: 0.5rem 0; font-size: 20px; color: c.$font-color; line-height: 26px; font-family: serif;}
 
   aside{padding-top: 2rem;}
 }

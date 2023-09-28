@@ -29,12 +29,12 @@
 
 /* == espacamentos about == */
 .about{max-width:90%;width:90%;margin:250px auto 0}
-.about-me{float:left;width:62%; p{font-size: 20px; color: c.$light-gray; line-height: 26px; font-family: serif;}}
+.about-me{float:left;width:62%; p{font-size: 18px; color: c.$font-color; line-height: 26px; font-family: f.$montserrat-medium;}}
 .about-image{float:right;width:30%;padding:75px 0 0 70px}
 
 /* == imagem no about == */
-.img-guilherme> img{border-radius:1%;width:280px;height:280px;box-shadow:22px 22px c.$primary-color,22px 22px 0 2.5px c.$secondary-color;-webkit-border-radius:1%;-moz-border-radius:1%;-ms-border-radius:1%;-o-border-radius:1%;}
-.img-guilherme:hover>img{box-shadow:12px 12px c.$primary-color,12px 12px 0 2.5px c.$secondary-color;}
+.img-guilherme> img{border-radius:1%;width:280px;height:280px;box-shadow:22px 22px c.$primary-color-home,22px 22px 0 2.5px c.$secondary-color;-webkit-border-radius:1%;-moz-border-radius:1%;-ms-border-radius:1%;-o-border-radius:1%;}
+.img-guilherme:hover>img{box-shadow:12px 12px c.$primary-color-home,12px 12px 0 2.5px c.$secondary-color;}
 
 .about-image> .img-guilherme> .eu {
   display: none;
@@ -47,7 +47,7 @@
 
 /* == titulo about me == */
 .title-about{color:#fff;display:flex;-webkit-box-align:center;align-items:center;position:relative;margin:10px 0 40px;width:100%;font-size:26px;white-space:nowrap}
-.title-about::after{content:"";display:block;position:relative;width:100%;height:1px;margin-left:20px;background-color:c.$light-gray}
+.title-about::after{content:"";display:block;position:relative;width:100%;height:1px;margin-left:20px;background-color:c.$font-color}
 
 
 

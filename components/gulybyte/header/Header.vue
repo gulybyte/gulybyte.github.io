@@ -59,7 +59,7 @@
       <li>
         <a href="static/PDF/Resume.pdf">
           <Button type="button" label="Resume"
-            class="p-button-outlined p-button-success"></Button>
+            class="p-button-outlined"></Button>
         </a>
       </li>
 
@@ -96,16 +96,21 @@
   @use 'assets/colors' as c;
   @use 'assets/fonts' as f;
 
-  .header {width: 100%;display: flex;align-items: center;justify-content: space-between;position: fixed;top: 0;background-color: c.$primary-color;opacity: 1 !important;z-index: 998;
+  .header {width: 100%;display: flex;align-items: center;justify-content: space-between;position: fixed;top: 0;background-color: c.$primary-color-home;opacity: 1 !important;z-index: 998;
     .header-contents{display: inline-block;padding: 25px;
-      .nav-link{color: white;font-size: 16px;font-family: f.$sf-mono;color: c.$light-gray !important;padding-right: 30px;}
-      .nav-link:hover {color: c.$secondary-color !important;}
+      .nav-link{color: white;font-size: 16px;text-decoration: none !important; font-family: f.$sf-mono;color: c.$font-color !important;padding-right: 30px;}
+      .nav-link:hover {color: c.$tertiary-color !important;}
     }
   }
 
   .nav-link{.nav-link-number{color: c.$secondary-color;}}
 
   .hamburger-menu {display: none;}
+
+  .p-button-outlined {
+    border-color: c.$secondary-color !important;
+    color: c.$secondary-color !important;
+  }
 
   @media screen and (max-width: 768px) {
 

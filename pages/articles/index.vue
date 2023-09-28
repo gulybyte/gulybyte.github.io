@@ -21,19 +21,12 @@
       </div>
     </article>
   </main>
-
-  <footer>
-    <article-HeadGeneric></article-HeadGeneric>
-    <div class="soon-more" style="margin: 80px; text-align: center; font-size: 25px; font-family: 'Calibre-semibold';">
-      <i class="pi pi-exclamation-triangle" style="color: yellow; font-size: 25px;"></i> Ainda em construção! <i
-        style="font-size: 25px;" class="pi pi-spin pi-spinner"></i> Em breve mais conteudo <i
-        style="font-size: 25px;" class="pi pi-calendar-plus"></i>
-    </div>
-  </footer>
 </template>
 
 <style lang="scss">
 @use 'assets/colors' as c;
+@use 'assets/fonts' as f;
+
 
 .container-articles {
   padding: 0;
@@ -58,6 +51,7 @@
   float: left;
   a {
     font-size: 30px;
+    font-family: f.$raleway-semibold;
   }
   p {
     padding: 0.5rem 1rem;

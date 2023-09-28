@@ -1,30 +1,32 @@
 <template>
-  <gulybyte-Head></gulybyte-Head>
-  <gulybyte-Header></gulybyte-Header>
-  <gulybyte-Email></gulybyte-Email>
+  <section class="home-page">
+    <gulybyte-Head></gulybyte-Head>
+    <gulybyte-Header></gulybyte-Header>
+    <gulybyte-Email></gulybyte-Email>
 
-  <div class="container">
+    <div class="container">
 
-    <main>
-      <gulybyte-FirstApresentation></gulybyte-FirstApresentation>
+      <main>
+        <gulybyte-FirstApresentation></gulybyte-FirstApresentation>
 
-      <gulybyte-Articles></gulybyte-Articles>
+        <gulybyte-Articles></gulybyte-Articles>
 
-      <gulybyte-About></gulybyte-About>
-    </main>
+        <gulybyte-About></gulybyte-About>
+      </main>
 
-    <div class="clear-both"></div>
+      <div class="clear-both"></div>
 
-    <!-- <gulybyte-Philosophy></gulybyte-Philosophy> -->
+      <!-- <gulybyte-Philosophy></gulybyte-Philosophy> -->
 
-    <div class="clear-both"></div>
+      <div class="clear-both"></div>
 
-    <footer class="soon-more" style="margin: 80px; text-align: center; font-size: 25px; font-family: 'Calibre-semibold';">
-      <i class="pi pi-exclamation-triangle" style="color: yellow; font-size: 25px;"></i> Ainda em construção! <i
-        style="font-size: 25px;" class="pi pi-spin pi-spinner"></i> Em breve mais conteudo <i
-        style="font-size: 25px;" class="pi pi-calendar-plus"></i>
-    </footer>
-  </div>
+      <footer class="soon-more" style="padding: 80px; text-align: center; font-size: 25px; font-family: 'Calibre-semibold';">
+        <i class="pi pi-exclamation-triangle" style="color: yellow; font-size: 25px;"></i> Ainda em construção! <i
+          style="font-size: 25px;" class="pi pi-spin pi-spinner"></i> Em breve mais conteudo <i
+          style="font-size: 25px;" class="pi pi-calendar-plus"></i>
+      </footer>
+    </div>
+  </section>
 
 
 
@@ -32,6 +34,14 @@
 
 
 <style lang="scss">
+  @use 'assets/colors' as c;
+
+  .home-page {
+    background-color: c.$primary-color-home !important;
+  }
+
+  ul {list-style: none !important;}
+
   @media screen and (max-width: 419px) {
     .soon-more {
       font-size: 22px !important;
@@ -56,14 +66,15 @@
 
   .container {
     width: 75%;
-    margin: 110px auto 0;
+    padding-top: 110px;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: 768px) {
 
     .container {
       width: 80%;
-      margin: 80px auto 0;
+      padding-top: 80px;
     }
 
   }
@@ -88,7 +99,7 @@
 <script>
 let line = '\n';
     console.log(
-        "             (((("+line+
+        "             ))))"+line+
         "            (((("+line+
         "             ))))"+line+
         "          _ .---."+line+
