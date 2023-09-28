@@ -80,3 +80,10 @@ Em resumo `LinkedList` é muito mais rápido para inserções e remoções em po
 ![LinkedList Java](/static/images/articles/estrutura-de-dados-java/linked-list.png)
 
 Por ao adicionar novo elemento, não precisa redimensionar tamanho objeto, você apenas precisar mudar dois endereços, e sem duplicata do seu objeto.
+
+::next-content
+---
+content: Vector
+linkcontent: /articles/estrutura-de-dados-java/list/vector
+---
+::

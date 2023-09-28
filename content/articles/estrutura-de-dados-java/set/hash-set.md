@@ -65,3 +65,10 @@ Vamos usar exemplo de colisões com duas String, as String's "FB" e "Ea" geram o
 ![HashSet Colisão Java](/static/images/articles/estrutura-de-dados-java/hash-set-colisao.png)
 
 **Em resumo é uma estrutura para quando não quer elementos duplicados e não depende de ordenação, em caso de colisões como visto, se for fazer pesquisa nela vai jogar para um lista ligada vai verificar o primeiro elemento, se não for passa para o próximo e assim por diante.**
+
+::next-content
+---
+content: LinkedHashSet
+linkcontent: /articles/estrutura-de-dados-java/set/linked-hash-set
+---
+::

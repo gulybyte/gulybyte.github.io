@@ -54,3 +54,10 @@ Em visualização fica um pouco mais simples, (observe que aqui já estamos most
 ![LinkedHashSet Colisão Java](/static/images/articles/estrutura-de-dados-java/linked-hash-set-colisao.png)
 
 **Em resumo é uma estrutura para quando não quer elementos duplicados e depende de ordenação pela inserção, em caso de colisões como visto, é feito igual da HashSet porém seu valor é um ponteiro para seu elemento na lista vinculada.**
+
+::next-content
+---
+content: TreeSet
+linkcontent: /articles/estrutura-de-dados-java/set/tree-set
+---
+::

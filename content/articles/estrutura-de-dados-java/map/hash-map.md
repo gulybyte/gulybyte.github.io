@@ -72,3 +72,10 @@ Vamos usar o mesmo exemplo que usamos em `HashSet`, colisão entre duas String's
 ![HashMap Colisão Java](/static/images/articles/estrutura-de-dados-java/hash-map-colisao.png){width="100%"}
 
 **Em resumo é uma estrutura para quando quer ter indices, ou seja, uma estrutura perfeita entre o melhor dos dois mundos de List e Set, ou seja, search e find rápidos.**
+
+::next-content
+---
+content: Fim da série. Retorne a home artigos.
+linkcontent: /articles/estrutura-de-dados-java
+---
+::

@@ -52,3 +52,10 @@ Visualização é:
 ![PriorityQueue Java](/static/images/articles/estrutura-de-dados-java/priority-queue.png)
 
 Eu sei que pode parecer difícil imaginar um cenário de uso real para filas, mas vou dar um bom exemplo. Imagine que na sua aplicação outras APIs se conectam a você e, de tempos em tempos, enviam dados em formato CSV via cron. Você precisa processar esses dados e salvá-los em um banco de dados, mas antes disso, precisa carregá-los na memória RAM para não ter problema de N+1. Nesse caso, você poderia usar um ArrayList para armazenar os dados, mas pense bem: é um processo em que você pega vários e vários dados, os processa em alguma estrutura de dados em sequência e, no final, os envia em sequência para a base de dados. Nesse cenário, uma estrutura de filas, ou melhor, uma estrutura de filas que já é feita especificamente para um cenário como esse e é performática seria melhor. É aí que entra a PriorityQueue, uma fila que oferece uma ordem específica para os elementos com base em sua prioridade. Ela é ideal para esse tipo de cenário, pois permite que você processe e envie os dados em ordem de prioridade, evitando gargalos e garantindo que tudo seja executado de forma eficiente.
+
+::next-content
+---
+content: ArrayDeque
+linkcontent: /articles/estrutura-de-dados-java/queue/array-deque
+---
+::

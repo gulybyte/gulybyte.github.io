@@ -108,3 +108,10 @@ onde podemos acessar pelo índice e elementos podem ser adicionados ou removidos
 Sim ele é um Objeto Dinâmico, porém ainda assim computador não tem memória infinita,
 ArrayList costuma ter 50% de memória a mais que seu total, e quando bate o limite vai precisar criar
 outro objeto, mas ainda assim é bem menos que o array, pois ele **redimensiona objeto não recria**.
+
+::next-content
+---
+content: LinkedList
+linkcontent: /articles/estrutura-de-dados-java/list/linked-list
+---
+::

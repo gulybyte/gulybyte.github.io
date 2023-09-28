@@ -120,3 +120,10 @@ No início do Java (chamado originalmente de `Oak`), as estruturas básicas disp
 - **LinkedHashMap** - key-value + <s>LinkedList</s>;
 - **TreeMap** - key-value em <span style="color: red;">R</span><span style="color: black;">B</span>Tree;
 - **Hashtable** - um HashMap só que thread-safe;
+
+::next-content
+---
+content: Começe aqui!
+linkcontent: /articles/estrutura-de-dados-java/list
+---
+::

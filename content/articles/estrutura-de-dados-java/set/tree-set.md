@@ -82,3 +82,10 @@ O Node raiz (o primeiro) ele é sempre preto, e por padrão ao criar um novo Nod
 ![Binary Search Tree Pior Caso x Red-Black Tree estrutura de dados](/static/images/articles/estrutura-de-dados-java/binary-search-tree-pior-caso-x-red-black-tree.png)
 
 **Bem melhor não é?**, agora que você já entendeu o que é uma **<span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree** fica mais fácil de entender como que ela consegue ordenar elementos de uma tabela de hash (nossa interface `Set`) por `ASC` ou `DESC` por exemplo.
+
+::next-content
+---
+content: Map (próxima interface)
+linkcontent: /articles/estrutura-de-dados-java/map
+---
+::

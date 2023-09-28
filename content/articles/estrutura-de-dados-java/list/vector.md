@@ -51,3 +51,10 @@ Uma visualização disso é:
 ![ArrayList x Vector Java](/static/images/articles/estrutura-de-dados-java/vector-x-array-list.png)
 
 **Em resumo, use Vector quando precisa de um ArrayList que é thread-safe.**
+
+::next-content
+---
+content: Stack
+linkcontent: /articles/estrutura-de-dados-java/list/stack
+---
+::

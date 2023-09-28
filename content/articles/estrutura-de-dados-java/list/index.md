@@ -67,3 +67,10 @@ head:
 | LinkedList | Node duplo | Elemento aponta para o próximo e para elemento anterior. |
 | Vector | Array dinâmico | ArrayList só que thread-safe |
 | Stack | Stack LIFO | Ele já tá defasado, troque por Deque |
+
+::next-content
+---
+content: ArrayList
+linkcontent: /articles/estrutura-de-dados-java/list/array-list
+---
+::

@@ -79,3 +79,10 @@ Obviamente `HashSet` sempre vai se sair na frente, afinal ela não tem ordem, lo
 | add	| 35.076.868	| 33.911.887	| 68.956.371 |
 | get	| 986.795	| 1.171.634	| 2.420.362 |
 | remove | 1.298.586	| 1.772.075	| 1.889.906 |
+
+::next-content
+---
+content: HashSet
+linkcontent: /articles/estrutura-de-dados-java/set/hash-set
+---
+::

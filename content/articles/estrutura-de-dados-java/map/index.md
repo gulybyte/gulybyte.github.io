@@ -67,3 +67,10 @@ head:
 ## Outros
 
 Se você leu a sessão [Set](/articles/estrutura-de-dados-java/set) e leu o [HashMap](/articles/estrutura-de-dados-java/map/hash-map) então você já sabe como funciona `LinkedHashMap` e `TreeMap`, a diferença é que o hash no Map diferente de Set, é a key.
+
+::next-content
+---
+content: HashMap
+linkcontent: /articles/estrutura-de-dados-java/map/hash-map
+---
+::

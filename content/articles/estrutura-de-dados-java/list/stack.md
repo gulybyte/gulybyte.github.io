@@ -69,3 +69,10 @@ Uma visualização disso é:
 ![Stack Java](/static/images/articles/estrutura-de-dados-java/stack.png)
 
 No entanto, saiba que na atualidade é recomendado mais o uso de Class que derivem diretamente de Deque para quando precisar de um Stack. Isso porque tem as mesmas funcionalidades, são mais flexíveis e mais performáticas.
+
+::next-content
+---
+content: Queue (próxima interface)
+linkcontent: /articles/estrutura-de-dados-java/queue
+---
+::

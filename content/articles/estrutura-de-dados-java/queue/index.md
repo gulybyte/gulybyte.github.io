@@ -74,3 +74,10 @@ Vimos só ArrayDeque e PriorityQueue, mas tem outras mais principais de outras i
 <br>
 
  - **BlockingDeque -** é semelhante a BlockingQueue, mas para filasde extremidade dupla. É sub interface do BlockingQueue.
+
+::next-content
+---
+content: PriorityQueue
+linkcontent: /articles/estrutura-de-dados-java/queue/priority-queue
+---
+::
