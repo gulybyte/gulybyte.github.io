@@ -15,10 +15,15 @@ export default defineNuxtConfig({
   build: {
     transpile: ["primevue"],
   },
+  nitro: {
+    prerender:{
+      failOnError: false // https://github.com/nuxt/nuxt/issues/22159
+    }
+  },
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     [
       '@nuxtjs/robots',
       {

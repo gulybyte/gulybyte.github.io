@@ -10,12 +10,12 @@ run:
 pnpm run dev -o
 ```
 
-build and preview build:
+preview prod:
 ```
-pnpm run build ; pnpm run preview
+pnpm run preview
 ```
 
-build and deploy:
+build and deploy prod:
 ```
 pnpm run deploy
 ```

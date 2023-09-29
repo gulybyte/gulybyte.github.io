@@ -9,7 +9,7 @@
 
         <section class="pos-right">
           <nuxt-img src="/static/images/articles/estrutura-de-dados-java/dados-estruturados-x-nao-estruturados.png"
-            alt="Dados Estruturados x Não Estruturados" />
+            alt="Dados Estruturados x Não Estruturados" width="712" />
         </section>
 
         <section class="pos-left">

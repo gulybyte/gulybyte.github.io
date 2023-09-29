@@ -1,5 +1,5 @@
 <template>
-  <nuxt-img :src="src" :alt="alt" :width="width" :height="height"></nuxt-img>
+  <nuxt-img :src="src" :alt="alt" :width="width" :height="height" :quality="quality"></nuxt-img>
 </template>
 
 <script setup lang="ts">
@@ -22,6 +22,10 @@ const props = defineProps({
   height: {
     type: [String, Number],
     default: undefined
+  },
+  quality: {
+    type: [String, Number],
+    default: 100
   }
 })
 
