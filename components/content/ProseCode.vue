@@ -3,7 +3,7 @@
 
     <code id="code-content-copy"><slot /></code>
 
-    <button class="copy-code" @click="copyText('code-content-copy')">
+    <button aria-label="Copiar código" class="copy-code" @click="copyText('code-content-copy')">
         <i :class="copyIcon"></i></button>
 
   </div>

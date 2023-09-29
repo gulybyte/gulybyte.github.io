@@ -18,7 +18,7 @@
 
       <aside>
         <a href="/articles">
-          <Button size="large" icon="pi pi-reply" severity="info" label="Navegue para os Artigos" outlined></Button>
+          <Button aria-label="Navegue para os Artigos" size="large" icon="pi pi-reply" severity="info" label="Navegue para os Artigos" outlined></Button>
         </a>
       </aside>
 
