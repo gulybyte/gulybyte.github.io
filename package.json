@@ -6,7 +6,7 @@
     "postinstall": "nuxt prepare",
     "build": "nuxt build",
     "preview": "nuxt preview",
-    "preview-local": "nuxt build && nuxt preview --host",
+    "preview-dev": "nuxt build && nuxt preview",
     "generate": "nuxt generate",
     "preview-prod": "nuxt generate && npx serve .output/public",
     "deploy": "nuxt generate && touch .output/public/.nojekyll && gh-pages --dotfiles -d .output/public"

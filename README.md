@@ -1,21 +1,22 @@
-# Nuxt 3
+# My Website [gulybyte.github.io/](https://gulybyte.github.io/)
 
-start:
-```
+start (install dependencies):
+```sh
 pnpm i
 ```
 
-run:
-```
+run (developer):
+```sh
 pnpm run dev -o
 ```
 
-preview prod:
-```
-pnpm run preview
+build and preview developer:
+```sh
+pnpm run preview-dev
 ```
 
-build and deploy prod:
+build and preview production:
+```sh
+pnpm run preview-prod
 ```
-pnpm run deploy
-```
+
