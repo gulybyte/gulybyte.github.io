@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as o,a_ as s}from"./entry.c0bd93f5.js";const r={},l={role:"table",class:"p-datatable-table",style:{"min-width":"100%",margin:"0 auto 1em"}};function c(e,n){return a(),o("table",l,[s(e.$slots,"default")])}const d=t(r,[["render",c]]);export{d as default};
