@@ -1,7 +1,7 @@
 <template>
   <footer class="footer-content">
     <NuxtLink :href="linkcontent">
-      <Button aria-label="Próximo conteudo" size="large" icon="pi pi-reply" class="next-content" severity="info" :label="content" outlined></Button>
+      <Button role="link" aria-label="Next Page" size="large" icon="pi pi-reply" class="next-content" severity="info" :label="content" outlined></Button>
     </NuxtLink>
   </footer>
 </template>
