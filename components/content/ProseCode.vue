@@ -11,12 +11,6 @@
 
 <script>
 export default {
-  props: {
-    content: {
-      type: String,
-      required: true
-    }
-  },
   data() {
     return {
       copyIcon: 'pi pi-clone text-white'
