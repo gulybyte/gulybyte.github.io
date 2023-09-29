@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     // https://developer.mozilla.org/en-US/docs/Web/API/Clipboard
-    copyText(input) {
+    async copyText(input) {
       const textToCopy = this.$el.querySelector(`#${input}`).textContent
       const textWithoutSaida = textToCopy.split('saida:')[0]
       const textWithoutColors = textWithoutSaida.split('.ct-')[0]
