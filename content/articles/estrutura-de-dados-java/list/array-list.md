@@ -76,7 +76,7 @@ arrays de diferentes elementos:
 /**
  * ArrayList
  */
-List listNames = new ArrayList<>();
+List<Integer> listNames = new ArrayList<>();
 listNames.add(42);
 listNames.add(-17);
 listNames.add("Guilherme");

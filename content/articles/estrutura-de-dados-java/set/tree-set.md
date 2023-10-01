@@ -55,7 +55,7 @@ A Tree mais básica que temos é uma Tree que só pode ter 2 filhas, e cada filh
 
 Com elas a busca é muito mais rápida, um exemplo simples é o famoso Binary search (ou busca binária). Para verificar se existe um número em um array faríamos uma busca sequencial de um a um até chegar nele, porém na busca binaria dividimos o total por dois, verificamos se a segunda metade e maior ou menor que nosso número, se menor cortamos ela e vamos para próxima etapa e assim por diante, visualização disso é:
 
-![Busca Binaria x Busca Sequencial estrutura de dados](/static/images/articles/estrutura-de-dados-java/busca-binaria-x-busca-sequencial.gif)
+![Busca Binaria x Busca Sequencial estrutura de dados](/static/images/articles/estrutura-de-dados-java/busca-binaria-x-busca-sequencial.gif){format=gif}
 
 **A arte de dividir para conquistar.**
 

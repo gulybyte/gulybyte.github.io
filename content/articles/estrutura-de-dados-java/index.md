@@ -42,7 +42,7 @@ head:
 
 <h2 style="font-size:1em;text-align:center;padding-top:0em!important;border-bottom:0px">Data Structures + Algorithms = Programs de Niklaus Wirth.</h2>
 
-![Dados Estruturados x Não Estruturados](/static/images/articles/estrutura-de-dados-java/dados-estruturados-x-nao-estruturados.png){width=700 quality=80}
+![Dados Estruturados x Não Estruturados](/static/images/articles/estrutura-de-dados-java/dados-estruturados-x-nao-estruturados.png){width=700px quality=80}
 
 ---
 

@@ -55,7 +55,7 @@ head:
 
 <div class="float-768-disable" style="float: right">
 
-  ![Lista](/static/images/articles/estrutura-de-dados-java/lista.png){width=200}
+  ![Lista](/static/images/articles/estrutura-de-dados-java/lista.png){width=200px}
 </div>
 
 <div class="clear-both"></div>
