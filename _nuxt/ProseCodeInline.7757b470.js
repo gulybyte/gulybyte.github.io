@@ -1,1 +1,0 @@
-import{_ as o,o as n,c as s,a_ as t}from"./entry.ec5eb442.js";const _={},c={class:"code-inline-prose"};function r(e,a){return n(),s("code",c,[t(e.$slots,"default")])}const d=o(_,[["render",r]]);export{d as default};

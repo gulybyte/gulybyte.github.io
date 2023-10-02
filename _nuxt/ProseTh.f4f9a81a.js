@@ -1,1 +1,0 @@
-import{_ as t,o as s,c as o,a_ as _}from"./entry.ec5eb442.js";const a={},r={class:"th-row-datatable"};function c(e,n){return s(),o("th",r,[_(e.$slots,"default")])}const d=t(a,[["render",c]]);export{d as default};
