@@ -5,5 +5,7 @@
 <style>
 .prose-paragraph {
   padding-bottom: 1em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 </style>
