@@ -1,6 +1,6 @@
 ---
 title: 'TreeSet'
-description: 'TreeSet | Série - visão geral sobre estrutura de dados Java.'
+description: 'TreeSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/binary-search-tree-pior-caso-x-red-black-tree.png'
   alt: 'TreeSet Java.'
@@ -16,15 +16,15 @@ head:
     - property: "og:title"
       content: 'TreeSet'
     - name: 'description'
-      content: 'TreeSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'TreeSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'TreeSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'TreeSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'TreeSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'TreeSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'TreeSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'TreeSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'TreeSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'TreeSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, Set, TreeSet'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # TreeSet.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

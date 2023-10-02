@@ -1,6 +1,6 @@
 ---
 title: "Map's"
-description: 'Map | Série - visão geral sobre estrutura de dados Java.'
+description: 'Map | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/map.png'
   alt: 'Map Java.'
@@ -16,15 +16,15 @@ head:
     - property: "og:title"
       content: "Map's"
     - name: 'description'
-      content: 'Map | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Map | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'Map | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Map | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'Map | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Map | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'Map | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Map | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'Map | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Map | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, Map, HashMap'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # Map's.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

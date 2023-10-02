@@ -1,6 +1,6 @@
 ---
 title: "Queue's"
-description: 'Queue | Série - visão geral sobre estrutura de dados Java.'
+description: 'Queue | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/fila.png'
   alt: 'Queue.'
@@ -16,15 +16,15 @@ head:
     - property: "og:title"
       content: "Queue's"
     - name: 'description'
-      content: 'Queue | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Queue | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'Queue | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Queue | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'Queue | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Queue | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'Queue | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Queue | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'Queue | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Queue | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, Queue, PriorityQueue, ArrayDeque'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # Queue's.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

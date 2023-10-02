@@ -4,7 +4,7 @@
       <div class="wrapper-articles">
 
         <section class="pos-left">
-          <NuxtLink href="/articles/estrutura-de-dados-java">&nbsp;&nbsp;Serie - visão geral sobre estrutura de dados Java.</NuxtLink>
+          <NuxtLink href="/articles/estrutura-de-dados-java">&nbsp;&nbsp;Serie - Fundamentos de Estrutura de Dados Elementar com Java.</NuxtLink>
         </section>
 
         <section class="pos-right">
@@ -13,9 +13,9 @@
         </section>
 
         <section class="pos-left">
-          <p>&nbsp;&nbsp;Desmistificando a temida estrutura de dados com Collections Framework do Java.</p>
-          <p>&nbsp;&nbsp;Aprenda de uma vez por todas com conceitos simples e imagens que te farão "sacar" na hora o funcionamento
-            dessas estruturas.</p>
+          <p>&nbsp;&nbsp;Fique postulado que: <b>estruturas de dados faz parte da fundação de um bom progrador</b>.</p>
+          <p>&nbsp;&nbsp;Desmistificando de uma vez por todas com conceitos simples e diagramas de imagens mentais a
+            temida estrutura de dados com Collections Framework do Java.</p>
         </section>
 
       </div>

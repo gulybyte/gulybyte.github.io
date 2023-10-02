@@ -1,6 +1,6 @@
 ---
 title: 'ArrayList'
-description: 'ArrayList vs array | Série - visão geral sobre estrutura de dados Java.'
+description: 'ArrayList vs array | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/array-list.png'
   alt: 'ArrayList Java.'
@@ -16,15 +16,15 @@ head:
     - property: 'og:title'
       content: 'ArrayList'
     - name: 'description'
-      content: 'ArrayList vs array | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayList vs array | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'ArrayList vs array | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayList vs array | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'ArrayList vs array | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayList vs array | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'ArrayList vs array | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayList vs array | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'ArrayList vs array | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayList vs array | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, List, Listas, ArrayList, ArrayList vs array'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # ArrayList.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

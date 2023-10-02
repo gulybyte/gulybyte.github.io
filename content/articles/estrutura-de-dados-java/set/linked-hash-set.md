@@ -1,6 +1,6 @@
 ---
 title: 'LinkedHashSet'
-description: 'LinkedHashSet | Série - visão geral sobre estrutura de dados Java.'
+description: 'LinkedHashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/linked-hash-set-colisao.png'
   alt: 'LinkedHashSet Java.'
@@ -16,15 +16,15 @@ head:
     - property: "og:title"
       content: 'LinkedHashSet'
     - name: 'description'
-      content: 'LinkedHashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'LinkedHashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'LinkedHashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'LinkedHashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'LinkedHashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'LinkedHashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'LinkedHashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'LinkedHashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'LinkedHashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'LinkedHashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, Set, LinkedHashSet'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # LinkedHashSet.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

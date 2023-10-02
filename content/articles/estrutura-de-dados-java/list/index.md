@@ -1,6 +1,6 @@
 ---
 title: 'Listas'
-description: 'Listas | Série - visão geral sobre estrutura de dados Java.'
+description: 'Listas | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/lista.png'
   alt: 'Lista.'
@@ -16,15 +16,15 @@ head:
     - property: 'og:title'
       content: 'Listas'
     - name: 'description'
-      content: 'Listas | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Listas | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'Listas | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Listas | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'Listas | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Listas | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'Listas | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Listas | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'Listas | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Listas | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, List, Listas, ArrayList, LinkedList, Vector, Stack'
     - name: 'og:image'
@@ -40,7 +40,7 @@ head:
 
 # List's.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'HashSet'
-description: 'HashSet | Série - visão geral sobre estrutura de dados Java.'
+description: 'HashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/hash-set-colisao.png'
   alt: 'HashSet Java.'
@@ -16,15 +16,15 @@ head:
     - property: "og:title"
       content: 'HashSet'
     - name: 'description'
-      content: 'HashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'HashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'HashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'HashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'HashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'HashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'HashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'HashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'HashSet | Série - visão geral sobre estrutura de dados Java.'
+      content: 'HashSet | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, Set, HashSet'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # HashSet.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'Vector'
-description: 'Vector vs ArrayList | Série - visão geral sobre estrutura de dados Java.'
+description: 'Vector vs ArrayList | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/vector-x-array-list.png'
   alt: 'Vector x ArrayList Java.'
@@ -16,15 +16,15 @@ head:
     - property: 'og:title'
       content: 'Vector'
     - name: 'description'
-      content: 'Vector vs ArrayList | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Vector vs ArrayList | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'Vector vs ArrayList | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Vector vs ArrayList | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: ' | Série - visão geral sobre estrutura de dados Java.'
+      content: ' | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'Vector vs ArrayList | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Vector vs ArrayList | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'Vector vs ArrayList | Série - visão geral sobre estrutura de dados Java.'
+      content: 'Vector vs ArrayList | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, List, Listas, Vector, Vector vs ArrayList'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # Vector.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 

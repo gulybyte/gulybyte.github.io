@@ -1,6 +1,6 @@
 ---
 title: 'ArrayDeque'
-description: 'ArrayDeque | Série - visão geral sobre estrutura de dados Java.'
+description: 'ArrayDeque | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/array-deque.png'
   alt: 'ArrayDeque Java.'
@@ -16,15 +16,15 @@ head:
     - property: "og:title"
       content: 'ArrayDeque'
     - name: 'description'
-      content: 'ArrayDeque | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayDeque | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'excerpt'
-      content: 'ArrayDeque | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayDeque | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:description'
-      content: 'ArrayDeque | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayDeque | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'application-name'
-      content: 'ArrayDeque | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayDeque | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'og:site_name'
-      content: 'ArrayDeque | Série - visão geral sobre estrutura de dados Java.'
+      content: 'ArrayDeque | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, Queue, ArrayDeque'
     - name: 'og:image'
@@ -39,7 +39,7 @@ head:
 
 # ArrayDeque.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - visão geral sobre estrutura de dados Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 
