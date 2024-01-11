@@ -1,30 +1,44 @@
 <template>
   <section class="articles-page" id="articles">
     <article>
-      <h2 class="title-about" data-aos="fade-down-left" data-aos-duration="800">
-        <span class="text-teal-400 mr-4">01.</span>Artigos</h2>
+      <section>
+        <h2 class="title-about" data-aos="zoom-out" data-aos-duration="500">
+          <span class="text-teal-400 mr-4" data-aos="zoom-out-down" data-aos-duration="1000">02.</span>Anotações</h2>
 
-      <!-- <p>
-        &nbsp;&nbsp;Explore meus artigos sobre programação. Abordo assuntos mais avançados, em particular assuntos
-        que dificilmente se encontra em outros lugares, principalmente em ótima qualidade e com o
-        material em português. Dentre os artigos você encontra assuntos como estruturas de dados, banco de dados, escalabilidade,
-        linguagens de programação, Cloud Computing, performance entre outros.</p>
 
-      <p>
-        &nbsp;&nbsp;Esses artigos foram criados para meu próprio uso como referência,
-        se eu quisesse bombar eu os colocaria no Medium, mas eu quero que fica no meu site com
-        o front-end da forma que eu gosto de forma personalizada, e está de forma publica caso alguém esteja procurando
-        mais conhecimentos sobre os assuntos postados :).</p> -->
+        <p data-aos="zoom-in-right" data-aos-duration="1000">
+          &nbsp;&nbsp;Inspirado no <a target="blank" href="https://rodrigoknol.com.br/#blog">
+          site do rodrigoknol</a>, para o nome "Anotações". Essas anotações são minha bússola,
+          minha fonte de consulta particular na programação, e compartilho publicamente na
+          esperança de que possam ser úteis para alguém, ideia essa influenciada
+          <a href="https://youtu.be/ii5Q2fCl8C0" target="blank">por este vídeo do Akitando</a>.</p>
 
-      <aside>
-        <a href="/articles">
-          <Button aria-label="Navegue para os Artigos" size="large" icon="pi pi-reply" severity="info" label="Navegue para os Artigos" outlined></Button>
-        </a>
-      </aside>
+        <p style="padding-top: 2em;" data-aos="zoom-in-left" data-aos-duration="1000">
+          &nbsp;&nbsp;Dê um pulo aqui e explore minhas anotações sobre programação,
+          abrangendo desde estruturas de dados, banco de dados até tópicos em alta como
+          cloud computing e escalabilidade.</p>
+
+        <p data-aos="flip-up" data-aos-delay="2000" data-aos-duration="1000" ><small style="padding-top: 2em;">
+          (as anotações sobre DB, cloud computing e escalabilidade. Ainda estão em andamento...).</small></p>
+
+      </section>
+
+      <section>
+        <aside data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+          <a href="/articles">
+            <Button aria-label="Ir para as Anotações" size="large"
+              icon="pi pi-reply" severity="info" label="Ir para as anotações"
+              outlined></Button>
+          </a>
+        </aside>
+      </section>
+
 
     </article>
   </section>
 </template>
+
+
 
 <style lang="scss">
 @use 'assets/colors' as c;
@@ -33,9 +47,12 @@
 .articles-page {
   overflow: none;
   width: 90%;
-  margin: 250px auto 0;
+  margin: 140px auto 0;
+  padding-top: 6em;
 
-  p{padding: 0.5rem 0; font-size: 20px; color: c.$font-color; line-height: 26px; font-family: serif;}
+  p {
+    font-size: 18px; color: c.$font-color; line-height: 26px; font-family: f.$montserrat-medium;
+  }
 
   aside{padding-top: 2rem;}
 }

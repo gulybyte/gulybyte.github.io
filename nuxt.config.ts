@@ -41,9 +41,9 @@ export default defineNuxtConfig({
       mdc: true
     },
     highlight: {
-      theme: 'monokai', // github-dark e dracula-soft também é top.TODO: TODOS INTERFACE DEVEM TER DIFERENCA TABELA, E BENCHMARK DE SUAS CLASSES. TODAS AS CLASSES DEVEM TER ALÉM DAS IMAGEM TAMBÉM EXEMPLO DE CÓDIGO CONDIZENTE COM AQUELA IMAGEM, REFAZER TODAS AS IMAGENS (FICAREM PADRÃO IGUAL)
+      theme: 'monokai', // github-dark e dracula-soft também é top.
       preload: [
-        'java', 'js', 'c'
+        'java', 'js', 'c', 'cpp', 'crystal'
       ]
     }
   },
@@ -64,7 +64,7 @@ export default defineNuxtConfig({
         { name: 'publisher', content: 'Guilherme Luis - gulybyte@gmail.com' },
         { name: 'theme-color', content: '#0A192F' },
         { property: 'og:locale', content: 'pt_BR' },
-        { name: 'copyright', content: 'https://github.com/gulybyte/gulybyte.github.io/blob/main/Licence' }
+        { name: 'copyright', content: 'https://github.com/gulybyte/gulybyte.github.io/blob/master/Licence' }
       ]
     },
   }

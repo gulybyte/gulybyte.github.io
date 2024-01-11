@@ -2,7 +2,6 @@
   <!-- vesao para nav-menu -->
   <aside class="nav-menu">
     <a href="https://github.com/gulybyte" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="pi pi-github"></i></a>
-    <a href="https://www.instagram.com/gulybyte/" aria-label="Instagram" target="_blank" rel="noreferrer"><i class="pi pi-instagram"></i></a>
     <a href="mailto:gulybyte@gmail.com" aria-label="E-Mail" target="_blank" rel="noreferrer"><i class="pi pi-envelope"></i></a>
     <a href="https://www.linkedin.com/in/gulybyte/" aria-label="E-Mail" target="_blank" rel="noreferrer"><i class="pi pi-linkedin"></i></a>
   </aside>
@@ -14,11 +13,6 @@
       <li>
         <a href="https://github.com/gulybyte" aria-label="GitHub" target="_blank" rel="noreferrer">
           <i class="pi pi-github"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/gulybyte/" aria-label="Instagram" target="_blank" rel="noreferrer">
-          <i class="pi pi-instagram"></i>
         </a>
       </li>
       <li>

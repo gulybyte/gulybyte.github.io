@@ -4,8 +4,8 @@ description: 'Stack Java | Série - Fundamentos de Estrutura de Dados Elementar 
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/stack.png'
   alt: 'Stack Java.'
-  width: 2363
-  height: 1950
+  width: 3386
+  height: 2306
 head:
   link:
     - rel: 'canonical'
@@ -30,9 +30,9 @@ head:
     - name: 'og:image'
       content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/stack.png'
     - name: 'og:image:width'
-      content: '2363'
+      content: '3386'
     - name: 'og:image:height'
-      content: '1950'
+      content: '2306'
     - name: 'og:image:type'
       content: 'image/png'
 ---
@@ -43,32 +43,53 @@ head:
 
 ---
 
-## Como funciona?
+## Pilha. Como funciona a `Stack`.
 
-**`Stack` é o que o próprio nome diz, uma pilha**. Essa é uma estrutura clássicatipo LIFO (last-in first-out), o que significa que o ultimo a entrar é o primeira sair.
+A Stack, como o próprio nome sugere, é uma pilha. Essa estrutura clássica segue o princípio LIFO (Last-In-First-Out), onde o último elemento a entrar é o primeiro a sair.
 
-**Exemplo código:**
+Imaginem como uma pilha de pratos. Quando você adiciona um novo prato, ele se torna o topo da pilha. Se precisar remover um prato, você retira o que está no topo, pois foi o último a ser adicionado.
+
+É a mesma forma que a Stack opera. É uma escolha lógica quando a ordem de entrada e saída é crucial. Se você está lidando com dados onde a temporalidade importa, a Stack é a ferramenta certa.
+
+> **exemplo em código:**
 ```java
-var pilha = new Stack<Integer>();
+var numbersStack = new Stack<Integer>();
+numbersStack.push(2);
+numbersStack.push(3);
+numbersStack.push(5);
 
-pilha.push(10);
-pilha.push(20);
-pilha.push(30);
+System.out.println("Top of the stack: " + numbersStack.peek());
 
-// exibindo o topo da pilha
-System.out.println("Topo da pilha: " + pilha.peek());
+System.out.println("Removing the element: " + numbersStack.pop());
 
-// removendo elementos da pilha
-System.out.println("Removendo elemento " + pilha.pop());
-
-// exibindo o topo da pilha novamente
-System.out.println("Topo da pilha: " + pilha.peek());
+System.out.println("Top of the stack: " + numbersStack.peek());
 ```
+::outputcode
+> Top of the stack: 5 <br>&nbsp;
+Removing the element: 5 <br>&nbsp;
+Top of the stack: 3
+::
 
-Uma visualização disso é:
-![Stack Java](/static/images/articles/estrutura-de-dados-java/stack.png)
+> **imagem mental:**
+
+![Stack Java](/static/images/articles/estrutura-de-dados-java/stack.png){width=65% quality=70 position=auto}
 
 No entanto, saiba que na atualidade é recomendado mais o uso de Class que derivem diretamente de Deque para quando precisar de um Stack. Isso porque tem as mesmas funcionalidades, são mais flexíveis e mais performáticas.
+
+## Vantagens e Desvantagens
+
+##### Vantagens
+ - **`1` -** Implementa uma estrutura de pilha de forma simples e eficiente. LIFO - Last In, First Out.
+ - **`2` -** Operações de empilhamento e desempilhamento são rápidas.
+
+##### Desvantagens
+ - **`1` -** Limitado na flexibilidade em comparação com outras estruturas mais gerais, como ArrayList ou LinkedList.
+ - **`2` -** Eistem estruturas que fazem o mesmo trabalho e de forma mais rápida, como o [ArrayDeque](/articles/estrutura-de-dados-java/queue/array-deque){target=blank}.
+
+#### Uso comum
+Rastreamento de chamadas de função em algoritmos recursivos ou controle de navegação em um navegador web.
+
+**Cenário de uso:** Um navegador web utiliza uma pilha para armazenar a história de navegação do usuário, permitindo a navegação de volta (undo) e para frente (redo) nas páginas visitadas.
 
 ::next-content
 ---

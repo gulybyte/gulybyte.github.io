@@ -4,8 +4,8 @@ description: 'TreeSet | Série - Fundamentos de Estrutura de Dados Elementar com
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/binary-search-tree-pior-caso-x-red-black-tree.png'
   alt: 'TreeSet Java.'
-  width: 2201
-  height: 946
+  width: 2281
+  height: 742
 head:
   link:
     - rel: 'canonical'
@@ -30,9 +30,9 @@ head:
     - name: 'og:image'
       content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/binary-search-tree-pior-caso-x-red-black-tree.png'
     - name: 'og:image:width'
-      content: '2201'
+      content: '2281'
     - name: 'og:image:height'
-      content: '946'
+      content: '742'
     - name: 'og:image:type'
       content: 'image/png'
 ---
@@ -43,49 +43,71 @@ head:
 
 ---
 
-## Tree's?
+## TreeSet. Como funciona a <span style="color: red;">`Red`</span>-<span style="color: black;">`Black`</span> `Tree`.
 
-Trees são literalmente arvores, então imagine essa estrutura de dados como uma árvore com galhos e sub-galhos e sub-galhos de sub-galhos e por ai vai, a Tree especificamente usada por TreeSet é uma chamada <span style="color: red;">Red</span>-<span style="color: black;">Black</span>Tree, mas para entender a <span style="color: red;">R</span><span style="color: black;">B</span>Tree é necessário antes entender o básico de Tree o porque existe a <span style="color: red;">R</span><span style="color: black;">B</span>Tree.
+##### O Desafio.
 
-A Tree mais básica que temos é uma Tree que só pode ter 2 filhas, e cada filha também só pode ter 2 filhas (sub-filhas), uma representação básica temos:
+As árvores, ou "Trees", em sua essência, representam estruturas facilmente compreensíveis. No entanto, algumas árvores, como a AVL Tree e a Red-Black Tree, envolvem implementações complexas. No caso do TreeSet, que utiliza o TreeMap, sua implementação se baseia na <span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree. Devido à natureza avançada desta estrutura, não abordarei detalhes profundos aqui. Dentre todas as estruturas, esta será a que simplificarei ao máximo, mas a simplificação será suficiente para fornecer noções básicas.
 
-![Tree simples estrutura de dados](/static/images/articles/estrutura-de-dados-java/tree-classica.png)
+Caso deseje explorar a implementação, recomendo estudar a <span style="color: red;">R</span><span style="color: black;">B</span>Tree apresentada no [livro do Cormen](https://www.amazon.com.br/Introduction-Algorithms-Fourth-Thomas-Cormen/dp/026204630X/ref=sr_1_2){target=_blank}, pois a <span style="color: red;">R</span><span style="color: black;">B</span>Tree utilizada no TreeSet é uma adaptação dessa presente no livro.
 
-## Qual a utilidade?
+##### Como Funciona a Tree?
 
-Com elas a busca é muito mais rápida, um exemplo simples é o famoso Binary search (ou busca binária). Para verificar se existe um número em um array faríamos uma busca sequencial de um a um até chegar nele, porém na busca binaria dividimos o total por dois, verificamos se a segunda metade e maior ou menor que nosso número, se menor cortamos ela e vamos para próxima etapa e assim por diante, visualização disso é:
+Antes de mergulharmos na complexidade da <span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree, consideremos um exemplo mais simples de árvore: a Binary Search Tree (BST).
 
-![Busca Binaria x Busca Sequencial estrutura de dados](/static/images/articles/estrutura-de-dados-java/busca-binaria-x-busca-sequencial.gif){format=gif}
+![Tree simples estrutura de dados](/static/images/articles/estrutura-de-dados-java/tree-classica.png){position=auto width=30%}
 
-**A arte de dividir para conquistar.**
+Outro exemplo prático: suponhamos o conjunto `{34, 84, 15, 0, 2, 99, 79, 9, 88, 89, 18, 31, 39, 100, 101}`{tag=true}.
 
-Vamos ver outro exemplo na tree, digamos que temos o seguinte conjunto: `{34, 84, 15, 0, 2, 99, 79, 9, 88, 89, 18, 31, 39, 100, 101}`, em um array se fossemos procurar `101` precisaríamos percorrer todos os elementos, já em uma BST (binary search tree) percorreríamos apenas 4: `34 -> 84 -> 99 -> 100 -> 101`, veja:
-![Binary Search Tree estrutura de dados](/static/images/articles/estrutura-de-dados-java/binary-search-tree.png)
+![Binary Search Tree estrutura de dados](/static/images/articles/estrutura-de-dados-java/binary-search-tree.png){position=auto width=70%}
 
-Note os elementos foram armazenas na sequencia dada (`{34, 84, 15, 0, 2, 99, 79, 9, 88, 89, 18, 31, 39, 100, 101}`), sendo os elementos menores são jogados a esquerda da árvore e os maiores a direita. Nesse nosso caso temos uma árvore bem distribuída, mas em um caso onde nosso conjunto não vai facilitar que nossa arvore fique bem distribuída?, ex `{99, 89, 100, 101, 102, 103, 104, 105, 106}`:
-![Binary Search Tree Pior Caso estrutura de dados](/static/images/articles/estrutura-de-dados-java/binary-search-tree-pior-caso.png)
+Ao realizar uma pesquisa nesse conjunto, como, por exemplo, para o elemento `101`{tag=true}, em um array seria necessário percorrer todos os elementos. No entanto, na BST, como evidenciado (veja o diagrama), percorreríamos apenas 4 elementos: `34 -> 84 -> 99 -> 100 -> 101`{tag=true}. Isso é bastante eficiente, concorda?
 
-Pense agora, para encontrarmos o elemento `106` vamos precisar percorrer a árvore inteira. Mas e nesses casos, o que fazemos para manter a árvore bem distribuída?, bom, é agora que chegamos nas **<span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree**, construídas exatamente para manter uma árvore bem distribuída. Mas como ela faz isso?
+> Observação: Ao apresentar um conjunto, significa que os elementos foram inseridos na ordem em que aparecem. Além disso, é importante destacar que demonstro o conjunto e, em seguida, como ele é organizado na árvore. Contudo, não entro em detalhes sobre por que a árvore se organiza dessa maneira, uma vez que, conforme especificado, não discutirei a implementação para melhor didática. Caso queira testar seus próprios conjuntos, [consulte isso](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html){target=_blank}.
 
-## Como funciona <span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree?
+No entanto, a BST (e outras Trees) apresenta um problema: ela pode facilmente se desequilibrar. A BST distribui os elementos menores à esquerda e os maiores à direita, seguindo a sequência de inserção. Em alguns casos, como o conjunto `{99, 89, 100, 101, 102, 103, 104, 105, 106}`{tag=true}, a árvore pode se tornar desbalanceada.
 
-A diferença no geral entre a **<span style="color: red;">Red</span>-<span style="color: black;">Black</span>** e a BST, é que a <span style="color: red;">R</span><span style="color: black;">B</span>Tree tem um campo que é quem "define as cores", que claramente são <span style="color: red;">Vermelho (**R**ed)</span> e <span style="color: black;">Preto (**B**lack)</span>, mas com certeza não é uma cor, a cor é só para melhor compreensão e principalmente visualização a nós humanos. Esse campo que seria a cor é na realidade um campo de um 1 bit, no caso um boolean, e geralmente o bit 1 é associado à cor vermelha e o bit 0 é associado à cor preta.
+![Binary Search Tree Pior Caso estrutura de dados](/static/images/articles/estrutura-de-dados-java/binary-search-tree-pior-caso.png){position=auto width=60%}
 
-> ***A partir de agora vamos chamar os elementos da tree pelo nome correto que é Node!!**
+Agora, pense: para encontrar o elemento `106`{tag=true}, precisamos percorrer quase toda a árvore. Nesses casos, surge a necessidade de uma árvore de busca balanceada. Existem várias implementações que atendem a essa necessidade, e a utilizada no TreeSet é a <span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree.
 
-O Node raiz (o primeiro) ele é sempre preto, e por padrão ao criar um novo Node ele será vermelho, a regra geral é que **um Node vermelho só pode ter Node pai e Nodes filhos da cor preta**. Os últimos Nodes (comumente chamados de LEAF) são Nodes vazios, que servem basicamente para os ponteiros dos verdadeiros últimos Nodes não serem nulos para seguir a regra das cores. Mas como que o <span style="color: red;">R</span><span style="color: black;">B</span>Tree consegue rebalancear nossos Nodes?, ela faz a rotação dos nós (por baixo dos panos é um swap de ponteiros) de forma que mantenha a árvore bem balanceada. Veja exemplo com nossos conjuntos anteriories (`{34, 84, 15, 0, 2, 99, 79, 9, 88, 89, 18, 31, 39, 100, 101}` e `{99, 89, 100, 101, 102, 103, 104, 105, 106}`):
+## Como funciona a <span style="color: red;">R</span><span style="color: black;">B</span> Tree?
+
+A diferença fundamental entre a <span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree e a BST é que a <span style="color: red;">R</span><span style="color: black;">B</span>Tree possui um campo que "define as cores", sendo elas <span style="color: red;">Vermelho (**R**ed)</span> e <span style="color: black;">Preto (**B**lack)</span>. Vale ressaltar que essas "cores" são representadas, na realidade, por um campo de 1 bit (boolean), geralmente associando o bit 1 à cor vermelha e o bit 0 à cor preta.
+
+> **A partir de agora, chamaremos os elementos da árvore pelo nome correto, que é "Nó" (Node)!**
+
+O nó raiz (o primeiro) é sempre preto, e por padrão, ao criar um novo nó, ele será vermelho. A regra geral é que um nó vermelho só pode ter nós pais e filhos da cor preta. Os últimos nós (comumente chamados de "folhas") são nós vazios, que servem principalmente para garantir que os ponteiros dos verdadeiros últimos nós não sejam nulos, seguindo a regra das cores. A Red-Black Tree consegue reequilibrar esses nós por meio de rotações (basicamente, uma troca de ponteiros) de modo a manter a árvore bem balanceada. Veja um exemplo com nossos conjuntos anteriores (`{34, 84, 15, 0, 2, 99, 79, 9, 88, 89, 18, 31, 39, 100, 101}`{tag=true} e `{99, 89, 100, 101, 102, 103, 104, 105, 106}`{tag=true}):
 
 ![Binary Search Tree x Red-Black Tree estrutura de dados](/static/images/articles/estrutura-de-dados-java/binary-search-tree-x-red-black-tree.png)
 
-> pior caso:
+> no pior caso (note o balanceamente):
 
 ![Binary Search Tree Pior Caso x Red-Black Tree estrutura de dados](/static/images/articles/estrutura-de-dados-java/binary-search-tree-pior-caso-x-red-black-tree.png)
 
-**Bem melhor não é?**, agora que você já entendeu o que é uma **<span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree** fica mais fácil de entender como que ela consegue ordenar elementos de uma tabela de hash (nossa interface `Set`) por `ASC` ou `DESC` por exemplo.
+#### Ok. Mas e o TreeSet?
+
+O TreeSet opera com base nesse conceito, com a diferença de que não são permitidos nós repetidos. Além disso, no TreeSet, o conceito de Árvore Vermelho e Preta (Red-Black Tree) é estendido para manter a ordenação. Essa ordenação é mantida por meio de um conjunto que utiliza a ordem natural, quer um [comparador](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Comparator.html){target=_blank} explícito seja fornecido ou não. Dessa forma, temos o HashSet sem ordenação, o LinkedHashSet ordenando apenas por inserção e o TreeSet utilizando um `Comparator`{tag=true}.
+
+## Vantagens e Desvantagens
+
+##### Vantagens
+ - **`1` -** Mantém os elementos em ordem natural ou com base em um comparador, permitindo a realização de operações eficientes de conjunto.
+ - **`2` -** Implementação de árvore <span style="color: red;">Red</span>-<span style="color: black;">Black</span> Tree eficiente.
+ - **`3` -** Suporta operações como encontrar o elemento sucessor ou predecessor.
+
+##### Desvantagens
+ - **`1` -** Operações de inserção, remoção e pesquisa podem ter desempenho ligeiramente inferior em comparação com HashSet (apenas para os melhores casos).
+ - **`2` -** Ocupa mais espaço que HashSet devido à necessidade de armazenar nós adicionais na árvore.
+
+#### Uso comum
+Manutenção de elementos ordenados em uma coleção, útil em cenários que exigem iteração em ordem.
+
+**Cenário de uso:** Em um sistema de calendário, um TreeSet pode ser usado para armazenar os compromissos agendados, garantindo que eles sejam recuperados e exibidos na ordem correta.
 
 ::next-content
 ---
-content: Map (próxima interface)
-linkcontent: /articles/estrutura-de-dados-java/map
+content: Fim da Série. Retorne a home.
+linkcontent: /articles
 ---
 ::

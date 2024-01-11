@@ -10,7 +10,7 @@
 blockquote {
   p {
     color: c.$light-gray;
-    padding-bottom: 0em !important;
+    padding: 0em !important;
   }
 	border-left:	3px solid c.$light-gray !important;
 	margin:			0 1px 1em !important;

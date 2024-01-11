@@ -4,8 +4,8 @@ description: 'ArrayDeque | Série - Fundamentos de Estrutura de Dados Elementar 
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/array-deque.png'
   alt: 'ArrayDeque Java.'
-  width: 3638
-  height: 1419
+  width: 3700
+  height: 1062
 head:
   link:
     - rel: 'canonical'
@@ -30,9 +30,9 @@ head:
     - name: 'og:image'
       content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/array-deque.png'
     - name: 'og:image:width'
-      content: '3638'
+      content: '3700'
     - name: 'og:image:height'
-      content: '1419'
+      content: '1062'
     - name: 'og:image:type'
       content: 'image/png'
 ---
@@ -43,18 +43,59 @@ head:
 
 ---
 
-## Como funciona?
+## `ArrayDeque`. Como funciona o `Double-Ended Queues`.
 
-**É igual a estrutura anterior, mas você pode fazer ambas operações e ambas as cabeças.**
+O ArrayDeque, usa uma variação de uma estrutura de dados chamada `Deque`{tag=true} (ou `Double-Ended Queues`{tag=true}), que é uma estrutura que combina características familiares com um toque único. Aqui, você pode realizar operações em ambas as extremidades, criando assim um híbrido entre as estruturas de dados Stack e PriorityQueue.
 
-A visualização geral é essa:
+Imagine a versatilidade de uma queue padrão, como a PriorityQueue, mas com a distinção de executar operações em ambas as cabeças (extremidades), é assim o funcionamento de uma deque. O ArrayDeque redefine o jogo, permitindo que você adicione e remova elementos tanto no início quanto no final da deque, criando uma abordagem única para manipulação de dados em "ambos os lados".
+
+> **exemplo em código:**
+```java
+var numbersDeque = new ArrayDeque<Integer>();
+
+numbersDeque.add(6);
+numbersDeque.add(8);
+numbersDeque.add(9);
+
+System.out.println(numbersDeque);
+
+numbersDeque.addFirst(4);
+numbersDeque.addLast(10);
+
+System.out.println(numbersDeque);
+
+numbersDeque.removeFirst();
+numbersDeque.removeLast();
+
+System.out.println(numbersDeque);
+```
+::outputcode
+> `[6, 8, 9]` <br>&nbsp;
+`[4, 6, 8, 9, 10]` <br>&nbsp;
+`[6, 8, 9]`
+::
+
+> **imagem mental:**
+
 ![ArrayDeque Java](/static/images/articles/estrutura-de-dados-java/array-deque.png)
 
-Embora seja difícil imaginar um cenário prático para o uso de uma estrutura de dados como ArrayDeque, há um caso em que ela pode ser muito útil. Suponha que você esteja lidando com uma aplicação que recebe eventos em uma ordem específica, como uma Stack, em que os últimos eventos a chegar são os primeiros a serem processados. No entanto, há um limite de tamanho para essa Stack e, eventualmente, muitos eventos começam a chegar ao mesmo tempo, tornando o processamento lento. Em uma estrutura de dados convencional, seria necessário pausar a chegada de eventos e processar todos os elementos até o final da Stack, para que os eventos mais antigos não fiquem defasados. Mas com a ArrayDeque, é possível processar a fila simultaneamente pelas duas extremidades, mantendo um equilíbrio perfeito e excelente performance. Além disso, caso o limitador seja acionado, é possível deixar os eventos chegarem enquanto o processamento é feito no final da fila, sem precisar pausar o recebimento de novos eventos. Com isso, é possível manter uma estrutura de dados leve e performática, sem sacrificar a velocidade de processamento.
+## Vantagens e Desvantagens
+
+##### Vantagens
+ - **`1` -** Fornece operações eficientes de fila e pilha, sendo um híbrido das duas.
+ - **`2` -** Acesso rápido ao início e ao final da deque.
+
+##### Desvantagens
+ - **`1` -** Não é tão flexível quanto LinkedList para inserções e remoções no meio da estrutura.
+
+#### Uso comum
+Implementação eficiente de fila e pilha, especialmente em algoritmos onde operações de inserção e remoção em ambas as extremidades são frequentes.
+
+**Cenário de uso:** Em um sistema de processamento de eventos em tempo real, um ArrayDeque pode ser usado para armazenar eventos recentes, permitindo rápida adição e remoção tanto no início quanto no final da lista.
 
 ::next-content
 ---
-content: Set (próxima interface)
-linkcontent: /articles/estrutura-de-dados-java/set
+content: Map (próxima interface)
+linkcontent: /articles/estrutura-de-dados-java/map
 ---
 ::

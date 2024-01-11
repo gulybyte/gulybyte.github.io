@@ -4,14 +4,14 @@
     <gulybyte-Header></gulybyte-Header>
     <gulybyte-Email></gulybyte-Email>
 
-    <div class="container">
+    <section class="container">
 
       <main>
         <gulybyte-FirstApresentation></gulybyte-FirstApresentation>
 
-        <gulybyte-Articles></gulybyte-Articles>
-
         <gulybyte-About></gulybyte-About>
+
+        <gulybyte-Articles></gulybyte-Articles>
       </main>
 
       <div class="clear-both"></div>
@@ -25,7 +25,7 @@
           style="font-size: 25px;" class="pi pi-spin pi-spinner"></i> Em breve mais conteudo <i
           style="font-size: 25px;" class="pi pi-calendar-plus"></i>
       </footer>
-    </div>
+    </section>
   </section>
 
 
@@ -36,8 +36,10 @@
 <style lang="scss">
   @use 'assets/colors' as c;
 
+
   .home-page {
     background-color: c.$primary-color-home !important;
+    width: 100% !important;
   }
 
   ul {list-style: none !important;}

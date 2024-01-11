@@ -2,10 +2,10 @@
 title: "Map's"
 description: 'Map | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
-  src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/map.png'
+  src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/set.png'
   alt: 'Map Java.'
-  width: 611
-  height: 271
+  width: 2201
+  height: 1816
 head:
   link:
     - rel: 'canonical'
@@ -28,49 +28,62 @@ head:
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, Map, HashMap'
     - name: 'og:image'
-      content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/map.png'
+      content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/set.png'
     - name: 'og:image:width'
-      content: '611'
+      content: '2201'
     - name: 'og:image:height'
-      content: '271'
+      content: '1816'
     - name: 'og:image:type'
       content: 'image/png'
 ---
 
-# Map's.
+# Mapas.
+<div class="img_pag_init">
+
+  ![Map (parecido com função matemática com indexador)](/static/images/articles/estrutura-de-dados-java/set.png){position=auto width=30%}
+</div>
 
 <h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 
-<div class="float-768-disable" style="float: left;">
+### Sobre Mapas
 
-- [HashMap](/articles/estrutura-de-dados-java/map/hash-map/)
-
-
-</div>
-
-<div class="float-768-disable" style="float: right">
-
-  ![Map (parecido com função matemática com indexador)](/static/images/articles/estrutura-de-dados-java/map.png){width=200}
-</div>
-
-<div class="clear-both"></div>
-<div style="padding:1rem 0"></div>
-
-| Tipo | Armazenamento | Ordenação |
-| - | - | - |
-| HashMap | key-value (tabela hash) | Sem ordem |
-| LinkedHashMap | key-value (tabela hash) | Ordem por inserção |
-| TreeMap | key-value (RB-Tree) | Ordem das chaves ou comparador |
-
-## Outros
-
-Se você leu a sessão [Set](/articles/estrutura-de-dados-java/set) e leu o [HashMap](/articles/estrutura-de-dados-java/map/hash-map) então você já sabe como funciona `LinkedHashMap` e `TreeMap`, a diferença é que o hash no Map diferente de Set, é a key.
+Comumente, recorremos à `Map`{tag=true} uando desejamos uma coleção que estabelece uma relação entre chaves e valores, sendo que as chaves não podem estar duplicadas. Valores podem ser duplicados, mas chaves não.
 
 ::next-content
 ---
-content: HashMap
+content: Começando com HashMap
+linkcontent: /articles/estrutura-de-dados-java/map/hash-map
+---
+::
+
+<div class="clear-both"></div>
+
+#### Nota
+
+Não será necessário abordar `Hashtable`{tag=true}, pois compreender HashMap é suficiente. Analogamente a Vector e ArrayList, assim é com Hashtable e HashMap. A distinção entre eles reside na sincronização, sendo Hashtable adequado para ambientes multi-thread, embora com um consumo um pouco mais elevado de memória.
+
+Ao iniciar esta série, mencionei que abordaria os mapeamentos HashMap (já explorado), `LinkedHashMap`{tag=true}, e `TreeMap`{tag=true}. No entanto, compreender HashMap torna as explicações subsequentes "redundantes". LinkedHashMap assemelha-se a `LinkedHashSet`{tag=true}, e TreeMap é comparável a `TreeSet`{tag=true}. A diferenciação reside na abordagem de geração de hash para armazenar dados, um aspecto que exploraremos ao estudar a próxima estrutura: `HashSet`{tag=true}, posteriormente a esta, discutiremos LinkedHashSet e TreeSet.
+
+Ao entender as variações na geração de hash em estruturas pertencentes às interfaces `Set`{tag=true} e `Map`{tag=true}, você poderá facilmente aplicar esses conceitos ao converter essas estruturas entre as interfaces Set e Map. Portanto, não vejo a nescessidade em explicar LinkedHashMap e TreeMap se veremos LinkedHashSet e TreeSet.
+
+::next-content
+---
+content: Começando com HashMap
+linkcontent: /articles/estrutura-de-dados-java/map/hash-map
+---
+::
+
+<div class="clear-both"></div>
+
+## Estruturas
+
+- [HashMap](/articles/estrutura-de-dados-java/map/hash-map/)
+
+::next-content
+---
+content: Começando com HashMap
 linkcontent: /articles/estrutura-de-dados-java/map/hash-map
 ---
 ::

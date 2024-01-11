@@ -57,7 +57,7 @@ export default {
     background-color: c.$dark-color;
   }
 
-  /* Necessário devido aos artigos que tem codes e eles alteram os códigos do markdown. */
+  /* Necessário devido aos anotações que tem codes e eles alteram os códigos do markdown. */
   code {
     border-radius: 0px !important;
     padding: 0px !important;

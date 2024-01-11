@@ -1,12 +1,12 @@
-$font-main: 'Montserrat-Medium';
+$font-main: 'notosans-medium';
 
 $sf-mono: 'SF Mono';
 $sf-mono-900: 'SF Mono-900';
 $calibre-semibold: 'Calibre-semibold';
 $calibre-regular: 'Calibre-Regular';
-$raleway-semibold: 'Raleway-SemiBold';
+$confortaa-semibold: 'Comfortaa-SemiBold';
+$notosans-medium: 'NotoSans-Medium';
 $montserrat-medium: 'Montserrat-Medium';
-
 
 
 /* === FONTS === */
@@ -43,13 +43,19 @@ $montserrat-medium: 'Montserrat-Medium';
 }
 
 @font-face {
-  font-family: 'Raleway-SemiBold';
-  src: url('/static/fonts/Raleway-SemiBold.ttf');
+  font-family: 'Comfortaa-SemiBold';
+  src: url('/static/fonts/Comfortaa-SemiBold.ttf');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Montserrat-Medium';
   src: url('/static/fonts/Montserrat-Medium.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: url('/static/fonts/NotoSans-Medium.ttf');
   font-display: swap;
 }

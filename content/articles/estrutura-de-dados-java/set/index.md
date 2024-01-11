@@ -4,8 +4,8 @@ description: 'Set | Série - Fundamentos de Estrutura de Dados Elementar com Jav
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/set.png'
   alt: 'Set Java.'
-  width: 371
-  height: 271
+  width: 2201
+  height: 1816
 head:
   link:
     - rel: 'canonical'
@@ -30,63 +30,70 @@ head:
     - name: 'og:image'
       content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/set.png'
     - name: 'og:image:width'
-      content: '371'
+      content: '2201'
     - name: 'og:image:height'
-      content: '271'
+      content: '1816'
     - name: 'og:image:type'
       content: 'image/png'
 ---
 
 # Set's.
 
+<div class="img_pag_init">
+
+  ![Map](/static/images/articles/estrutura-de-dados-java/set.png){position=auto width=30%}
+</div>
+
 <h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
+
+<details style="padding-top:1.5rem;">
+<summary>
+  <h5 style="display: inline;cursor:pointer;">
+    Opcional: breve explicação da imagem conceitual acima. (clique)
+  </h5>
+</summary>
+
+![HashSet Java](/static/images/articles/estrutura-de-dados-java/set.png){width=30% quality=30 position=auto}
+
+Isto diz, como funciona em geral uma função hash, onde cada valor será transformando em um unico hash, isso significa que os mesmo valores resultam nos mesmo hashes. (A expressão mostrada, é uma expressão matemática da lógica proposicional).
+
+::equation
+---
+size: 2re
+expression: \{ \forall v \exists! h \} \Leftrightarrow \begin{Bmatrix}  \begin{matrix} \underbrace{ \forall v } \\ \text{para todo value } \end{matrix}\text{ }\begin{matrix} \underbrace{ \exists! h } \\ \text{ existe um, e apenas um hash} \end{matrix} \end{Bmatrix}
+---
+::
+
+</details>
 
 ---
 
-<div class="float-768-disable" style="float: left;">
+### Sobre Sets
+Comumente, recorremos à `Set`{tag=true} quando buscamos uma coleção que não permite elementos duplicados. Set segue o modelo matemático [Set Abstraction](https://en.wikipedia.org/wiki/Set_(abstract_data_type)){target=_blank}.
+
+::next-content
+---
+content: Começando com HashSet
+linkcontent: /articles/estrutura-de-dados-java/set/hash-set
+---
+::
+
+<div class="clear-both"></div>
+
+## Estruturas
+
 
 - [HashSet](/articles/estrutura-de-dados-java/set/hash-set/)
 - [LinkedHashSet](/articles/estrutura-de-dados-java/set/linked-hash-set/)
 - [TreeSet](/articles/estrutura-de-dados-java/set/tree-set/)
 
 
-</div>
-
-<div class="float-768-disable" style="float: right">
-
-  ![Set (parecido com função matemática)](/static/images/articles/estrutura-de-dados-java/set.png){width=200}
-
-::equation
----
-size: 2re
-expression: \{ \forall x \in \text{A } \exists \text{! } y \in \text{B } \text{| } (x,y) \in f \}
----
-::
-
-</div>
-
 <div class="clear-both"></div>
 <div style="padding:1rem 0"></div>
 
-| Tipo | Armazenamento | Ordenação |
-| - | - | - |
-| HashSet | tabela hash | Sem ordem |
-| LinkedHashSet | tabela hash | Ordem por inserção |
-| TreeSet | árvore | Ordem DESC ou ASC, fornecido na criação dela |
-
-## Performance entre elas
-
-Obviamente `HashSet` sempre vai se sair na frente, afinal ela não tem ordem, logo depois sem muita diferença e ordenada por inserção temos `LinkedHashSet`, por fim no geral sendo dobro mais lenta porém com sistemas de ordenação completo `TreeSet`. [Benchmark:](https://gist.github.com/gulybyte/9373c09e0b92d698945afc451527b853){target="_blank"}
-
-| Operação | HashSet | LinkedHashSet | TreeSet |
-| - | - | - | - |
-| add	| 35.076.868	| 33.911.887	| 68.956.371 |
-| get	| 986.795	| 1.171.634	| 2.420.362 |
-| remove | 1.298.586	| 1.772.075	| 1.889.906 |
-
 ::next-content
 ---
-content: HashSet
+content: Começando com HashSet
 linkcontent: /articles/estrutura-de-dados-java/set/hash-set
 ---
 ::

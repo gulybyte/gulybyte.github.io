@@ -1,14 +1,12 @@
 <template>
   <nuxt-img :src="src" :alt="alt"
-    :style="'width:'+width+';height:'+height"
+    :style="'width:'+width+';height:'+height+';margin:'+position"
     :quality="quality" :format="format"></nuxt-img>
 </template>
 
 <script setup lang="ts">
-import { withTrailingSlash, withLeadingSlash, joinURL } from 'ufo'
-import { useRuntimeConfig, computed } from '#imports'
 
-const props = defineProps({
+defineProps({
   src: {
     type: String,
     default: ''
@@ -32,16 +30,10 @@ const props = defineProps({
   format: {
     type: [String, Number],
     default: 'png'
+  },
+  position: {
+    type: [String],
+    default: 'none'
   }
-})
-
-const refinedSrc = computed(() => {
-  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {
-    const _base = withLeadingSlash(withTrailingSlash(useRuntimeConfig().app.baseURL))
-    if (_base !== '/' && !props.src.startsWith(_base)) {
-      return joinURL(_base, props.src)
-    }
-  }
-  return props.src
 })
 </script>

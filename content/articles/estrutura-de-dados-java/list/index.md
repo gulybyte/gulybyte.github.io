@@ -38,39 +38,41 @@ head:
 ---
 
 
-# List's.
+# Listas.
 
 <h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
+<div class="img_pag_init">
+
+![Lista](/static/images/articles/estrutura-de-dados-java/lista.png){width=30% position=auto}
+</div>
 
 ---
 
-<div class="float-768-disable" style="float: left;">
+### Sobre Listas
+Comumente, recorremos à `List`{tag=true} quando buscamos uma coleção ordenada, permitindo a inclusão de elementos duplicados, e quando a busca por índices é uma operação desejada.
 
-- [ArrayList](/articles/estrutura-de-dados-java/list/array-list) | ArrayList vs array
-- [LinkedList](/articles/estrutura-de-dados-java/list/linked-list) | LinkedList vs ArrayList
-- [Vector](/articles/estrutura-de-dados-java/list/vector) | Vector vs ArrayList
-- [Stack](/articles/estrutura-de-dados-java/list/stack) | Alternativas????
+::next-content
+---
+content: Começando com ArrayList
+linkcontent: /articles/estrutura-de-dados-java/list/array-list
+---
+::
 
-</div>
+<div class="clear-both"></div>
 
-<div class="float-768-disable" style="float: right">
+## Estruturas
 
-  ![Lista](/static/images/articles/estrutura-de-dados-java/lista.png){width=200px}
-</div>
+- [ArrayList](/articles/estrutura-de-dados-java/list/array-list)
+- [LinkedList](/articles/estrutura-de-dados-java/list/linked-list)
+- [Vector](/articles/estrutura-de-dados-java/list/vector)
+- [Stack](/articles/estrutura-de-dados-java/list/stack)
 
 <div class="clear-both"></div>
 <div style="padding:1rem 0"></div>
 
-| Tipo | Descrição | Detalhes |
-| - | - | - |
-| ArrayList | Array dinâmico | Não é thread-safe |
-| LinkedList | Node duplo | Elemento aponta para o próximo e para elemento anterior. |
-| Vector | Array dinâmico | ArrayList só que thread-safe |
-| Stack | Stack LIFO | Ele já tá defasado, troque por Deque |
-
 ::next-content
 ---
-content: ArrayList
+content: Começando com ArrayList
 linkcontent: /articles/estrutura-de-dados-java/list/array-list
 ---
 ::

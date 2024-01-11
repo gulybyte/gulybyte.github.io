@@ -4,8 +4,8 @@ description: 'HashSet | Série - Fundamentos de Estrutura de Dados Elementar com
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/hash-set-colisao.png'
   alt: 'HashSet Java.'
-  width: 2400
-  height: 1913
+  width: 2142
+  height: 1156
 head:
   link:
     - rel: 'canonical'
@@ -30,41 +30,94 @@ head:
     - name: 'og:image'
       content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/hash-set-colisao.png'
     - name: 'og:image:width'
-      content: '2400'
+      content: '2142'
     - name: 'og:image:height'
-      content: '1913'
+      content: '1156'
     - name: 'og:image:type'
       content: 'image/png'
 ---
 
 # HashSet.
 
-<h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
+<h1 style="text-align: left; padding: 0em 0em 1em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 
-## Como funciona?
 
-É uma estrutura de dados bem rápida. É uma tabela de hash, onde temos sim de certa forma um `<K, V>` (chave e valor), porém nós não lidamos com chave em HashSet (para isso use HashMap), a chave é insignificante (não trabalhamos e nem podemos lidar diretamente com elas), usada apenas para encontrar os elementos na tabela, e também para garantir que não tenhamos elementos duplicados:
+## HashSet. Como Funciona o `Hash Table` com `Set`.
 
-A visualização geral é essa:
+O HashSet, assim como o HashMap, é uma estrutura de dados baseada em tabelas de hash. Embora ambos compartilhem a ideia de associação chave-valor `<K, V>`{tag=true}, no HashSet essa relação é um pouco diferente. Ao contrário do HashMap, não tratamos diretamente de chaves no HashSet. A chave é utilizada apenas para garantir a ausência de duplicatas de dados, utilizando o hash. Em resumo, o HashSet é semelhante ao HashMap, mas com foco na exclusividade dos dados, evitando duplicatas.
 
-![HashSet Java](/static/images/articles/estrutura-de-dados-java/hash-set.png)
+O funcionamento é o seguinte: ao adicionar um elemento, o HashSet recebe esse elemento, e a função hash é aplicada a ele. Em outras palavras, o hash é gerado com base nos dados que estamos inserindo. Para recuperar um dado na estrutura, utilizamos o próprio dado enviado, que é transformado em hash para realizar a busca na estrutura.
 
-Se você prestou atenção, deve ter percebido que os elementos adicionados ao `HashSet` não ficaram na mesma ordem que foram inseridos. Isso acontece porque o `HashSet` não mantém nenhuma ordem, nem mesmo a ordem de inserção. A forma como os elementos são ordenados varia de acordo com a implementação da JVM e de outros fatores. Além disso, é importante mencionar a função hash utilizada, que é uma função de hash padrão da classe `Object`. O número total de hashes possíveis é de 32 bits (em algumas implementações pode chegar a 64 bits), o que é relativamente pouco, e isso pode levar a **colisões entre os elementos do `HashSet`**.
+Então, qual é a vantagem? Enquanto no HashMap podemos verificar a existência de algo sem possuir todos os dados, utilizando apenas a chave, no HashSet precisamos do dado completo. O Set é ideal para casos em que desejamos evitar duplicatas de dados e verificar a existência desses dados (retornando verdadeiro ou falso) durante a manipulação da estrutura.
+
+> **exemplo em código:**
+
+```java
+var names = new HashSet<String>();
+
+names.add("gulybyte");
+names.add("Aulus");
+names.add("Donald Knuth");
+
+System.out.println(names.contains("gulybyte"));
+System.out.println(names.contains("John Doe"));
+
+```
+::outputcode
+> true <br>&nbsp;
+false
+::
+
+> **imagem mental:**
+
+![HashSet Java](/static/images/articles/estrutura-de-dados-java/hash-set.png){width=80% position=auto}
+
+Observe que as informações não serão dispostas de forma organizada, nem mesmo por inserção.
 
 ## E se houver colisões?
-> "No caso de colisão, um único value armazena várias entradas sequenciais de outros values".
 
-Se o hash é usado como próprio "identificador" dos elementos para evitar duplicação, o que acontece se houver dois elementos diferentes que geram o mesmo hash?
+Aqui a resposta é simples: nos bastidores, o HashSet usa o HashMap. Em outras palavras, ele abstrai para nós a necessidade de lidar diretamente com chaves.
 
-Bem, o algoritmo de hash usado por `HashSet` é chamado de hashing by chaining, sua implementação não é importante aqui, mas ele funciona como uma tabela de hash e as **"colisões são resolvidas colocando em um único value armazena várias entradas sequenciais de outros values".** Ficou meio confuso eu sei, mas na visualização que já veremos vai dar para entender facilmente.
+Dado que o HashSet implementa o HashMap, a abordagem para lidar com colisões é a mesma. Vamos usar o mesmo exemplo que utilizamos no HashMap.
 
-Vamos usar exemplo de colisões com duas String, as String's "FB" e "Ea" geram o mesmo hash 2236. Isso aconteçe pois o hashCode() do Java usa uma função polinomial que produz um número finito de valores hash, por isso a colisão. Veremos agora então uma visualização de como funciona essa lista encadeada em caso de colisões ("FB" e "Ea"):
+> **exemplo em código:**
 
-![HashSet Colisão Java](/static/images/articles/estrutura-de-dados-java/hash-set-colisao.png)
+```java
+var names = new HashSet<String>();
 
-**Em resumo é uma estrutura para quando não quer elementos duplicados e não depende de ordenação, em caso de colisões como visto, se for fazer pesquisa nela vai jogar para um lista ligada vai verificar o primeiro elemento, se não for passa para o próximo e assim por diante.**
+names.add("John Carmack");
+names.add("Ea");
+names.add("Cormen");
+names.add("FB");
+
+System.out.println(names);
+```
+::outputcode
+> `[Cormen, John Carmack, Ea, FB]`
+::
+
+> **imagem mental:**
+
+![HashSet Colisão Java](/static/images/articles/estrutura-de-dados-java/hash-set-colisao.png){width=80% position=auto}
+
+Nesta representação visual, optei por retratar o HashSet de forma mais abstrata, diferentemente de incluir os Nodes como fizemos no HashMap, para variar um pouco e facilitar o entendimento.
+
+## Vantagens e Desvantagens
+
+##### Vantagens
+ - **`1` -** Fornece uma coleção de elementos únicos com acesso rápido.
+ - **`2` -** Implementa um algoritmo de tabela de hashing eficiente, sem duplicação de dados. Eficiente para verificar a existência de elementos.
+
+##### Desvantagens
+ - **`1` -** Não mantém a ordem dos elementos e pode ter colisões.
+ - **`2` -** Sua função de hash hashCode pode levar a colisões frequentes.
+
+#### Uso comum
+Verificação eficiente de unicidade de elementos em uma coleção.
+
+**Cenário de uso:** Em um sistema de gerenciamento de permissões, um HashSet pode ser usado para armazenar os papéis atribuídos a um usuário, garantindo que não haja duplicatas e facilitando a verificação de permissões.
 
 ::next-content
 ---

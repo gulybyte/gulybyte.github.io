@@ -10,7 +10,7 @@
     </p>
 
     <a target="_blank" href="https://github.com/gulybyte/gulybyte.github.io">
-      <Button label="Check code this website!" class="thiscode p-button-outlined p-button-success"></Button>
+      <Button class="thiscode p-button-outlined p-button-success">Check code this website!</Button>
     </a>
 
 
@@ -33,9 +33,9 @@
 
 .developer-web{line-height:50px;font-size:72px;color:c.$font-color;padding:0!important}
 
-.info{padding-top:25px;color:c.$font-color;max-width:51%}
+.info{font-family:f.$montserrat-medium !important; padding-top:25px;color:c.$font-color;max-width:51%; font-size: 1.1rem;}
 
-.thiscode{font-family:f.$sf-mono-900;color:c.$secondary-color;font-size:15px;margin-top:50px!important;padding:12px 25px}
+.thiscode{max-width:80%;font-family:f.$sf-mono-900;color:c.$secondary-color;font-size:15px;margin-top:50px!important;padding:12px 25px}
 
 
 @media screen and (max-width: 1125px) {

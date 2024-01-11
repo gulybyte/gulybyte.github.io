@@ -4,8 +4,8 @@ description: 'Queue | Série - Fundamentos de Estrutura de Dados Elementar com J
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/fila.png'
   alt: 'Queue.'
-  width: 640
-  height: 320
+  width: 958
+  height: 468
 head:
   link:
     - rel: 'canonical'
@@ -30,54 +30,59 @@ head:
     - name: 'og:image'
       content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/fila.png'
     - name: 'og:image:width'
-      content: '640'
+      content: '958'
     - name: 'og:image:height'
-      content: '320'
+      content: '468'
     - name: 'og:image:type'
       content: 'image/png'
 ---
 
-# Queue's.
+# Filas.
+
+<div class="img_pag_init">
+
+  ![Fila](/static/images/articles/estrutura-de-dados-java/fila.png){position=auto width=30%}
+</div>
 
 <h1 style="text-align: left; padding: 0em 0em !important; font-size: 2em">Serie - Fundamentos de Estrutura de Dados Elementar com Java.</h1>
 
 ---
 
-<div class="float-768-disable" style="float: left;">
+### Sobre Filas
+Comumente, recorremos à `Queue`{tag=true} quando buscamos uma coleção que mantem uma lista de prioridades. Ele é projetada para guardar elementos antes do processamento.
+
+::next-content
+---
+content: Começando com PriorityQueue
+linkcontent: /articles/estrutura-de-dados-java/queue/priority-queue
+---
+::
+
+<div class="clear-both"></div>
+
+## Estruturas
+
+<details style="padding-bottom: 1rem">
+<summary>
+  <h5 style="display: inline;cursor:pointer;">
+    Opcional: curiosidade intrigante da interface Deque no Java. (clique)
+  </h5>
+</summary>
+
+<br>
+
+Em nossa jornada pela [hierarquia elementar do Collections Framework](/articles/estrutura-de-dados-java#collections-framework){target=blank}, deparamo-nos com uma fascinante curiosidade sobre a interface Deque, nosso conhecido ArrayDeque não é o único a adotar essa interface. O LinkedList, por sua vez, também a implementa.
+
+O LinkedList não se limita a ser apenas uma lista; ele é uma estrutura multifuncional que abraça as interfaces List e Deque. Essa dualidade se deve à natureza abstrata da estrutura deque, que funciona como uma estrutura de dados que **aponta para objetos anteriores e posteriores**. No caso do LinkedList no Java, baseado em uma Doubly-linked List, a implementação das interfaces List e Deque se torna essencial para alinhar-se com esse conceito.
+
+</details>
 
 - [PriorityQueue](/articles/estrutura-de-dados-java/queue/priority-queue/)
 - [ArrayDeque](/articles/estrutura-de-dados-java/queue/array-deque)
 
-</div>
-
-<div class="float-768-disable" style="float: right">
-
-  ![Fila](/static/images/articles/estrutura-de-dados-java/fila.png){width=200}
-</div>
-
-<div class="clear-both"></div>
-<div style="padding:1rem 0"></div>
-
-| Tipo | Descrição | Detalhes |
-| - | - | - |
-| PriorityQueue | Queue simples | FIFO, primeiros elementos a entrar são os primeiros a sair. |
-| ArrayDeque | Deque -> queue dupla | É possível inserir e remover dados da entrada e da saída. |
-
-## Outras "queues"
-
-Vimos só ArrayDeque e PriorityQueue, mas tem outras mais principais de outras interfaces
-
-<br>
-
- - **BlockingQueue -** abstrata um tipo de fila que espera que a fila não seja vazia ao recuperar um elemento e aguarda que o espaço fique disponível na fila ao armazenar um elemento;
-
-<br>
-
- - **BlockingDeque -** é semelhante a BlockingQueue, mas para filasde extremidade dupla. É sub interface do BlockingQueue.
-
 ::next-content
 ---
-content: PriorityQueue
+content: Começando com PriorityQueue
 linkcontent: /articles/estrutura-de-dados-java/queue/priority-queue
 ---
 ::

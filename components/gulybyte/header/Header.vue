@@ -9,17 +9,13 @@
 
     <nav class="header-contents" data-aos="zoom-in-left" data-aos-duration="2000">
 
-      <NuxtLink href="/articles" class="nav-link">
-        <span class="nav-link-number">01.</span> Artigos
-      </NuxtLink>
-
       <a href="#about" class="nav-link">
-        <span class="nav-link-number">02. </span>Sobre
+        <span class="nav-link-number">01. </span>Sobre
       </a>
 
-      <!-- <a href="#philosophy" class="nav-link">
-        <span class="nav-link-number">03. </span>Filosofia
-      </a> -->
+      <a href="#articles" class="nav-link">
+        <span class="nav-link-number">02. </span>Anotações
+      </a>
 
       <a target="_blank" href="/static/PDF/Resume.pdf" rel="noopener">
         <Button label="Resume" class="p-button-outlined p-button-success" style="padding: 8px 15px;" />
@@ -39,22 +35,16 @@
     <ul class="navbar" v-if="navVisible">
 
       <li>
-        <NuxtLink href="/articles" class="nav-link">
-          <span class="nav-link-number">01.</span> Artigos
-        </NuxtLink>
+        <a href="#about" class="nav-link">
+          <span class="nav-link-number">01. </span>Sobre
+        </a>
       </li>
 
       <li>
-        <a href="#about" class="nav-link">
-          <span class="nav-link-number">02.</span> Sobre
+        <a href="#articles" class="nav-link">
+          <span class="nav-link-number">02. </span>Anotações
         </a>
       </li>
-
-      <!-- <li>
-        <a href="#about" class="nav-link">
-          <span class="nav-link-number">03.</span> Filosofia
-        </a>
-      </li> -->
 
       <li>
         <a href="static/PDF/Resume.pdf">

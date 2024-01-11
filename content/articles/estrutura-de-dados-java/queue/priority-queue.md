@@ -4,8 +4,8 @@ description: 'PriorityQueue | Série - Fundamentos de Estrutura de Dados Element
 image:
   src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/priority-queue.png'
   alt: 'PriorityQueue Java.'
-  width: 3038
-  height: 1528
+  width: 3140
+  height: 613
 head:
   link:
     - rel: 'canonical'
@@ -30,9 +30,9 @@ head:
     - name: 'og:image'
       content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/priority-queue.png'
     - name: 'og:image:width'
-      content: '3038'
+      content: '3140'
     - name: 'og:image:height'
-      content: '1528'
+      content: '613'
     - name: 'og:image:type'
       content: 'image/png'
 ---
@@ -43,15 +43,49 @@ head:
 
 ---
 
-## Como funciona?
+## PriorityQueue. Como funciona `Queue`.
 
-Essa deve ser a mais fácil. Como o nome diz, uma fila de prioridade, **é exatamente como uma fila de supermercado, o primeiro da fila é o primeiro a sair.**
+Como visto na estrutura de dados [Stack](articles/estrutura-de-dados-java/list/stack){target=blank}, a Stack opera com o princípio LIFO (Last-In-First-Out), onde o último elemento a entrar é o primeiro a sair. Agora, vamos direcionar nossa atenção para a intrigante PriorityQueue.
 
-Visualização é:
+Ao contrário da Stack, a PriorityQueue segue o princípio FIFO (First-In-First-Out). Nesse contexto, o primeiro elemento a entrar é o último a sair, replicando o comportamento de uma fila comum. Essa reviravolta na lógica de ordenação é útil em situações em que a prioridade dos elementos é crucial. O que é útil em situações em que a prioridade dos elementos é crucial.
+
+> **exemplo em código:**
+```java
+var numbersQueue = new PriorityQueue<Integer>();
+numbersQueue.add(2);
+numbersQueue.add(3);
+numbersQueue.add(5);
+
+System.out.println(numbersQueue);
+
+numbersQueue.poll();
+
+System.out.println(numbersQueue);
+```
+::outputcode
+> `[2, 3, 5]` <br>&nbsp;
+`[3, 5]`
+::
+
+> **imagem mental:**
 
 ![PriorityQueue Java](/static/images/articles/estrutura-de-dados-java/priority-queue.png)
 
-Eu sei que pode parecer difícil imaginar um cenário de uso real para filas, mas vou dar um bom exemplo. Imagine que na sua aplicação outras APIs se conectam a você e, de tempos em tempos, enviam dados em formato CSV via cron. Você precisa processar esses dados e salvá-los em um banco de dados, mas antes disso, precisa carregá-los na memória RAM para não ter problema de N+1. Nesse caso, você poderia usar um ArrayList para armazenar os dados, mas pense bem: é um processo em que você pega vários e vários dados, os processa em alguma estrutura de dados em sequência e, no final, os envia em sequência para a base de dados. Nesse cenário, uma estrutura de filas, ou melhor, uma estrutura de filas que já é feita especificamente para um cenário como esse e é performática seria melhor. É aí que entra a PriorityQueue, uma fila que oferece uma ordem específica para os elementos com base em sua prioridade. Ela é ideal para esse tipo de cenário, pois permite que você processe e envie os dados em ordem de prioridade, evitando gargalos e garantindo que tudo seja executado de forma eficiente.
+## Vantagens e Desvantagens
+
+##### Vantagens
+ - **`1` -** Mantém os elementos em ordem natural ou com base em um comparador, permitindo acesso eficiente ao elemento de maior prioridade.
+ - **`2` -** Implementa uma fila de prioridade eficiente. FIFO - First In, First Out.
+
+##### Desvantagens
+ - **`1` -** Não fornece acesso eficiente a elementos arbitrários; a remoção é restrita ao elemento de maior prioridade.
+ - **`2` -** A remoção e atualização de elementos específicos são menos eficientes que em outras estruturas, em termos de flexibilidade.
+
+#### Uso comum
+
+Implementação de filas de prioridade em algoritmos como Dijkstra ou algoritmos de roteamento.
+
+**Cenário de uso:** Em um sistema de despacho de tarefas, uma PriorityQueue pode ser usada para priorizar e executar tarefas com base em sua urgência ou importância. Como o [SQS da AWS](https://aws.amazon.com/pt/sqs/){target=_blank}, onde as requisições são processadas por ordem de chegada.
 
 ::next-content
 ---

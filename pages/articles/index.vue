@@ -58,7 +58,7 @@
   float: left;
   a {
     font-size: 30px;
-    font-family: f.$raleway-semibold;
+    font-family: f.$confortaa-semibold;
   }
   p {
     padding: 0.5rem 1rem;
@@ -75,18 +75,18 @@
 
 <script setup>
 useHead({
-  title: 'Artigos',
+  title: 'Anotações',
   link: [
     { rel: 'canonical', href: 'https://gulybyte.github.io/articles' }
   ],
   meta: [
-    { property: 'og:title', content: 'Artigos' },
+    { property: 'og:title', content: 'Anotações' },
 
-    { name: 'description', content: 'Artigos - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
-    { name: 'excerpt', content: 'Artigos - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
-    { name: 'og:description', content: 'Artigos - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
-    { name: 'application-name', content: 'Artigos - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
-    { name: 'og:site_name', content: 'Artigos - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
+    { name: 'description', content: 'Anotações - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
+    { name: 'excerpt', content: 'Anotações - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
+    { name: 'og:description', content: 'Anotações - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
+    { name: 'application-name', content: 'Anotações - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
+    { name: 'og:site_name', content: 'Anotações - Programação, Estrutura de Dados, Banco de Dados, Desenvolvimento Web.'},
 
     { name: 'keywords', content: 'Java, Estrutura de Dados, Séries, Algoritmos e Estrutura de Dados Java, Banco de Dados'},
 

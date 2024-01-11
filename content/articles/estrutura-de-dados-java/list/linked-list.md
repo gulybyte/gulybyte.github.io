@@ -2,10 +2,10 @@
 title: 'LinkedList'
 description: 'ListLinkedList vs ArrayListas | Série - Fundamentos de Estrutura de Dados Elementar com Java.'
 image:
-  src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/linked-list.png'
+  src: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/linked-list-adicao-de-elementos.png'
   alt: 'LinkedList Java.'
-  width: 3488
-  height: 1800
+  width: 3478
+  height: 1420
 head:
   link:
     - rel: 'canonical'
@@ -28,11 +28,11 @@ head:
     - name: 'keywords'
       content: 'Java, Estrutura de Dados, Série, List, Listas, LinkedList, LinkedList vs ArrayList'
     - name: 'og:image'
-      content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/linked-list.png'
+      content: 'https://gulybyte.github.io/static/images/articles/estrutura-de-dados-java/linked-list-adicao-de-elementos.png'
     - name: 'og:image:width'
-      content: '3488'
+      content: '3478'
     - name: 'og:image:height'
-      content: '1800'
+      content: '1420'
     - name: 'og:image:type'
       content: 'image/png'
 ---
@@ -43,43 +43,78 @@ head:
 
 ---
 
-## Como funciona?
+## LinkedList. Como funciona o `Doubly-linked List`.
 
-**Basicamente é uma estrutura chamada Node, ou seja, estrutura com seus valores que apontam para outros nós**. Fuçando o código fonte Java olha só o que eu encontrei:
+> A estrutura de dados do LinkedList é sim uma `Linked List`{tag=true} (ou Lista Ligada), porém de forma mais rigorosa, ela é mais especificamente uma `Doubly-linked List`{tag=true} (ou Lista Duplamente Ligada).
 
-```c
-LinkedList$Node(java.util.LinkedList.Node<E> prev,
-  E element, java.util.LinkedList.Node<E> next) {}
+A `Doubly-linked List`{tag=true} funciona no Java, através de um objeto chamado `Node`{tag=true}, podemos vê-lo [aqui no código fonte do Java](https://github.com/openjdk/jdk/blob/ecd25e7d6f9d69f9dbdbff0a4a9b9d6b19288593/src/java.base/share/classes/java/util/LinkedList.java#L986){target=blank}:
+
+```java
+Node(Node<E> prev, E element, Node<E> next)
+  { ... }
 ```
 
-Ou seja, de formas rudimentar concluímos que nessa estrutura temos:
+De forma rudimentar, o parametro `element`{tag=true} é o value, ou seja, o objeto que está sendo armazenado. Já os paramentros `prev`{tag=true} e `next`{tag=true}, funcionam como <abbr title="uma variável que armazena o endereço de memória de um objeto" style="text-decoration: underline dotted">ponteiros</abbr>, sendo respectivamente `prev`{tag=true} (previous) quem aponta para o node anterior, e `next`{tag=true} quem aponta para o próximo node que está a sua frente.
 
-  - **prev -** endereço do registro anterior;
-  - **element -** elementos em si, os valores nele;
-  - **next -** endereço do próximo registro.
+Isso significa que cada node possui seu element e ponteiros para seu próximo e anterior node.
 
-Isso significa que cada elemento possui um ponteiro para seu próximo e/ou anterior nessa lista.
+> **exemplo em código:**
+```java
+final var __ = " ; size: ";
+var numbersLinkedList = new LinkedList<Integer>();
+numbersLinkedList.addAll(Arrays.asList(
+  4,6,8,9
+));
 
-## ArrayList vs LinkedList
-
-Creio que a essa altura do campeonato você já tenha quase que entendido o funcionamento do `LinkedList`, mas agora qual sua diferença em relação a estrutura estudada anteriormente(`ArrayList`)?. Vamos ver essa tabela de [benchmark](https://gist.github.com/gulybyte/5682491f14ddf489d1c05d042673ca5e){target="_blank"}:
-
-| Operação | ArrayList | LinkedList |
-| - | - | - |
-| add (final lista) | 3.064.831 | 4.056.815 |
-| add (posição aleatoria lista) | 188.153.952 | 20.694.666 |
-| get (posição aleatoria lista) | 81.242 | 112.373.462 |
-| remove (posição aleatoria lista) | 376.194.016 | 112.884.713 |
-
-Para adição no final `ArrayList` é levemente mais rápido. Para adições em posições aleatórias `LinkedList` é 10x mais rápido. Para get não tem jeito `ArrayList` é ordens de grandeza mais rápido (isso se da pois não é possível fazer aritmética de busca por ponteiro em Nodes). Remoção em posição aleatória `LinkedList` é pouco mais de 3x mais rápido.
-
-Ou seja, **`ArrayList` para quando tem inserção no final e quando tem muita busca e `LinkedList` para quando tem remoção e adição em posição aleatória**.
-
-Em resumo `LinkedList` é muito mais rápido para inserções e remoções em posições aleatórias `ArrayList` precisa redimensionar seu tamanho, já `LinkedList` faz algo assim:
+System.out.println(numbersLinkedList+__+numbersLinkedList.size());
+```
+::outputcode
+> `[4, 6, 8, 9]` ; size: 4
+::
 
 ![LinkedList Java](/static/images/articles/estrutura-de-dados-java/linked-list.png)
 
-Por ao adicionar novo elemento, não precisa redimensionar tamanho objeto, você apenas precisar mudar dois endereços, e sem duplicata do seu objeto.
+Vale ressaltar que, para adição, o LinkedList é muito rápido, pois não precisa se redimensionar, internamente ele não usa um array como ArrayList, ele armazena no baixo nivel os nodes em locais como a [`Heap`](/no-seo/virtual-memory-4522-bd13-c7dc7eac996d){target=blank}, como a Heap é dinâmica, os nodes simplesmente são armazenados lá, e para encontrarmos é via ponteiro dos outros nodes.
+
+> **exemplo em código:**
+```java
+final var __ = " ; size: ";
+var numbersLinkedList = new LinkedList<Integer>();
+numbersLinkedList.addAll(Arrays.asList(
+  4,6,8,10
+));
+
+System.out.println(numbersLinkedList+__+numbersLinkedList.size());
+
+numbersLinkedList.add(3, 9);
+System.out.println(numbersLinkedList+__+numbersLinkedList.size());
+```
+::outputcode
+> `[4, 6, 8, 10]` ; size: 4 <br>&nbsp;
+`[4, 6, 8, 9, 10]` ; size: 5
+::
+
+![imagem mental de adição no LinkedList Java](/static/images/articles/estrutura-de-dados-java/linked-list-adicao-de-elementos.png)
+
+Como pode ver, além do novo node, foi preciso apenas alterar dois ponteiros de outros nodes. Para se ter ideia, LinkedList é cerca de 9x mais rápido que ArrayList no quesito adição que não seja no final da estrutura de dados. Afinal de contas, em listas ligadas, seus itens podem estar em qualquer lugar da
+memória.
+
+Porém como nada é bala de prata, LinkedList é pessimo no quesito para fazer busca na estrutura de dados, pois para fazer search ele precisa fazer [equals em for em todos os nodes](https://github.com/openjdk/jdk/blob/ecd25e7d6f9d69f9dbdbff0a4a9b9d6b19288593/src/java.base/share/classes/java/util/LinkedList.java#L615){target=blank}, mesmo que o [ArrayList faça o mesmo](https://github.com/openjdk/jdk/blob/ecd25e7d6f9d69f9dbdbff0a4a9b9d6b19288593/src/java.base/share/classes/java/util/ArrayList.java#L299){target=blank}, ainda assim o LinkedList é cerca de **130x pior** que o ArrayList em search, pois diferentemento do ArrayList que é sequencial (o que facilita em fazer search), o LinkedList vai precisar verificar Node a Node, para isso ira em cada Node, ver se corresponde ao element procurado, caso contrario vai precisar verificar o ponteiro do próximo Node, ir no endereço da memória, e repetir o processo. Quanto maior for a LinkedList, pior vai ser para fazer search.
+
+## Vantagens e Desvantagens
+
+##### Vantagens
+ - **`1` -** Eficiente para inserções e remoções frequentes, inclusive em posições aleatórias, pois não requer realocação de memória.
+ - **`2` -** Suporta eficientemente operações de remoção e inserção no meio da lista.
+
+##### Desvantagens
+ - **`1` -** O acesso direto aos elementos é mais lento do que em ArrayList devido à necessidade de percorrer os Nodes sequencialmente, ou melhor, não existe operação de busca por índice.
+
+#### Uso comum
+Implementação de listas encadeadas para operações eficientes de inserção e remoção.
+
+**Cenário de uso:** Em um editor de texto colaborativo em tempo real, uma LinkedList pode ser usada para representar a sequência de caracteres, permitindo inserções e remoções eficientes em qualquer posição do texto.
+
 
 ::next-content
 ---
@@ -87,3 +122,4 @@ content: Vector
 linkcontent: /articles/estrutura-de-dados-java/list/vector
 ---
 ::
+
