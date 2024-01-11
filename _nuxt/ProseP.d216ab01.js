@@ -1,0 +1,1 @@
+import{_ as s,o,c as t,d as r,a_ as a}from"./entry.d29a0d37.js";const _={},c={class:"prose-paragraph"};function n(e,l){return o(),t("p",c,[r("  "),a(e.$slots,"default")])}const p=s(_,[["render",n]]);export{p as default};
