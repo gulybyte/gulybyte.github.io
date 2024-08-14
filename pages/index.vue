@@ -33,7 +33,7 @@
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
   @use 'assets/colors' as c;
 
 
