@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as o,a_ as r,a}from"./entry.a87d17a0.js";const c={},n=a("summary",{class:"no-select",style:{cursor:"pointer",padding:"0 0 .8rem",color:"gray"}},"Output (clique)",-1);function l(e,u){return s(),o("details",null,[n,r(e.$slots,"default")])}const _=t(c,[["render",l]]);export{_ as default};

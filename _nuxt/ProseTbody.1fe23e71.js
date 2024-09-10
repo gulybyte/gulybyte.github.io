@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r,a_ as s}from"./entry.a87d17a0.js";const a={},c={class:"p-datatable-tbody",role:"rowgroup"};function n(o,_){return t(),r("tbody",c,[s(o.$slots,"default")])}const l=e(a,[["render",n]]);export{l as default};

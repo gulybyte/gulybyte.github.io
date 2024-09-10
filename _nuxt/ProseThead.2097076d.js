@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as o,a_ as r}from"./entry.2a6e1a07.js";const s={},c={class:"p-datatable-thead",role:"rowgroup",style:{"text-align":"left !important"}};function n(e,l){return a(),o("thead",c,[r(e.$slots,"default")])}const d=t(s,[["render",n]]);export{d as default};
