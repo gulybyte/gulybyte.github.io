@@ -1,0 +1,47 @@
+@use '_colors' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body{
+  max-width: 100% !important;
+  max-height: 100% !important;
+  color: $secondary-color !important;
+  background-color: $primary-color !important;
+
+  /* -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important; */
+}
+
+label {
+  font-weight: bold;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+} a:hover  {
+  color: $link-color;
+  text-decoration: underline !important;
+}
+
+pre {
+  overflow-x: auto;
+}
+
+.clear-both {clear: both}
+
+abbr{text-decoration: none;cursor: wait;}
+
+.no-select{-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
+
+body::-webkit-scrollbar-track{background: $primary-color}
+body::-webkit-scrollbar{width: 6px}
+body::-webkit-scrollbar-thumb{background-color: $link-color}

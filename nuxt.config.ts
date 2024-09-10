@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-09-10',
   devtools: { enabled: true },
 
+  css: [
+    'assets/_colors.scss',
+    'assets/_base.scss',
+  ],
+
   routeRules: {
     '/': { isr: true }
   },
@@ -14,8 +19,6 @@ export default defineNuxtConfig({
 
 
 
-
-  
   app: {
     baseURL: '/',
     head: {
