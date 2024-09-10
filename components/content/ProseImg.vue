@@ -1,7 +1,7 @@
 <template>
-  <nuxt-img :src="src" :alt="alt"
+  <NuxtImg :src="src" :alt="alt"
     :style="'width:'+width+';height:'+height+';margin:'+position"
-    :quality="quality" :format="format"></nuxt-img>
+    :quality="quality" />
 </template>
 
 <script setup lang="ts">
@@ -27,10 +27,10 @@ defineProps({
     type: [String, Number],
     default: 100
   },
-  format: {
+  /* format: {
     type: [String, Number],
     default: 'png'
-  },
+  }, */
   position: {
     type: [String],
     default: 'none'
