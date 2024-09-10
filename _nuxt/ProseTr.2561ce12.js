@@ -1,0 +1,1 @@
+import{_ as r,o as t,c as o,a_ as s}from"./entry.2a6e1a07.js";const _={},a={role:"row",class:"tr-row-datatable"};function c(e,n){return t(),o("tr",a,[s(e.$slots,"default")])}const d=r(_,[["render",c]]);export{d as default};
