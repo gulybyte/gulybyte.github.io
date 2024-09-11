@@ -4,7 +4,6 @@
 
 <template>
   <button @click="count++">plus</button>
-  <TestCompo>
-    {{ count }}
-  </TestCompo>
+  <br>
+  {{ count }}
 </template>

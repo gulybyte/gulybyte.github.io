@@ -7,10 +7,7 @@ export default defineNuxtConfig({
     '/': { isr: true }
   },
 
-  modules: [
-    '@nuxt/image',
-    '@nuxtjs/google-fonts'
-  ],
+  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss'],
 
   css: [
     'assets/_colors.scss',
