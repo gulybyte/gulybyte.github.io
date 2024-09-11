@@ -5,5 +5,8 @@
   <div>
     <h1>Welcome to the homepage</h1>
     <NuxtLink to="/about">About</NuxtLink>
+    <br>
+    <NuxtImg src="/img/guilherme-luis-franca.png" quality="10" />
   </div>
 </template>
+

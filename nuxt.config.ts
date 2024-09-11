@@ -3,20 +3,28 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-09-10',
   devtools: { enabled: true },
 
-  css: [
-    'assets/_colors.scss',
-    'assets/_base.scss',
-  ],
-
   routeRules: {
     '/': { isr: true }
   },
 
+  modules: [
+    '@nuxt/image',
+    '@nuxtjs/google-fonts'
+  ],
 
-
-
-
-
+  css: [
+    'assets/_colors.scss',
+    'assets/_base.scss'
+  ],
+  googleFonts: {
+    preload: true,
+    display: 'swap',
+    families: {
+      'Playwrite+CU': {
+        wght: '200..400'
+      }
+    }
+  },
 
 
   app: {
