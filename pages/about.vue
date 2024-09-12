@@ -1,9 +1,7 @@
-<script setup lang="ts">
-  const count = ref(1)
-</script>
-
 <template>
-  <button @click="count++">plus</button>
-  <br>
-  {{ count }}
+  <section>
+    <h1 class="text-center text-2xl">About</h1>
+    <br>
+    <NuxtImg class="rounded-full" src="/img/guilherme-luis-franca.png" width="200" />
+  </section>
 </template>

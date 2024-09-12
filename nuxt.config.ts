@@ -3,8 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-09-10',
   devtools: { enabled: true },
 
+  ssr: true,
   routeRules: {
-    '/': { isr: true }
+    '/': { isr: true },
+    '/posts/**': { isr: true },
+    '/create-post': { swr: true },
+    '/about': { static: true }
   },
 
   modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss'],
