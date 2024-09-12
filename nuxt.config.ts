@@ -5,8 +5,8 @@ export default defineNuxtConfig({
 
   ssr: true,
   routeRules: {
-    '/': { isr: true },
-    '/posts/**': { isr: true },
+    '/': { isr: 60 },
+    '/posts/**': { isr: 60 },
     '/create-post': { swr: true },
     '/about': { static: true }
   },
