@@ -27,7 +27,6 @@ export default defineNuxtConfig({
     }
   },
 
-
   app: {
     baseURL: '/',
     head: {
