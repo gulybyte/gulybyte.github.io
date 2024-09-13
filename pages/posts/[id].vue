@@ -7,17 +7,27 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const ID_POST = route.params.id;
+definePageMeta({
+  validate: async (route) => {
+    return typeof route.params.id === 'string' && /^\d+$/.test(route.params.id)
+  }
+})
+
+const ID_POST: number = route.params.id as unknown as number
 
 interface Post {
-  id: number;
-  title: string;
-  body: string;
+  id: number
+  title: string
+  body: string
 }
 
-const post = useState<Post>('post')
+const post = useState<Post>('post', () => ({
+  id: 0,
+  title: '',
+  body: ''
+}))
 
-await callOnce(async () => {
+watchEffect(async () => {
   const posts = await $fetch<Post[]>(`http://localhost:8000/posts?id=${ID_POST}`)
   post.value = posts[0]
 })

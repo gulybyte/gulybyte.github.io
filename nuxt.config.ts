@@ -7,11 +7,16 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { isr: 60 },
     '/posts/**': { isr: 60 },
+    '/api/*': { cache: { maxAge: 60 } },
     '/create-post': { swr: true },
     '/about': { static: true }
   },
 
   modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss'],
+
+  alias: {
+    css: "/<rootDir>/assets",
+  },
 
   css: [
     'assets/_colors.scss',
@@ -29,7 +34,7 @@ export default defineNuxtConfig({
 
 
   app: {
-    baseURL: '/',
+    baseURL: process.env.BASE_URL || 'http://localhost:3000',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',

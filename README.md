@@ -73,3 +73,9 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+
+---
+issues acompanhadas:
+[versão do vue-tsc](https://github.com/quasarframework/quasar/issues/17469)

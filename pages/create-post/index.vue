@@ -11,7 +11,7 @@ interface Post {
 const lastPosts = useState<Post[]>('lastPosts')
 
 await callOnce(async () => {
-  const posts = await $fetch<Post[]>('http://localhost:8000/posts')
+  const { posts } = await $fetch<{ posts: Post[] }>('http://localhost:3000/api/posts')
 
   lastPosts.value = posts.slice(0, 10)
 })
