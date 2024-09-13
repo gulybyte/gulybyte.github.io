@@ -24,7 +24,7 @@ const post = useState<Post>('post', () => ({
 }))
 
 watchEffect(async () => {
-  const { posts } = await $fetch<{ posts: Post[] }>(`http://localhost:3000/api/posts`)
+  const { posts } = await $fetch<{ posts: Post[] }>(`/api/posts`)
 
   post.value = posts[ID_POST-1]
 })
