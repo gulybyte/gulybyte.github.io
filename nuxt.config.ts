@@ -14,12 +14,7 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss'],
 
-  alias: {
-    css: "/<rootDir>/assets",
-  },
-
   css: [
-    'assets/_colors.scss',
     'assets/_base.scss'
   ],
   googleFonts: {
@@ -34,7 +29,7 @@ export default defineNuxtConfig({
 
 
   app: {
-    baseURL: process.env.BASE_URL || 'http://localhost:3000',
+    baseURL: '/',
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',

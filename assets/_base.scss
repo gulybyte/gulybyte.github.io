@@ -1,5 +1,5 @@
-@use '_colors' as *;
-@use '_fonts' as *;
+@use 'assets/_colors' as *;
+@use 'assets/_fonts' as *;
 
 * {
   padding: 0;
@@ -14,7 +14,6 @@ body{
   max-width: 100% !important;
   max-height: 100% !important;
   color: $secondary-color !important;
-  /* font-family: $playwrite-cu; */
   background-color: $primary-color !important;
 }
 
@@ -40,6 +39,6 @@ abbr{text-decoration: none;cursor: wait;}
 
 .no-select{-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;}
 
-body::-webkit-scrollbar-track{background: $primary-color}
 body::-webkit-scrollbar{width: 6px}
+body::-webkit-scrollbar-track{background: $primary-color}
 body::-webkit-scrollbar-thumb{background-color: $link-color}

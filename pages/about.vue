@@ -5,3 +5,9 @@
     <NuxtImg class="rounded-full" src="/img/guilherme-luis-franca.png" width="200" />
   </section>
 </template>
+
+<script setup lang="ts">
+definePageMeta({
+  layout: 'about'
+})
+</script>
