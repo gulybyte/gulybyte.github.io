@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PostsDto } from '@/interfaces/PostsDto'
+import type { PostsDto } from '@/lib/types/PostsDto'
 
 definePageMeta({
   middleware: 'auth'
@@ -10,7 +10,8 @@ const lastPosts = useState<PostsDto[]>('lastPosts')
 await callOnce(async () => {
   const { posts } = await $fetch<{ posts: PostsDto[] }>(`/api/posts`)
 
-  lastPosts.value = posts.slice(0, 10)
+  console.log(posts)
+  lastPosts.value = posts
 })
 
 function linkToPage(id: number): string  {

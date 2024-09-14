@@ -1,8 +1,8 @@
-import type { Post } from '@/interfaces/Post'
+import type { Post } from '@/lib/types/Post'
 
 export const usePostStore = defineStore('post', {
   state: () => ({
-    post: { id: 0, title: '', body: '' } as Post
+    post: { id: 0, title: '', content: '' } as Post
   }),
   actions: {
     async fetchPost(id: number) {

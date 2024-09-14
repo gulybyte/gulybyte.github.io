@@ -1,7 +1,7 @@
 <template>
   <span>{{ post.id }}</span>
   <h1>{{ post.title }}</h1>
-  <p>{{ post.body }}</p>
+  <p>{{ post.content }}</p>
 </template>
 
 <script setup lang="ts">
