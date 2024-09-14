@@ -3,13 +3,17 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-09-10',
   devtools: { enabled: true },
 
-  ssr: true,
-  routeRules: {
-    '/': { isr: 60 },
-    '/posts/**': { isr: 60 },
-    '/api/*': { cache: { maxAge: 20 } },
-    '/create-post': { swr: true },
-    '/about': { static: true }
+  $production: {
+    ssr: true,
+    routeRules: {
+      '/': { isr: 60 },
+      '/posts/**': { isr: 60 },
+      '/create-post': { swr: true },
+      '/about': { static: true }
+    },
+  },
+  $development: {
+    ssr: false
   },
 
   modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
