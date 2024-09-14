@@ -1,9 +1,3 @@
-## Start DataBase
-
-```bash
-docker-compose up -d
-```
-
 ## Install Dependencies
 
 ```bash
