@@ -1,3 +1,4 @@
 <template>
-  Default: <slot></slot>
+  <slot></slot>
+  <HomeHeader></HomeHeader>
 </template>

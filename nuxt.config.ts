@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { isr: 60 },
     '/posts/**': { isr: 60 },
-    '/api/*': { cache: { maxAge: 60 } },
+    '/api/*': { cache: { maxAge: 20 } },
     '/create-post': { swr: true },
     '/about': { static: true }
   },
