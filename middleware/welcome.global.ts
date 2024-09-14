@@ -1,5 +1,5 @@
 export default defineNuxtRouteMiddleware((to, from) => {
-  let line = '\n';
+  /* let line = '\n';
   if(to.fullPath == from.fullPath)
     console.log(
       "      ))))"+line+
@@ -14,6 +14,6 @@ export default defineNuxtRouteMiddleware((to, from) => {
       "    C A L M"+line+
       "      and"+line+
       "   D R I N K"+line+
-      "  C O F F E E");
+      "  C O F F E E"); */
 })
 
