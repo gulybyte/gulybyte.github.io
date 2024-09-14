@@ -78,5 +78,8 @@ export default defineEventHandler((event) => {
       "body": "reprehenderit quos placeat\nvelit minima officia dolores impedit repudiandae molestiae nam\nvoluptas recusandae quis delectus\nofficiis harum fugiat vitae"
     }
   ]
-  return { posts: posts }
+
+  const requestId = event.context.params?.id || 0
+
+  return { posts: posts.find(p => p.id === +requestId) }
 })

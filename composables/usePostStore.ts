@@ -6,8 +6,8 @@ export const usePostStore = defineStore('post', {
   }),
   actions: {
     async fetchPost(id: number) {
-      const { posts } = await $fetch<{ posts: Post[] }>(`/api/posts`)
-      this.post = posts[id - 1]
+      const { posts } = await $fetch<{ posts: Post }>(`/api/posts/${id}`)
+      this.post = posts
     }
   }
 })
