@@ -5,10 +5,11 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "start:dev": "rm -rf .nuxt ; nuxt dev",
+    "start:dev:": "",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "ved": "rm -rf .nuxt ; nuxt dev"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxt/image": "^1.8.0",

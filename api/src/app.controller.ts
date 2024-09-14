@@ -15,7 +15,7 @@ export class AppController {
 
   @Get(':id')
   getPost(@Param() params: any): { posts: PostDto | undefined } {
-    console.log('posts/${params.id}');
+    console.log(`posts/${params.id}`);
     return this.appService.getPost(params.id);
   }
 }

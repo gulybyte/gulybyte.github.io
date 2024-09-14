@@ -18,6 +18,12 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
 
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.VITE_APP_API_URL || 'http://localhost:4000',
+    }
+  },
+
   css: [
     'assets/_base.scss'
   ],

@@ -6,7 +6,7 @@ export const usePostStore = defineStore('post', {
   }),
   actions: {
     async fetchPost(id: number) {
-      const { posts } = await $fetch<{ posts: Post }>(`http://localhost:4000/posts/${id}`)
+      const { posts } = await $fetch<{ posts: Post }>(`${useRuntimeConfig().public.apiUrl}/posts/${id}`)
       this.post = posts
     }
   }
