@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     '/about': { static: true }
   },
 
-  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/image', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
 
   css: [
     'assets/_base.scss'

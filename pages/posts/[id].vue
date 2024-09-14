@@ -5,9 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Post } from '@/interfaces/Post'
-
 const route = useRoute()
+const postStore = usePostStore()
 
 definePageMeta({
   validate: async (route) => {
@@ -17,15 +16,9 @@ definePageMeta({
 
 const ID_POST: number = route.params.id as unknown as number
 
-const post = useState<Post>('post', () => ({
-  id: 0,
-  title: '',
-  body: ''
-}))
-
 watchEffect(async () => {
-  const { posts } = await $fetch<{ posts: Post[] }>(`/api/posts`)
-
-  post.value = posts[ID_POST-1]
+  await postStore.fetchPost(ID_POST)
 })
+
+const post = computed(() => postStore.post)
 </script>
