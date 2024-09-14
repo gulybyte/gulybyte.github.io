@@ -9,6 +9,7 @@ dist
 
 # Others
 dev.*
+db
 
 # Node dependencies
 node_modules

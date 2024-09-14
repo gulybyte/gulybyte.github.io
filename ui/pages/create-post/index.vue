@@ -8,7 +8,7 @@ definePageMeta({
 const lastPosts = useState<PostsDto[]>('lastPosts')
 
 await callOnce(async () => {
-  const { posts } = await $fetch<{ posts: PostsDto[] }>(`${useRuntimeConfig().public.apiUrl}/posts`)
+  const posts = await $fetch<PostsDto[]>(`${useRuntimeConfig().public.apiUrl}/posts`)
 
   lastPosts.value = posts
 })
