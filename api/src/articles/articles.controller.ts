@@ -15,18 +15,18 @@ export class ArticlesController {
   constructor(private service: ArticlesService) {}
 
   @Get()
-  findAll(): Promise<Articles[]> {
+  async findAll(): Promise<Articles[]> {
     return this.service.findAll();
-  }
-
-  @Post()
-  async save(@Body() entitytData: Articles): Promise<any> {
-    return this.service.save(entitytData);
   }
 
   @Get(':id')
   async findById(@Param('id') id: number): Promise<Articles | null> {
     return this.service.findById(+id);
+  }
+
+  @Post()
+  async save(@Body() entitytData: Articles): Promise<any> {
+    return this.service.save(entitytData);
   }
 
   @Put(':id')

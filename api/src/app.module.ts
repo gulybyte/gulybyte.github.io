@@ -4,8 +4,8 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ArticlesModule } from '@articles/articles.module';
 import { Articles } from '@articles/articles.entity';
-import { CollectionArticles } from '@articles/collection-articles.entity';
-import { NodeCollectionArticles } from '@articles/node-collection-articles.entity';
+import { CollectionArticles } from '@articles/collection/collection-articles.entity';
+import { NodeCollectionArticles } from '@articles/collection/node/node-collection-articles.entity';
 
 @Module({
   imports: [
@@ -15,6 +15,8 @@ import { NodeCollectionArticles } from '@articles/node-collection-articles.entit
       entities: [Articles, CollectionArticles, NodeCollectionArticles],
       synchronize: true,
       autoLoadEntities: true,
+      logging: true,
+      logger: 'advanced-console',
     }),
     ArticlesModule,
   ],

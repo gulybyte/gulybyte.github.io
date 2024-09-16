@@ -4,12 +4,17 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
+  Index,
 } from 'typeorm';
 
-@Entity('articles')
+@Entity()
 export class Articles {
   @PrimaryGeneratedColumn()
   id: number;
+
+  @Index({ unique: true })
+  @Column()
+  url: string;
 
   @Column()
   title: string;
@@ -29,10 +34,10 @@ export class Articles {
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @Column()
+  @Column({ nullable: true })
   publishedAt: Date;
 
-  @Column()
+  @Column({ default: true })
   isIndexSeo: boolean;
 
   @Column()
