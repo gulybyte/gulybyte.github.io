@@ -2,18 +2,21 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { PostsModule } from '@posts/posts.module';
-import { Posts } from '@posts/posts.entity';
+import { ArticlesModule } from '@articles/articles.module';
+import { Articles } from '@articles/articles.entity';
+import { CollectionArticles } from '@articles/collection-articles.entity';
+import { NodeCollectionArticles } from '@articles/node-collection-articles.entity';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot({
       type: 'sqlite',
       database: 'db',
-      entities: [Posts],
+      entities: [Articles, CollectionArticles, NodeCollectionArticles],
       synchronize: true,
+      autoLoadEntities: true,
     }),
-    PostsModule,
+    ArticlesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

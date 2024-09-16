@@ -18,8 +18,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@dto/*": ["./src/dto/*"],
-      "@posts/*": ["src/posts/*"]
+      "@articles/*": ["src/articles/*"]
     }
   }
 }
