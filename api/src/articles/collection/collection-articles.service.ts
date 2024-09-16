@@ -16,9 +16,10 @@ export class CollectionArticlesService {
     return await this.repo.save(entity);
   }
 
-  async findAllCollections(): Promise<CollectionArticles[]> {
-    return await this.repo.find({
-      relations: ['nodesCollectionArticles', 'headNodeCollectionArticles'],
+  async getById(id: number): Promise<CollectionArticles | null> {
+    return await this.repo.findOne({
+      where: { id },
+      relations: ['headNodeCollectionArticles', 'nodesCollectionArticles'],
     });
   }
 }

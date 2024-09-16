@@ -22,10 +22,4 @@ export class CollectionArticles {
 
   @Column()
   name: string;
-
-  @Column()
-  description: string;
-
-  @Column()
-  image: string;
 }
